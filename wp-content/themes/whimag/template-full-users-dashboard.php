@@ -82,14 +82,15 @@ wp_redirect( '/login/?reauth=1' );
 	input[type=text] {width: 82%;padding: 5px;margin-top: 5px;border: 1px solid #ccc;padding-left: 40px; font-family: raleway;}
     button {text-decoration: none !important; color: white; background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);
 </style>
+<div style="text-align:center;"><h1>Welcome Alok !</h1></div>
 <div id="newsbox" class="newsbox">
     <div id="leftsidebar" class="leftsidebar">
         <table style="width:100%; margin: 0 0 0 0;">
             <tr>
-                <td class="leftsidetd" id="leftsidetd"><a href="?superusers=superusers">Administrators</a></td>
-                <td class="leftsidetd" id="leftsidetd"><a href="?orgnizations=orgnizations">Orgnizations</a></td>
-                <td class="leftsidetd" id="leftsidetd"><a href="?employees=employees">All Employees</a></td>
-                <td class="leftsidetd" id="leftsidetd"><a href="?news=news">Important News</a></td>
+                <td class="leftsidetd" id="leftsidetd"><a href="?superusers=superusers"><strong>Administrators</strong></a></td>
+                <td class="leftsidetd" id="leftsidetd"><a href="?orgnizations=orgnizations"><strong>Orgnizations</strong></a></td>
+                <td class="leftsidetd" id="leftsidetd"><a href="?employees=employees"><strong>All Employees</strong></a></td>
+                <td class="leftsidetd" id="leftsidetd"><a href="?news=news"><strong>Important News</strong></a></td>
             </tr>
         </table>
     </div>
@@ -155,7 +156,7 @@ wp_redirect( '/login/?reauth=1' );
         <div class="" id="">
             <?php
                 if(isset($_GET['employees'])){ ?>
-                <div style="background-color: #EAEAEA; border: 1px solid #D8D8D8; padding: 5px 0 5px 10px; margin: 0 0 10px 0;"><strong>All Uttar Pradesh Employee</strong></div>
+                <div style="background-color: #EAEAEA; border: 1px solid #D8D8D8; padding: 5px 0 5px 10px; margin: 0 0 10px 0;"><strong>Total Uttar Pradesh Employees (<?php echo $wpdb->get_var("SELECT COUNT(*) FROM uptron_contributor_list"); ?>)</strong></div>
                 <table>
                     <tbody>
                        <tr>
@@ -165,8 +166,15 @@ wp_redirect( '/login/?reauth=1' );
                            <th><strong>Other Details</strong></th>
                         </tr>
                         <?php global $wpdb;
-                            $i=1;
-                            $users = $wpdb->get_results("SELECT * FROM uptron_contributor_list");
+                            $page = $_GET['pageno'];
+                            if($page=="" || $page=="1"){
+                                $page1=0;
+                                $i=1;
+                            }else{
+                                $page1=($page*100)-100;
+                                $i=($page*100-100)+1;
+                            }
+                            $users = $wpdb->get_results("SELECT * FROM uptron_contributor_list limit $page1,100");
                             foreach($users as $page){
                                 echo '<tr>
                                     <td style="font-size: 70%; text-align: center;">'.$i++.'</td>
@@ -178,7 +186,14 @@ wp_redirect( '/login/?reauth=1' );
                         ?>
                     </tbody>
                 </table>
-            <?php }
+            <?php
+                $res=$wpdb->get_var("SELECT COUNT(*) FROM uptron_contributor_list");
+                $a=$res/100;
+                $a=ceil($a);
+                for($b=1;$b<=$a;$b++){
+                    ?><a href="?employees=employees&pageno=<?php echo $b; ?>" style="text-decoration:none !important;"><?php echo $b." "; ?></a><?php
+                }
+             }
             ?>
         </div>
         <div class="" id="">
@@ -583,20 +598,28 @@ wp_redirect( '/login/?reauth=1' );
 </script>
 
 <?php global $wpdb;
-    $i=1;
-$current_user = wp_get_current_user();
-$org_name = $wpdb->get_results ( "SELECT `organization` FROM  uptron_contributor_list where `userid` LIKE '%". $current_user->user_login . "%' LIMIT 1" );
-$result = $wpdb->get_results ( "SELECT * FROM  uptron_contributor_list where `userid` LIKE '%". $current_user->user_login ."%'" );
-
-echo '<div style="width:100%;">
+    $page = $_GET['pageno'];
+    if($page=="" || $page=="1"){
+        $page1=0;
+        $i=1;
+    }else{
+        $page1=($page*100)-100;
+        $i=($page*100-100)+1;
+    }
+    $current_user = wp_get_current_user();
+    $org_name = $wpdb->get_results ( "SELECT `organization` FROM  uptron_contributor_list where `userid` LIKE '%". $current_user->user_login . "%' LIMIT 1" );
+    $result = $wpdb->get_results ( "SELECT * FROM  uptron_contributor_list where `userid` LIKE '%". $current_user->user_login ."%' LIMIT $page1,100" );
+    $totalemployee = $wpdb->get_var("SELECT COUNT(*) FROM uptron_contributor_list where `userid` LIKE '%". $current_user->user_login ."%'");
+?>
+<div style="width:100%;">
 	<div style="float: left;">
-		<h2>'.$current_user->display_name.'</h2>
+		<h2><?php echo $current_user->display_name; ?>&nbsp;(<?php echo $totalemployee; ?>)</h2>
 	</div>
 	<div style="float: right;">
 		<a href="/add-new-employee-detail/" id="onclick" class="add-employee-button" style="text-decoration: none !important;">Add Employee</a>
 	</div>
-</div>';
-echo '<table class="table1" border="0" cellspacing="2" cellpadding="2">
+</div>
+<table class="table1" border="0" cellspacing="2" cellpadding="2">
 	<thead>
 		<tr>
 			<th><b>SN</b></th>
@@ -608,7 +631,9 @@ echo '<table class="table1" border="0" cellspacing="2" cellpadding="2">
 			<th><b>eMail</b></th>
             <th><b>Action</b></th>
 		</tr>
-	</thead>';
+	</thead>
+	<tbody>
+<?php
 foreach ( $result as $page )
 {
 	echo '<tr>
@@ -621,12 +646,18 @@ foreach ( $result as $page )
 		<td><a href="mailto:'.$page->email_id.'" style="text-decoration:none !important" target="_top">'.$page->email_id.'</a></td>
 		<td><input type="button" name='.$page->id.' id="popup" onclick=div_show('.$page->id.') value="Edit"></td>
 	</tr>';
-}
-	echo '</table>';
-?>
+}?>
+	</tbody>
+</table>
+Page =>
+<?php
+    $a=$totalemployee/100;
+    $a=ceil($a);
+    for($b=1;$b<=$a;$b++){ ?>
+        <a href="?pageno=<?php echo $b; ?>" style="text-decoration:none !important;"><?php echo $b." "; ?></a>
+    <?php } ?>
 <div id="abc">
-	<div id="popupContact">
-	</div>
+	<div id="popupContact"></div>
 </div>
 <?php } ?>
 </div><!-- Contributor Dashboard End -->
