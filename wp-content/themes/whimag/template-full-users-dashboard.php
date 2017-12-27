@@ -608,7 +608,7 @@ wp_redirect( '/login/?reauth=1' );
     }
     $current_user = wp_get_current_user();
     $org_name = $wpdb->get_results ( "SELECT `organization` FROM  uptron_contributor_list where `userid` LIKE '%". $current_user->user_login . "%' LIMIT 1" );
-    $result = $wpdb->get_results ( "SELECT * FROM  uptron_contributor_list where `userid` LIKE '%". $current_user->user_login ."%' LIMIT $page1,100" );
+    $result = $wpdb->get_results ( "SELECT * FROM  uptron_contributor_list where `userid` LIKE '%". $current_user->user_login ."%' ORDER by `name` ASC LIMIT $page1,100" );
     $totalemployee = $wpdb->get_var("SELECT COUNT(*) FROM uptron_contributor_list where `userid` LIKE '%". $current_user->user_login ."%'");
 ?>
 <div style="width:100%;">
