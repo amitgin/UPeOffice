@@ -120,7 +120,7 @@ if(isset($_POST['action']))
 
         $table_name = $wpdb->prefix . "contributor_list";
         $wpdb->insert($table_name, array('userid' => $userid, 'organization' => $organization, 'main_org' => $main_org, 'department_name' => $department_name, 'name' => $name, 'post_name' => $post_name, 'digsign'=>$digsign, 'aadhaar_number' => $aadhaar_number, 'mobile_number' => $mobile_number, 'cug_number' => $cug_number, 'email_id' => $email_id, 'computer' => $computer, 'scanner' => $scanner, 'internet' => $internet) );
-        header('location:/contributor-dashboard/');
+        header('location:/dashboard/');
         die;
     }
 }
