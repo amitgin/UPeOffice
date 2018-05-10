@@ -1,20 +1,13 @@
 <?php include('wp-config.php'); ?>
-<?php
-	global $wpdb;
-	$userinfo_id = $_GET['id'];
-	$userinfo = $wpdb->get_results ( "SELECT * FROM  uptron_contributor_list where id=".$userinfo_id );
-    $pc = $wpdb->get_results ( "SELECT computer FROM  uptron_contributor_list where id=".$userinfo_id );
-    echo $n;
+<?php global $wpdb;
+	$goid = $_GET['id'];
+	$gotitle = $wpdb->get_results ( "SELECT title FROM  uptron_notice_board where id=".$goid );
 
-	foreach ($userinfo as $page){
-        if($page->computer=="Computer,"){$pc="checked";}
-        if($page->scanner=="Scanner,"){$sc="checked";}
-        if($page->internet=="Internet"){$int="checked";}
-
-	echo '<form id="formObj" method="post" name="form" class="popupForm">
+?>
+	<form id="formObj" method="post" name="form" class="popupForm">
             <input type="hidden" name="action" />
             <img id="close" src="/images/3.png" onclick ="div_hide()">
-			<div style="text-align:center"><h2>Edit or Delete Employee</h2></div>
+			<div style="text-align:center"><h2>Edit or Delete Employee <?php echo $goid; ?></h2></div>
 			<hr>
             <input id="empid" name="empid" type="hidden" >
             <table>
@@ -23,15 +16,15 @@
                 <td><input id="name" name="empname" type="text" value="'.$page->name.'"></td>
             </tr>
             <tr>
-                <td><label>Department Name: <span>*</span></td>
+                <td><label>Department Name: <span>*</span></label></td>
                 <td><input id="department_name" name="depname" type="text" value="'.$page->department_name.'"></td>
             </tr>
             <tr>
-                <td><label>Office Name: <span>*</span></td>
+                <td><label>Office Name: <span>*</span></label></td>
                 <td><input id="organization" name="orgname" value="'.$page->organization.'" type="text"></td>
             </tr>
             <tr>
-                <td><label>Designation: <span>*</span></td>
+                <td><label>Designation: <span>*</span></label></td>
                 <td><input id="post_name" name="postname" value="'.$page->post_name.'" type="text"></td>
             </tr>
             <tr>
@@ -71,6 +64,4 @@
 				<button onclick="delete_data('.$page->id.')" id="submit">Delete</button>
 				<button onclick="div_hide()" id="submit">Cancel</button>
 			</div>
-		</form>';
-		}
-?>
+		</form>
