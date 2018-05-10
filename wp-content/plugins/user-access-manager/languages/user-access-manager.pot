@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: user-access-manager 2.1.10\n"
+"Project-Id-Version: user-access-manager 2.1.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-15 21:12+0000\n"
+"POT-Creation-Date: 2018-03-17 06:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -827,104 +827,108 @@ msgid "User Access Manager database was updated successfully"
 msgstr ""
 
 #: includes/language.php:234
-msgid "Update current blog"
+msgid "Failure on User Access Manager database update"
 msgstr ""
 
 #: includes/language.php:235
-msgid "Update network wide"
+msgid "Update current blog"
 msgstr ""
 
 #: includes/language.php:236
-msgid "Backup the uam database tables"
+msgid "Update network wide"
 msgstr ""
 
 #: includes/language.php:237
-msgid "Repair the database"
+msgid "Backup the uam database tables"
 msgstr ""
 
 #: includes/language.php:238
-msgid "Try to repair the database."
+msgid "Repair the database"
 msgstr ""
 
 #: includes/language.php:239
-msgid "repair now"
+msgid "Try to repair the database."
 msgstr ""
 
 #: includes/language.php:240
-msgid "Database repair successfull"
+msgid "repair now"
 msgstr ""
 
 #: includes/language.php:241
+msgid "Database repair successfull"
+msgstr ""
+
+#: includes/language.php:242
 msgid ""
 "<b style=\"color:red;\">Your UAM database seems broken. You should try to "
 "repair it.</b>"
 msgstr ""
 
-#: includes/language.php:242
+#: includes/language.php:243
 msgid ""
 "<b style=\"color:green;\">Your UAM database seems to be in good condition.</"
 "b>"
 msgstr ""
 
-#: includes/language.php:243
+#: includes/language.php:244
 msgid "Revert the database"
 msgstr ""
 
-#: includes/language.php:244
+#: includes/language.php:245
 msgid ""
 "Choose a backup to revert the database to this user access manager database "
 "version. <b>Note: The user access manager database version differs from the "
 "user access manager version.</b>"
 msgstr ""
 
-#: includes/language.php:245
+#: includes/language.php:246
 msgid "revert now"
 msgstr ""
 
-#: includes/language.php:246
+#: includes/language.php:247
 msgid "Revert successfull"
 msgstr ""
 
-#: includes/language.php:247
+#: includes/language.php:248
 msgid "Delete a database backup"
 msgstr ""
 
-#: includes/language.php:248
+#: includes/language.php:249
 msgid "Choose a backup to delete. <b>Note: That cannot be undone.</b>"
 msgstr ""
 
-#: includes/language.php:249
+#: includes/language.php:250
 msgid "delete now"
 msgstr ""
 
-#: includes/language.php:250
+#: includes/language.php:251
 msgid "Backup deleted successfully"
 msgstr ""
 
-#: includes/language.php:254
+#: includes/language.php:255
 msgid "About"
 msgstr ""
 
-#: includes/language.php:257
+#: includes/language.php:258
 msgid "How to support me?"
 msgstr ""
 
-#: includes/language.php:258
+#: includes/language.php:259
 msgid "Help me to improve the plugin"
 msgstr ""
 
-#: includes/language.php:259
+#: includes/language.php:260
 msgid ""
 "Send me bug reports, bug fixes, pull requests or your ideas. See: <a href="
 "\"https://github.com/GM-Alex/user-access-manager\">https://github.com/GM-"
 "Alex/user-access-manager</a>"
 msgstr ""
 
-#: includes/language.php:260
+#: includes/language.php:261
 msgid "Create a translation of the plugin"
 msgstr ""
 
-#: includes/language.php:261
+#: includes/language.php:262
 msgid ""
 "Give other users more comfort help me to translate it to all languages. See: "
 "<a href=\"https://translate.wordpress.org/projects/wp-plugins/user-access-"
@@ -932,220 +936,220 @@ msgid ""
 "manager</a>"
 msgstr ""
 
-#: includes/language.php:262
+#: includes/language.php:263
 msgid "Donate via PayPal"
 msgstr ""
 
-#: includes/language.php:263
+#: includes/language.php:264
 msgid "Support me on Steady"
 msgstr ""
 
-#: includes/language.php:264
+#: includes/language.php:265
 msgid "Spread the word"
 msgstr ""
 
-#: includes/language.php:265
+#: includes/language.php:266
 msgid ""
 "Write about the plugin and place a link to the plugin in your blog/website."
 msgstr ""
 
-#: includes/language.php:268
+#: includes/language.php:269
 msgid "Thanks"
 msgstr ""
 
-#: includes/language.php:269
+#: includes/language.php:270
 msgid "Be the first one supporting me on steady!"
 msgstr ""
 
-#: includes/language.php:270
+#: includes/language.php:271
 msgid "Top supporters"
 msgstr ""
 
-#: includes/language.php:271
+#: includes/language.php:272
 msgid "Supporters"
 msgstr ""
 
-#: includes/language.php:272
+#: includes/language.php:273
 msgid "Special thanks"
 msgstr ""
 
-#: includes/language.php:273
+#: includes/language.php:274
 msgid "My wife for giving me the time to develop this plugin"
 msgstr ""
 
-#: includes/language.php:274
+#: includes/language.php:275
 msgid "All testers and all others I forgot"
 msgstr ""
 
-#: includes/language.php:278
+#: includes/language.php:279
 msgid "Access"
 msgstr ""
 
-#: includes/language.php:279
+#: includes/language.php:280
 msgid "UAM User Groups"
 msgstr ""
 
-#: includes/language.php:283
+#: includes/language.php:284
 msgid "Full access"
 msgstr ""
 
-#: includes/language.php:284
+#: includes/language.php:285
 #, php-format
 msgid "Member of %s other user groups"
 msgstr ""
 
-#: includes/language.php:285
+#: includes/language.php:286
 msgid ""
 "<strong>Note:</strong> An administrator has always access to all posts/pages."
 msgstr ""
 
-#: includes/language.php:286
+#: includes/language.php:287
 msgid "Please create a user group first."
 msgstr ""
 
-#: includes/language.php:287
+#: includes/language.php:288
 msgid "No user group available."
 msgstr ""
 
-#: includes/language.php:288
+#: includes/language.php:289
 msgid "No rights"
 msgstr ""
 
-#: includes/language.php:289
+#: includes/language.php:290
 msgid "You have no rights to access this content."
 msgstr ""
 
-#: includes/language.php:290
+#: includes/language.php:291
 msgid "User Groups"
 msgstr ""
 
-#: includes/language.php:291
+#: includes/language.php:292
 msgid "Set up user groups"
 msgstr ""
 
-#: includes/language.php:292
+#: includes/language.php:293
 msgid "Nonce error"
 msgstr ""
 
-#: includes/language.php:293
+#: includes/language.php:294
 msgid "Sorry, your nonce did not verify."
 msgstr ""
 
-#: includes/language.php:296
+#: includes/language.php:297
 msgid "Info"
 msgstr ""
 
-#: includes/language.php:297
+#: includes/language.php:298
 msgid "Group info"
 msgstr ""
 
-#: includes/language.php:298
+#: includes/language.php:299
 #, php-format
 msgid "Group membership given by %s"
 msgstr ""
 
-#: includes/language.php:299
+#: includes/language.php:300
 msgid "Assigned groups"
 msgstr ""
 
-#: includes/language.php:300 includes/language.php:334
+#: includes/language.php:301 includes/language.php:335
 msgid "Role"
 msgstr ""
 
-#: includes/language.php:301 includes/language.php:333
+#: includes/language.php:302 includes/language.php:334
 msgid "User"
 msgstr ""
 
-#: includes/language.php:302
+#: includes/language.php:303
 msgid "Term"
 msgstr ""
 
-#: includes/language.php:303
+#: includes/language.php:304
 msgid "Post"
 msgstr ""
 
-#: includes/language.php:307
+#: includes/language.php:308
 msgid "Opening file info database failed."
 msgstr ""
 
-#: includes/language.php:308
+#: includes/language.php:309
 msgid "Error: File not found."
 msgstr ""
 
-#: includes/language.php:309
+#: includes/language.php:310
 msgid "The file you are looking for wasn't found."
 msgstr ""
 
-#: includes/language.php:313
+#: includes/language.php:314
 msgid "Username"
 msgstr ""
 
-#: includes/language.php:314
+#: includes/language.php:315
 msgid "Password"
 msgstr ""
 
-#: includes/language.php:315
+#: includes/language.php:316
 msgid "Login"
 msgstr ""
 
-#: includes/language.php:316
+#: includes/language.php:317
 msgid "Logout"
 msgstr ""
 
-#: includes/language.php:317
+#: includes/language.php:318
 #, php-format
 msgid "Welcome, %s!"
 msgstr ""
 
-#: includes/language.php:318
+#: includes/language.php:319
 msgid "Register"
 msgstr ""
 
-#: includes/language.php:319
+#: includes/language.php:320
 msgid "Lost your password?"
 msgstr ""
 
-#: includes/language.php:320
+#: includes/language.php:321
 msgid "Password Lost and Found"
 msgstr ""
 
-#: includes/language.php:321
+#: includes/language.php:322
 msgid "Remember me"
 msgstr ""
 
-#: includes/language.php:325
+#: includes/language.php:326
 msgid "Setup time based group assignment"
 msgstr ""
 
-#: includes/language.php:326 includes/language.php:328
+#: includes/language.php:327 includes/language.php:329
 msgid "From"
 msgstr ""
 
-#: includes/language.php:327 includes/language.php:329
+#: includes/language.php:328 includes/language.php:330
 msgid "To"
 msgstr ""
 
-#: includes/language.php:335
+#: includes/language.php:336
 msgid "Not logged in users"
 msgstr ""
 
-#: includes/language.php:336
+#: includes/language.php:337
 msgid "Add dynamic groups"
 msgstr ""
 
-#: includes/language.php:339
+#: includes/language.php:340
 msgid "UAM login widget"
 msgstr ""
 
-#: includes/language.php:340
+#: includes/language.php:341
 msgid "User Access Manager login widget for users."
 msgstr ""
 
-#: includes/language.php:343
+#: includes/language.php:344
 msgid "Get User Access Manager Pro!"
 msgstr ""
 
-#: includes/language.php:344
+#: includes/language.php:345
 msgid ""
 "You want all the features? Guess what? You are already using the Pro "
 "version, because there is none. So it would be nice if you support me and "
@@ -1154,11 +1158,11 @@ msgid ""
 "my free time for the plugin. ;)"
 msgstr ""
 
-#: includes/language.php:345
+#: includes/language.php:346
 msgid "Need help?"
 msgstr ""
 
-#: includes/language.php:346
+#: includes/language.php:347
 msgid ""
 "You got stuck using the User access manager? See <a href=\"https://github."
 "com/GM-Alex/user-access-manager/wiki\">https://github.com/GM-Alex/user-"

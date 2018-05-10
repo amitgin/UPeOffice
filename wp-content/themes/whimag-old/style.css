@@ -1,0 +1,50 @@
+/*
+Theme Name: Whimag
+Theme URI: http://www.magpress.com/wordpress-themes/whimag.html
+Description: Clean Magazine and Blogging HTML5/CSS3 2 Columns Responsive WordPress Theme
+Version: 1.1
+Author: MagPress.com
+Author URI: http://www.magpress.com
+License: Creative Commons Attribution-Share Alike 3.0
+License URI: http://creativecommons.org/licenses/by-sa/3.0/us/
+Tags: white,red,two-columns,right-sidebar,fixed-width,editor-style,custom-menu,custom-header,featured-images,full-width-template,theme-options,threaded-comments
+
+The CSS, XHTML and design is released under Creative Commons Attribution-Share Alike 3.0 License:
+http://creativecommons.org/licenses/by-sa/3.0/us/
+*/
+
+/*
+changelog
+v1.1
+- fixed pagination issue
+
+v1.0
+- initial release
+
+*/
+/* *************************** Custom Code ***************************************************** */
+#socialbox { width: 230px; float: right; display: flex; }
+.contributor-table {width: 98%;}
+.contributor-table, .contributor-table td {border: 1px solid !important;}
+#carousel_container { width: 100%; overflow: hidden; margin: 5px auto 0 auto; background: #fff; }
+.scroll-img { float: left; width: 93%; overflow: hidden; position: relative; margin: 0 auto 0 auto; padding-bottom: 15px;}
+.scroll-img ul { width: 1500px; position: relative; left: 0; list-style-type: none; margin: 0; padding: 0;}
+.scroll-img ul li { float: left; height: 90px; list-style: none !important; padding-left: 9px; padding-right: 9px; padding-top: 9px;}
+.thum_scroll { border: 1px solid rgba(35, 114, 167, 0.54);}
+.btn-log1 {background-color: #333; font-size: 1.2em; border-radius: 25px; border: 1px solid #333; color: #fff !important; padding: 4px 12px;}
+.new-link a { color: #3c3c3c; /* color: #990000; */ text-decoration: none; font-size: .92em; font-weight: bold;}
+.keyfunc-img { display:inline-block; width:25%; height:150px;}
+.pageheightkeyfunc{ height : 350px;}
+.box-blu{ background-color: #3d5186; color: #FFF; text-decoration: none; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 20px; height:192px; }
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure {position: relative; width: 500%; margin: 0; left: 0; text-align: left; font-size: 0; animation: 20s slidy infinite;}
+.caption { min-height: 178px;}
+.caption p { font-size: .9em !important; text-align: justify; line-height: 19px; }
+#DivContent {width: 100%; margin-left: auto; margin-right: auto; }
+.row {display: flex;}
+.imageDiv {width: 33.33333333%;padding: 5px;}
+#wp-submit {width: 100px; height: 33px; color: white; border-radius: 10px; background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); font-weight: 800; border: 2px solid honeydew;}
+#wp-submit:hover {border: 2px solid green;}
+.site-title-wrap {padding: 25px;}
+/*************************************** Custom Code End **************************************/

@@ -1,0 +1,832 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: themes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-06 21:58+0800\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: C:\\xampp\\htdocs\\magpress\\release\\wp-content\\themes\\traveleg\n"
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/comments.php:4
+msgid "Please do not load this page directly. Thanks!"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/comments.php:6
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/comments.php:20
+msgid "No Comments Yet"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/comments.php:20
+msgid "1 Comment Already"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/comments.php:20
+msgid "% Comments Already"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/comments.php:23
+msgid "stay updated with"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/comments.php:23
+msgid "Subscribe to comments feed"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/comments.php:40
+msgid "Trackbacks/Pingbacks"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/footer.php:24
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/sidebar-left.php:18
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/sidebar.php:24
+msgid "Topics"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/footer.php:38
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/sidebar-left.php:22
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/sidebar.php:28
+msgid "Archive"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/footer.php:52
+msgid "Meta"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/footer.php:70
+msgid "About Us"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/footer.php:93
+msgid "Copyright &copy;"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/footer.php:93
+msgid "Y"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/functions.php:58
+msgid "Primary Menu"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/functions.php:59
+msgid "Footer Menu"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/header.php:26
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/index.php:52
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/template-blog.php:54
+msgid "more about"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/index.php:52
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/template-blog.php:54
+msgid "Read More"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/page.php:25
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/single.php:31
+msgid "...more &raquo;"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/sidebar-left.php:9
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/sidebar.php:11
+msgid "Links"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/sidebar.php:33
+msgid "Recent Comments"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/sidebar.php:38
+msgid "Hot Topics"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/template-blogroll.php:30
+msgid "Useful Resources:"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/template-full-width.php:30
+msgid "...Continue reading"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/template-sitemap.php:33
+msgid "Archives by Month:"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/template-sitemap.php:35
+msgid "Archives by Category:"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/template-sitemap.php:44
+msgid "Browse Last 50 Posts:"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:400
+msgid "Header Setting"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:401
+msgid "Site Logo"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:402
+msgid "Upload your logo here."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:409
+msgid "Favourite Icon"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:410
+msgid "Upload your fav icon here. <em>prefered 16x16 or 32x32 image dimension</em>"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:418
+msgid "Enable or Disable the 480x60 Header Banner"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:419
+msgid "Choose if you want to enable or disable header banner."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:425
+msgid "468x60 Header Banner or Advertisment Embed Code"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:426
+msgid "Add Embed Code or Image Banner Here <em>*HTML Allowed</em>. Leave blank if not use."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:434
+msgid "Typography Settings"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:435
+msgid "Body Font"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:436
+msgid "Choose a font for the body text."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:443
+msgid "Headline and Title Font"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:444
+msgid "Choose a font for the headline text."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:451
+msgid "Navigation Font"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:452
+msgid "Choose a font for the navigation text."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:461
+msgid "Gallery Slider Settings"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:462
+msgid "Enable Featured Gallery Slider"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:463
+msgid "Choose if you want to enable or disable gallery slider."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:471
+msgid "Categories ID"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:472
+msgid "Add a list of category ids if you want to use category as featured. <em>*leave blank to use bottom post ids featured</em><br /><small>example: 3,4,68</small>"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:478
+msgid "Limit to how many posts"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:479
+msgid "How many posts in categories you listed you want to show?"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:487
+msgid "Posts ID"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:488
+msgid "Add a list of post ids if you want to use posts as featured. <em>*leave blank to use above category ids featured</em><br /><small>example: 136,928,925,80,77,55,49</small>"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:496
+msgid "Featured Sidebar"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:497
+msgid "Enable Featured Category Sidebar"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:498
+msgid "Choose if you want to enable or disable featured category sidebar. <em>*leave blank if not use</em>"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:506
+msgid "Sidebar Featured Category 1"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:507
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:521
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:536
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:551
+msgid "Choose which category to featured."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:512
+msgid "Featured Category 1 Count"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:513
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:527
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:542
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:557
+msgid "How many posts you want to list in this category?"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:520
+msgid "Sidebar Featured Category 2"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:526
+msgid "Featured Category 2 Count"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:535
+msgid "Sidebar Featured Category 3"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:541
+msgid "Featured Category 3 Count"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:550
+msgid "Sidebar Featured Category 4"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:556
+msgid "Featured Category 4 Count"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:566
+msgid "Google Adsense Settings"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:567
+msgid "Google Adsense in Post Loop"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:568
+msgid "Insert Google Adsense code for the blog post loop. It will appeared after <em>post_content()</em>. Leave blank if not use."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:573
+msgid "Google Adsense in Single Post"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:574
+msgid "Insert Google Adsense code for the single post page. It will appeared before and after <em>post_content()</em>. Leave blank if not use."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:579
+msgid "Google Adsense in Sidebar"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:580
+msgid "Insert Google Adsense code for the sidebar. 250x250 dimension preferable. Leave blank if not use."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:585
+msgid "Google Analytics"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:586
+msgid "Insert <strong>Google Analytics</strong> code on head section. <em>Leave blank if not use</em>"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:595
+msgid "Sidebar Banner Settings"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:596
+msgid "Banner Ads 1"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:597
+msgid "Insert banner 1 HTML code. <em>*leave blank if not use</em>"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:602
+msgid "Banner Ads 2"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:603
+msgid "Insert banner 2 HTML code. <em>*leave blank if not use</em>"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:608
+msgid "Banner Ads 3"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:609
+msgid "Insert banner 3 HTML code. <em>*leave blank if not use</em>"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:614
+msgid "Banner Ads 4"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:615
+msgid "Insert banner 4 HTML code. <em>*leave blank if not use</em>"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:620
+msgid "Banner Ads 5"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:621
+msgid "Insert banner 5 HTML code. <em>*leave blank if not use</em>"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:626
+msgid "Banner Ads 6"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:627
+msgid "Insert banner 6 HTML code. <em>*leave blank if not use</em>"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:635
+msgid "Social Settings"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:636
+msgid "Twitter and Facebook Like and Send in Posts"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:637
+msgid "Enable Twitter and Facebook Like and Send in posts"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:644
+msgid "Facebook User or Apps ID"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:645
+msgid "Insert your Facebook User ID or Apps ID"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:652
+msgid "RSS Feed url"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:653
+msgid "Insert your RSS Feed url like feed url for feedburner"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:659
+msgid "Facebook page url"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:660
+msgid "Insert your facebook page url"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:666
+msgid "Twitter page url"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:667
+msgid "Insert your twitter page url"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:673
+msgid "Linkedin page url"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:674
+msgid "Insert your linkedin page url"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:680
+msgid "Google Plus page url"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:681
+msgid "Insert your google plus page url"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:689
+msgid "Extra Settings"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:690
+msgid "Use Timthumb for thumbnails"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:691
+msgid "Enable timthumb for all thumbnails. You may experience higher server or host cpu load, if yes, you can choose to disable it"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:699
+msgid "Thumbnails left or right?"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:700
+msgid "Make thumbnail alignleft or alignright"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:712
+msgid " Theme Options"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:714
+msgid " settings saved."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:715
+msgid " settings reset."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:881
+msgid "Save Options"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:888
+msgid "Are you sure you want to delete all saved settings for this theme?."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:889
+msgid "Reset Options"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:926
+msgid "The image name contain invalid character, rename it and try upload it again"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:959
+msgid " Options"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/option-functions.php:959
+msgid "Theme Options"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/theme-functions.php:9
+msgid "Search for:"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/theme-functions.php:198
+msgid "Read more &raquo;"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/theme-functions.php:549
+msgid "There is no excerpt because this is a protected post."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/theme-functions.php:709
+msgid "Page "
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/theme-functions.php:711
+msgid "&laquo; First"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/theme-functions.php:725
+msgid "Last &raquo;"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/theme-functions.php:750
+msgid "F jS, Y"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/theme-functions.php:750
+msgid "at"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/theme-functions.php:756
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/theme-functions.php:844
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/breadcrumbs.php:12
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:8
+msgid "Right Sidebar"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:10
+msgid "Right sidebar widget area"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:18
+msgid "First Footer Widget Area"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:20
+msgid "The first footer widget area"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:28
+msgid "Second Footer Widget Area"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:30
+msgid "The second footer widget area"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:38
+msgid "Third Footer Widget Area"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:40
+msgid "The third footer widget area"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:48
+msgid "Fourth Footer Widget Area"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:50
+msgid "The fourth footer widget area"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:118
+msgid "Display your latest twitter."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:129
+msgid "Twitter"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:133
+msgid "Follow me"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:153
+msgid "Twitter Title:"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:158
+msgid "Twitter ID:"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:162
+msgid "Number Of Tweets:"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:181
+msgid "Display your most commented posts."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:187
+msgid "Most Comments"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:222
+msgid "Name for most comment(optional):"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:226
+msgid "Total to show: "
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:231
+msgid "Show comments count:"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:233
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:317
+msgid "yes"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:234
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:318
+msgid "no"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:251
+msgid "Display your recent comments with user avatar."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:289
+msgid "Says:"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:311
+msgid "Name for recent comment(optional):"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:315
+msgid "Enable avatar?:"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:323
+msgid "Total to show:"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:339
+msgid "Displays your latest Flickr feed."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:346
+msgid "Flickr"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:353
+msgid "More in Flickr &raquo;"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:375
+msgid "Flickr Name"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:379
+msgid "Flickr ID"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/functions/widget-functions.php:384
+msgid "Number of photos:"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/advertisment.php:13
+msgid "Advertisment"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/breadcrumbs.php:10
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/breadcrumbs.php:23
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/breadcrumbs.php:34
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/breadcrumbs.php:48
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/breadcrumbs.php:60
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/breadcrumbs.php:81
+msgid "You are here&nbsp;:"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/breadcrumbs.php:11
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/breadcrumbs.php:24
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/breadcrumbs.php:35
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/breadcrumbs.php:49
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/breadcrumbs.php:61
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/breadcrumbs.php:82
+msgid "Home"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/breadcrumbs.php:36
+msgid "Category"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/breadcrumbs.php:50
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/headline.php:3
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/headline.php:7
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/headline.php:11
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/headline.php:23
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/headline.php:30
+msgid "Page"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/breadcrumbs.php:83
+msgid "Search Result"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/headline.php:3
+msgid "Latest News From The"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/headline.php:3
+msgid "Blog"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/headline.php:7
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/headline.php:18
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/headline.php:20
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/headline.php:22
+msgid "Archives for"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/headline.php:11
+msgid "Tag archives for"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/headline.php:30
+msgid "Search result for &quot;"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/headline.php:30
+msgid "&quot;"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/post-meta.php:6
+msgid "by"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/post-meta.php:20
+msgid "Tags:&nbsp;"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/post-meta.php:27
+msgid "No Comment"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/post-meta.php:27
+msgid "1 Comment"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/post-meta.php:27
+msgid "% Comments"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/post-meta.php:31
+msgid "Edit"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/related-alt.php:5
+msgid "Share with friends"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/related-alt.php:11
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/related.php:17
+msgid "Related Posts"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/related-alt.php:42
+msgid "no related post found"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/result.php:2
+msgid "Sorry, we can't find the category you're looking for at this URL. Please try selecting a menu item from above or to the side of this message to get where you'd like to go."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/result.php:4
+msgid "Sorry, we can't find the archive you're looking for at this URL. Please try selecting a menu item from above or to the side of this message to get where you'd like to go."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/result.php:6
+msgid "Sorry, we can't find the search keyword you're looking for. Please try selecting a menu item from above or to the side of this message to get where you'd like to go."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/result.php:8
+msgid "Sorry, we can't find the author you're looking for at this URL. Please try selecting a menu item from above or to the side of this message to get where you'd like to go."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/result.php:10
+msgid "Sorry, we can't find the post you're looking for at this URL. Please try selecting a menu item from above or to the side of this message to get where you'd like to go."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/result.php:12
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/result.php:14
+msgid "Sorry, we can't find the content you're looking for at this URL. Please try selecting a menu item from above or to the side of this message to get where you'd like to go."
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/share-box.php:4
+msgid "Tweet"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/social-box.php:3
+msgid "Subscribe to rss feed"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/social-box.php:5
+msgid "Like us on Facebook"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/social-box.php:7
+msgid "Follow us on Twitter"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/social-box.php:9
+msgid "Check out our Linkedin profile"
+msgstr ""
+
+#: C:\xampp\htdocs\magpress\release\wp-content\themes\traveleg/lib/templates/social-box.php:11
+msgid "Check out our Google Plus profile"
+msgstr ""
+

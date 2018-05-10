@@ -1,0 +1,12 @@
+body.woocommerce #single-content .content-area {}
+
+body.woocommerce-page #single-content {}
+
+.woocommerce .widget_shopping_cart .cart_list li, .woocommerce.widget_shopping_cart .cart_list li {width: 90%;}
+
+body#custom.woocommerce li.product h2 {
+    font-size:1.4em;line-height:1.2em;
+}
+body.woocommerce .wc-tabs-wrapper .entry-content {
+    font-size:1.2em;line-height:1.3em;
+}

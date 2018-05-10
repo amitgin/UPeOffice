@@ -1,99 +1,29 @@
-<?php if(!is_active_sidebar( 'first-footer-widget-area' ) && !is_active_sidebar( 'second-footer-widget-area' )  && !is_active_sidebar( 'third-footer-widget-area' )  && !is_active_sidebar( 'fourth-footer-widget-area' )  ) : ?>
-
-<?php else: ?>
-
-<footer class="footer-top">
-
-<div class="ftop">
-<div class="container-wrap">
-<div class="fbox">
-<div class="widget-area the-icons">
-<?php if ( is_active_sidebar( 'first-footer-widget-area' ) ) : ?>
-<?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
-<?php endif; ?>
+<?php do_action( 'mp_before_end_wrapper_content' ); ?>
+</div>
+<?php if( is_front_page() && is_home() ){ ?>
+<div id="carousel_container">
+<div id="demo4" class="scroll-img">
+	<ul>
+		<li><div class="thumbnail thum_scroll"><a href="http://goidirectory.nic.in/index.php" title="Click to view more" target="_blank" onclick="return Confirmviewpage();"><img height="73" width="166" src="http://www.upeoffice.in/wp-content/uploads/2017/11/gov.jpg" alt="..."></a></div></li>
+		<li><div class="thumbnail thum_scroll"><a href="http://eci.nic.in/" title="Click to view more" target="_blank" onclick="return Confirmviewpage();"><img height="73" width="166" src="http://www.upeoffice.in/wp-content/uploads/2017/11/election.gif" alt="..."></a></div></li>
+		<li><div class="thumbnail thum_scroll"><a href="http://india.gov.in/" title="Click to view more" target="_blank" onclick="return Confirmviewpage();"><img height="73" width="166" src="http://www.upeoffice.in/wp-content/uploads/2017/11/indiaGov.gif" alt="..."></a></div></li>
+		<li><div class="thumbnail thum_scroll"><a href="http://uponline.up.nic.in/" title="Click to view more" target="_blank" onclick="return Confirmviewpage();"><img height="73" width="166" src="http://www.upeoffice.in/wp-content/uploads/2017/11/logo_uponline.jpg" alt="..."></a></div></li>
+		<li><div class="thumbnail thum_scroll"><a href="http://www.digitalindia.gov.in/" title="Click to view more" target="_blank" onclick="return Confirmviewpage();"><img height="73" width="166" src="http://www.upeoffice.in/wp-content/uploads/2017/11/logo_digitalindia.jpg" alt="..."></a></div></li>
+		<li><div class="thumbnail thum_scroll"><a href="http://righttoinformation.gov.in/" title="Click to view more" target="_blank" onclick="return Confirmviewpage();"><img height="73" width="166" src="http://www.upeoffice.in/wp-content/uploads/2017/11/rti-icon.gif" alt="..."></a></div></li>
+		<li><div class="thumbnail thum_scroll"><a href="http://www.itpolicyup.gov.in" title="Click to view more" target="_blank" onclick="return Confirmviewpage();"><img height="73" width="166" src="http://www.upeoffice.in/wp-content/uploads/2017/11/it-policy.png" alt="..."></a></div></li>
+		<li><div class="thumbnail thum_scroll"><a href="http://up.gov.in/" title="Click to view more" target="_blank" onclick="return Confirmviewpage();"><img height="73" width="166" src="http://www.upeoffice.in/wp-content/uploads/2017/11/upgov-icon.gif" alt="..."></a></div></li>
+		<li><div class="thumbnail thum_scroll"><a href="http://meity.gov.in/" title="Click to view more" target="_blank" onclick="return Confirmviewpage();"><img height="73" width="166" src="http://www.upeoffice.in/wp-content/uploads/2017/11/deity.jpg" alt="..."></a></div></li>
+	</ul>
 </div>
 </div>
-
-
-<div class="fbox wider-cat">
-<div class="widget-area the-icons">
-<?php if ( is_active_sidebar( 'second-footer-widget-area' ) ) : ?>
-<?php dynamic_sidebar( 'second-footer-widget-area' ); ?>
-<?php endif; ?>
-</div>
-</div>
-
-
-<div class="fbox">
-<div class="widget-area the-icons">
-<?php if ( is_active_sidebar( 'third-footer-widget-area' ) ) : ?>
-<?php dynamic_sidebar( 'third-footer-widget-area' ); ?>
-<?php endif; ?>
-</div>
-</div>
-
-<!--
-<div class="fbox">
-<div class="widget-area the-icons">
-<?php if ( is_active_sidebar( 'fourth-footer-widget-area' ) ) : ?>
-<?php dynamic_sidebar( 'fourth-footer-widget-area' ); ?>
-<?php endif; ?>
-</div>
-</div>
--->
-
-</div>
-</div>
-
-
-
-</footer><!-- FOOTER TOP END -->
-
-<?php endif; //no footer-top sidebar found ?>
-
-
-<footer class="footer-bottom">
-
-<div class="fbottom">
-<div class="footer-left">
-<?php _e('Copyright &copy;', TEMPLATE_DOMAIN); ?> <?php echo gmdate(__('Y', TEMPLATE_DOMAIN)); ?>. <?php bloginfo('name'); ?>
-</div><!-- FOOTER LEFT END -->
-
-<div class="footer-right">
-<?php if ( function_exists( 'wp_nav_menu' ) ) { // Added in 3.0 ?>
-	<?php wp_nav_menu( array(
-	'theme_location' => 'footer',
-	'container' => false,
-	'depth' => 1,
-	'fallback_cb' => 'none'
-	)); ?>
 <?php } ?>
-<?php get_template_part( 'lib/templates/social-box' ); ?>
+<?php do_action( 'mp_before_end_wrapper' ); ?>
 </div>
-<!-- FOOTER RIGHT END -->
+<?php do_action( 'mp_before_end_wrapper_container' ); ?>
 </div>
-
-</footer><!-- FOOTER BOTTOM END -->
-
-
-</div><!-- CONTAINER WRAP END -->
-</section><!-- CONTAINER END -->
-
-
-
-
-</div><!-- INNERWRAP END -->
-</div><!-- WRAPPER MAIN END -->
-</div><!-- WRAPPER END -->
-
-<div class="cleariefloat"></div>
-
+<?php do_action( 'mp_after_wrapper' ); ?>
+</div>
+<?php do_action( 'mp_after_wrapper_main' ); ?>
 <?php wp_footer(); ?>
-
-<?php if( get_theme_option('social_on') == 'Yes' ) { ?>
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-<?php } ?>
-
 </body>
-
 </html>

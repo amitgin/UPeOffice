@@ -1,0 +1,176 @@
+#tabber-widget {
+	width: 100%;
+	float:left;
+	position: relative;
+}
+#sidebar #tabber-widget {
+	width: 100%;
+	float:left;
+}
+/*--------------------------------------------------
+  REQUIRED to hide the non-active tab content.
+  But do not hide them in the print stylesheet!
+  --------------------------------------------------*/
+.tabberlive .tabbertabhide {
+	display:none;
+}
+
+/*--------------------------------------------------
+  .tabber = before the tabber interface is set up
+  .tabberlive = after the tabber interface is set up
+  --------------------------------------------------*/
+.tabber, .tabberlive {
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	width: 100%;
+    float:left;
+
+
+}
+#tabber-widget .tabbertab ul li ul li ul li {
+}
+#tabber-widget .tabbertab ul  {
+padding: 4% 0 0;
+}
+#tabber-widget .tabbertab ul li {
+
+}
+#tabber-widget .tabbertab ul li ul {
+  	border: 0 none;
+	padding: 0 !important;
+	width: 100%;
+}
+
+#tabber-widget .tabbertab ul li ul li {
+}
+#container #tabber-widget .widget {
+}
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+#tabber-widget .widget {
+   margin:1em 0 1.5em !important;
+}
+
+ul.tabbernav
+{
+	margin:0px;
+	position: relative;
+	width: 100%;
+
+	padding: 0px;
+	float: left;
+    border-bottom: 1px solid #ccc;
+}
+
+
+footer ul.tabbernav
+{
+    border-bottom: 1px solid #504c4c;
+}
+
+
+ul.tabbernav li
+{
+	list-style: none;
+	padding: 0px;
+	display: inline;
+	font-size: 1.2em;
+	font-weight: bold;
+    position:relative;
+    bottom:-1px;
+	float: left;margin:0 5px 0 0;
+}
+
+ul.tabbernav li a
+{
+	text-decoration: none;
+	color: #B2B2B2;
+	padding: 0.4em 0.8em;
+	margin: 0px;
+	float: left;
+    background-color:#fff;
+}
+
+footer ul.tabbernav li a
+{
+
+	color: #666;
+    background-color:#222;
+}
+
+
+ul.tabbernav li a:hover
+{
+	text-decoration: none;
+	margin: 0px;
+	float: left;
+}
+
+ul.tabbernav li.tabberactive a,ul.tabbernav li.tabberactive a:hover
+{      color: #444;
+      border:1px solid #ccc;
+    background-color:#fff;
+    border-bottom: 0 none !important;
+}
+
+footer ul.tabbernav li.tabberactive a,footer ul.tabbernav li.tabberactive a:hover
+{      color: #fff;
+      border:1px solid #504c4c;
+    background-color:#222;
+    border-bottom: 0 none !important;
+}
+
+
+
+.post-content ul.tabbernav
+{
+	margin:0px;
+	position: relative;
+	width: 96% !important;
+	padding: 2% 2% 0 2% !important;
+	float: left;
+    border:0 none !important;
+}
+.post-content ul.tabbernav li
+{
+	list-style: none;
+	padding: 0px;
+	display: inline;
+	font-size: 1.125em;
+	font-weight: bold;
+	float: left;
+    margin:0 !important;
+	text-transform: capitalize;
+}
+.post-content ul.tabbernav li a
+{
+	text-decoration: none !important;
+}
+/*--------------------------------------------------
+  .tabbertab = the tab content
+  Add style only after the tabber interface is set up (.tabberlive)
+  --------------------------------------------------*/
+.tabberlive .tabbertab {
+	position: relative;
+
+}
+
+/* If desired, hide the heading since a heading is provided by the tab */
+.tabberlive .tabbertab h2 {
+
+}
+.tabberlive .tabbertab h3 {
+ display:none;
+}
+
+/* Example of using an ID to set different styles for the tabs on the page */
+.tabberlive#tab1 {
+}
+.tabberlive#tab2 {
+}
+.tabberlive#tab2 .tabbertab {
+ overflow:auto;
+}

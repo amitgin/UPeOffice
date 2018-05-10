@@ -1,0 +1,33 @@
+#featuredbox,#Gallerybox {height: 400px;}
+
+#featuredbox {width: 99%; float: left; background: #191919 url(img/spin.gif) no-repeat center center;margin:0 0 2em;}
+#featuredbox #featured {width: 100%; float: left;}
+
+#Gallerybox {display:none;width: 100%; overflow: hidden; margin: 0; padding: 0px; float: left; background: #111; border:0 none;}
+#Gallerybox img {border: 0px none !important; margin: 0 !important;}
+#myGallery, #myGallerySet, #flickrGallery {z-index: 5; width: 100%; height: 100%; padding: 0px; margin: 0px; overflow: hidden;}
+#myGallery img.thumbnail, #myGallerySet img.thumbnail {display: none;}
+.jdGallery {overflow: hidden; position: relative;}
+.jdGallery img {border: 0;}
+.jdGallery .slideElement {width: 100%; height: 100%; background: #191919 no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.jdGallery .loadingElement {width: 100%; height: 100%; position: absolute; left: 0; bottom: 0; background-color: #191919;}
+.jdGallery .slideInfoZone {position: absolute; z-index: 10; margin: 0px; left: 0px; color: #FFFFFF; text-indent: 0; padding: 2% !important; clear: both; float: left; width: 96%; height: auto !important; bottom: 0px;}
+.jdGallery .slideInfoZone {background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.7); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";}
+.jdGallery .slideInfoZone a {color: #FFFFFF !important;}
+* html .jdGallery .slideInfoZone {bottom: -1px;}
+.jdGallery .slideInfoZone h3 {font-size: 2em; font-weight: bold; color: #FFFFFF; width: 100%; text-decoration: none; text-transform: capitalize; display: block; margin: 0px 0px 0.5em; padding: 0%; letter-spacing: normal; text-align: left; float: left;}
+.jdGallery .slideInfoZone p {font-size: 1.2em; color: #eee; width: 100%; margin: 0px !important; padding: 0%; float: left; line-height: 1.45;}
+.jdGallery .slideInfoZone a {text-decoration: none; color: #FFF;}
+.jdGallery .slideInfoZone a:hover {text-decoration: none; color: #FFFFFF;}
+.jdGallery a.open {left: 0; top: 0; width: 100%; height: 100%;}
+.jdGallery a.right, .jdGallery a.left {position: absolute; height: 99%; width: 25%; cursor: pointer; z-index: 10; filter:alpha(opacity=20); -moz-opacity: 0.2; -khtml-opacity: 0.2; opacity: 0.2;}
+* html .jdGallery a.right, * html .jdGallery a.left {filter:alpha(opacity=50);}
+.jdGallery a.right:hover, .jdGallery a.left:hover {filter:alpha(opacity=80); -moz-opacity: 0.8; -khtml-opacity: 0.8; opacity: 0.8;}
+.jdGallery a.left {left: 0; top: 0; background: url('img/fleche1.png') no-repeat center left;}
+* html .jdGallery a.left {background: url('img/fleche1.gif') no-repeat center left;}
+.jdGallery a.right {right: 0; top: 0; background: url('img/fleche2.png') no-repeat center right;}
+* html .jdGallery a.right {background: url('img/fleche2.gif') no-repeat center right;}
+.jdGallery a.open {left: 0; top: 0; width: 100%; height: 100%;}
+.withArrows a.open {position: absolute; top: 0; left: 25%; height: 99%; width: 50%; cursor: pointer; z-index: 10; background: none; -moz-opacity: 0.8; -khtml-opacity: 0.8; opacity: 0.8;}
+.withArrows a.open:hover {background: url('img/open.png') no-repeat center center;}
+* html .withArrows a.open:hover {background: url('img/open.gif') no-repeat center center; filter:alpha(opacity=80);}

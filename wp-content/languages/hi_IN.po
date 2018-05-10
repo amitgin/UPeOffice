@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.9.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-11-15 10:56:45+0000\n"
+"PO-Revision-Date: 2018-03-31 16:25:16+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,13 +36,39 @@ msgstr ","
 msgid "number_format_decimal_point"
 msgstr "."
 
-#: wp-includes/class-wp-customize-manager.php:4135
-msgid "Update anyway, even though it might break your site?"
-msgstr "फिर भी अपडेट कीजिये, भले ही यह शायद वेबसाइट बिगाड़ दे ?"
+#: wp-includes/functions.php:2607
+msgid "The link you followed has expired."
+msgstr "आपके द्वारा अनुगमित लिंक की समय सीमा समाप्त हो गई है।"
 
-#: wp-includes/wp-db.php:1290
+#: wp-includes/class-wp-customize-manager.php:515
+#: wp-includes/script-loader.php:566
+msgid "You need a higher level of permission."
+msgstr "आपको एक उच्च स्तरीय अनुमति की आवश्यकता है।"
+
+#: wp-includes/class-wp-customize-manager.php:450
+#: wp-includes/class-wp-xmlrpc-server.php:3689 wp-includes/functions.php:2617
+#: wp-includes/script-loader.php:133 wp-includes/script-loader.php:565
+#: wp-includes/script-loader.php:645 wp-includes/script-loader.php:839
+msgid "Something went wrong."
+msgstr "कोई त्रुटि हो गई है।"
+
+#. translators: %s: User who is customizing the changeset in customizer.
+#: wp-includes/class-wp-customize-manager.php:3970
+msgid "%s is already customizing this changeset. Do you want to take over?"
+msgstr "%s इन परिवर्तनों का पहले से ही अनुरूपण कर रहा है। क्या आप उनसे यह अधिकार लेना चाहेंगे?"
+
+#. translators: %s: User who is customizing the changeset in customizer.
+#: wp-includes/class-wp-customize-manager.php:3968
+msgid "%s is already customizing this changeset. Please wait until they are done to try customizing. Your latest changes have been autosaved."
+msgstr "%s इन परिवर्तनों का पहले से ही अनुरूपण कर रहा है। कृपया जब तक वह अनुकूलित कर रहे हैं तब तक प्रतिक्षा करें। आपके नवीनतम बदलाव स्वत: सहेज लिए गए हैं।"
+
+#: wp-includes/class-wp-customize-manager.php:4172
+msgid "Update anyway, even though it might break your site?"
+msgstr "हालांकि यह आपकी साइट बिगाड़ सकता है, क्या फिर भी अपडेट करें?"
+
+#: wp-includes/wp-db.php:1283
 msgid "The query only expected one placeholder, but an array of multiple placeholders was sent."
-msgstr "Query को केवल एक placeholder की उम्मीद थी, लेकिन कई placeholders का एक array भेजा गया था।"
+msgstr "क्वेरी केवल एक प्लेसहोल्डर की उम्मीद कर रहा था, किन्तु कई प्लेसहोल्डर की एक सरणी भेज दिया गया।"
 
 #: wp-includes/script-loader.php:555
 msgctxt "customizer changeset status"
@@ -60,22 +86,22 @@ msgid "%1$s is not a valid property of Object."
 msgstr "%1$s ऑब्जेक्ट की वैध संपत्ति नहीं है।"
 
 #. translators: %s: URL to Add Themes admin screen
-#: wp-includes/script-loader.php:601
+#: wp-includes/script-loader.php:602
 msgid "You won&#8217;t be able to install new themes from here yet since your install requires SFTP credentials. For now, please <a href=\"%s\">add themes in the admin</a>."
 msgstr "आप यहाँ से नई थीम को स्थापित नहीं कर पाएंगे क्योंकि इस संस्थापन पर एसएफटीपी के प्रमाण लगेंगे। अभी के लिए कृपया <a href=\"%s\">थीम व्यवस्थापन पटल</a> का इस्तेमाल करें।"
 
 #: wp-includes/taxonomy.php:525
 msgctxt "categories"
 msgid "Most Used"
-msgstr "सर्वाधिक उपयोग किया गया"
+msgstr "सर्वाधिक प्रयुक्त"
 
 #. translators: Tab heading when selecting from the most used terms
 #: wp-includes/taxonomy.php:525
 msgctxt "tags"
 msgid "Most Used"
-msgstr "सर्वाधिक उपयोग किया गया"
+msgstr "सर्वाधिक प्रयुक्त"
 
-#: wp-includes/class-wp-customize-nav-menus.php:950
+#: wp-includes/class-wp-customize-nav-menus.php:966
 msgid "Click &#8220;Next&#8221; to start adding links to your new menu."
 msgstr "आपके नए मेन्यू में लिंक जोड़ने के लिए &#8220;अगला&#8221; क्लिक करें।"
 
@@ -84,12 +110,12 @@ msgstr "आपके नए मेन्यू में लिंक जोड�
 msgid "Sorry, we can&#8217;t load the video at the supplied URL. Please check that the URL is for a supported video file (%s) or stream (e.g. YouTube and Vimeo)."
 msgstr "माफ कीजिए, हम दिए गए यूआरएल पर विडियो नहीं लोड कर सकते। कृपया जाँच लें कि यूआरएल किसी समर्थित विडियो फाईल (%s) या स्ट्रीम (जैसे यूट्यूब और विमियो) का ही है।"
 
-#: wp-includes/script-loader.php:690
+#: wp-includes/script-loader.php:691
 msgctxt "post action/button label"
 msgid "Schedule"
 msgstr "नियत करें"
 
-#: wp-includes/class-wp-customize-manager.php:4588
+#: wp-includes/class-wp-customize-manager.php:4627
 #: wp-includes/script-loader.php:554
 msgctxt "customizer changeset action/button label"
 msgid "Schedule"
@@ -115,45 +141,45 @@ msgstr "अपने साइडबार में एक नेविगे�
 
 #. translators: %s: Display name of the user who has taken over the changeset
 #. in customizer.
-#: wp-includes/script-loader.php:578
+#: wp-includes/script-loader.php:579
 msgid "%s has taken over and is currently customizing."
 msgstr "%s ने बदलाव करने का अधिकार ले लिया है वर्त्मान में वह अनुरूपण कर रहे है। "
 
-#: wp-includes/script-loader.php:572
+#: wp-includes/script-loader.php:573
 msgid "Looks like something&#8217;s gone wrong. Wait a couple seconds, and then try again."
 msgstr "लगता है कुछ गलत हो गया। कुछ देर रुककर दोबारा कोशिश करें।"
 
-#: wp-includes/class-wp-customize-manager.php:4121
+#: wp-includes/class-wp-customize-manager.php:4158
 msgid "Take over"
 msgstr "अधिकार में लें"
 
-#: wp-includes/class-wp-customize-manager.php:4117
+#: wp-includes/class-wp-customize-manager.php:4154
 msgid "Go back"
-msgstr "पीछे वापस जाए "
+msgstr "वापस जाएँ"
 
 #. translators: %s: User who is customizing the changeset in customizer.
-#: wp-includes/class-wp-customize-manager.php:4110
+#: wp-includes/class-wp-customize-manager.php:3975
 msgid "%s is already customizing this site. Please wait until they are done to try customizing. Your latest changes have been autosaved."
 msgstr "%s पहले से ही इस साइट का अनुरूपण कर रहे है अगर आप अनुरूपण करना चाहते है तो कृपया प्रतीक्षा करें। आपके नवीनतम बदलाव स्वत: सहेजे गए हैं।"
 
 #. translators: %s: User who is customizing the changeset in customizer.
-#: wp-includes/class-wp-customize-manager.php:4105
+#: wp-includes/class-wp-customize-manager.php:3977
 msgid "%s is already customizing this site. Do you want to take over?"
 msgstr "%s पहले से इस साइट पर अनुरूपण कर रहे है। क्या आप अनुरूपण का अधिकार लेना चहते है?  "
 
-#: wp-includes/class-wp-customize-manager.php:3210
+#: wp-includes/class-wp-customize-manager.php:3228
 msgid "Sorry, you are not allowed to take over."
-msgstr "माफ कीजिए, आप अधिकार नहीं ले सकते।"
+msgstr "क्षमा करें, आपको अधिकार लेने की अनुमति नहीं है।"
 
-#: wp-includes/class-wp-customize-manager.php:3203
+#: wp-includes/class-wp-customize-manager.php:3221
 msgid "No changeset found to take over"
 msgstr "कोई चेंजसेट नहीं मिला जिसका आप अधिकार ले सके "
 
-#: wp-includes/class-wp-customize-manager.php:3194
+#: wp-includes/class-wp-customize-manager.php:3212
 msgid "Security check failed."
 msgstr "सुरक्षा जांच में विफल।"
 
-#: wp-includes/class-wp-customize-manager.php:2451
+#: wp-includes/class-wp-customize-manager.php:2456
 msgid "Changeset is being edited by other user."
 msgstr "चेंजसेट अन्य उपयोगकर्ता द्वारा संपादित किया जा रहा है।"
 
@@ -178,24 +204,24 @@ msgctxt "menu locations"
 msgid "Where do you want this menu to appear?"
 msgstr "आप इस मेनू को कहां दिखाना चाहते हैं?"
 
-#: wp-includes/class-wp-customize-nav-menus.php:964
+#: wp-includes/class-wp-customize-nav-menus.php:980
 msgid "You&#8217;ll create a menu, assign it a location, and add menu items like links to pages and categories. If your theme has multiple menu areas, you might need to create more than one."
 msgstr "आप एक मेनू बनाते हैं, उसे एक स्थान प्रदान करते हैं, और पेज और श्रेणियों के लिंक जैसे मेनू आइटम जोड़ते हैं। यदि आपकी थीम में एक से अधिक मेनू क्षेत्र हैं, तो आपको एक से अधिक बनाना पड़ सकता है।"
 
-#: wp-includes/class-wp-customize-nav-menus.php:961
+#: wp-includes/class-wp-customize-nav-menus.php:977
 msgid "It doesn&#8217;t look like your site has any menus yet. Want to build one? Click the button to start."
 msgstr "ऐसा लगता है की आपकी साइट पर अभी कोई मेनू नहीं है। एक बनाना चाहते हैं? शुरू करने के लिए बटन पर क्लिक करें।"
 
-#: wp-includes/class-wp-customize-nav-menus.php:588
+#: wp-includes/class-wp-customize-nav-menus.php:604
 msgctxt "menu locations"
 msgid "View All Locations"
-msgstr "सभी मेनू स्थान देखें"
+msgstr "सभी स्थान देखें"
 
-#: wp-includes/class-wp-customize-manager.php:4788
+#: wp-includes/class-wp-customize-manager.php:4828
 msgid "While previewing a new theme, you can continue to tailor things like widgets and menus, and explore theme-specific options."
 msgstr "एक नई थीम का पूर्वावलोकन करते समय, आप विजेट और मेनू जैसी चीज़ों को तैयार कर सकते हैं, और थीम-विशिष्ट विकल्प तलाश सकते हैं।"
 
-#: wp-includes/class-wp-customize-manager.php:4787
+#: wp-includes/class-wp-customize-manager.php:4827
 msgid "Looking for a theme? You can search or browse the WordPress.org theme directory, install and preview themes, then activate them right here."
 msgstr "क्या थीम ढूढ़ रहे है? आप WordPress.org थीम निर्देशिका खोज सकते हैं या ब्राउज़ कर सकते हैं, थीम स्थापित और पूर्वावलोकन कर सकते हैं, फिर उन्हें यहीं पर सक्रिय कर सकते हैं।"
 
@@ -203,11 +229,11 @@ msgstr "क्या थीम ढूढ़ रहे है? आप WordPress.o
 msgid "Something went wrong. Your change may not have been saved. Please try again. There is also a chance that you may need to manually fix and upload the file over FTP."
 msgstr "कुछ गलत हो गया। आपका परिवर्तन सहेजा नहीं गया हो सकता है कृपया पुन: प्रयास करें। ऐसा भी हो सकता है कि आपको फ़ाइल को मैन्युअल रूप से ठीक करना पड़े और एफ. टी. पी. से अपलोड करना पड़े।"
 
-#: wp-includes/class-wp-customize-manager.php:5242
+#: wp-includes/class-wp-customize-manager.php:5282
 msgid "Screen reader users: when in forms mode, you may need to press the escape key twice."
 msgstr "स्क्रीन रीडर उपयोगकर्ता: जब आप फार्म वाले मोड में हों, तो एस्केप कुंजी को दो बार दबाना होगा।"
 
-#: wp-includes/class-wp-customize-nav-menus.php:588
+#: wp-includes/class-wp-customize-nav-menus.php:604
 msgctxt "menu locations"
 msgid "View Location"
 msgstr "मेनू स्थान देखें"
@@ -220,7 +246,7 @@ msgstr "%1 सेकंड आगे बढ़ो "
 msgid "No themes found. Try a different search."
 msgstr "कोई थीम नहीं मिला। कुछ और खोजें।"
 
-#: wp-includes/class-wp-customize-nav-menus.php:576
+#: wp-includes/class-wp-customize-nav-menus.php:592
 msgid "Your theme can display menus in one location. Select which menu you would like to use."
 msgstr "आपकी थीम एक स्थान पर मेनू प्रदर्शित कर सकती है वह मेनू चुनें जिसे आप उपयोग करना चाहते हैं।"
 
@@ -236,11 +262,11 @@ msgid "%1$s &lsaquo; %2$s &#8212; WordPress"
 msgstr "%1$s &lsaquo; %2$s &#8212; वर्डप्रेस"
 
 #. translators: 1: number of placeholders, 2: number of arguments passed
-#: wp-includes/wp-db.php:1301
+#: wp-includes/wp-db.php:1294
 msgid "The query does not contain the correct number of placeholders (%1$d) for the number of arguments passed (%2$d)."
 msgstr "पारित किए गए तर्कों (%2$d) की संख्या के लिए क्वेरी में प्लेसहोल्डर (%1$d) की सही संख्या शामिल नहीं है।"
 
-#: wp-includes/wp-db.php:1253
+#: wp-includes/wp-db.php:1246
 msgid "Unsupported value type (%s)."
 msgstr "(%s) असमर्थित मान प्रकार."
 
@@ -267,20 +293,20 @@ msgstr "गैलरी"
 
 #: wp-includes/widgets/class-wp-widget-custom-html.php:319
 msgid "Custom HTML Widget"
-msgstr "मनपसंद  HTML विजेट "
+msgstr "कस्टम एचटीएमएल विजेट "
 
 #: wp-includes/widgets/class-wp-widget-custom-html.php:292
 msgid "Use the Custom HTML widget to add arbitrary HTML code to your widget areas."
-msgstr "कस्टम एचटीएमएल विजेट का उपयोग करने के लिए अपने विजेट क्षेत्रों में मनमाने एचटीएमएल कोड जोड़ें।"
+msgstr "अपने विजेट क्षेत्रों में इच्छित एचटीएमएल कोड सम्मिलित करने हेतु कस्टम एचटीएमएल विजेट का उपयोग करें।"
 
 #. translators: %s: New email address
 #: wp-includes/user.php:2731
 msgid "Your email address has not been updated yet. Please check your inbox at %s for a confirmation email."
-msgstr "आपका ईमेल पता अभी तक अपडेट नहीं किया गया है। पुष्टि ईमेल के लिए कृपया %s पर अपना इनबॉक्स देखें।"
+msgstr "आपका ईमेल पता अभी तक अपडेट नहीं किया गया है। कृपया पुष्टि ईमेल हेतु %s पर अपना इनबॉक्स देखें।"
 
 #: wp-includes/user.php:2712
 msgid "[%s] New Email Address"
-msgstr "[%s] नया ईमेल एड्रेस "
+msgstr "[%s] नया ईमेल पता"
 
 #. translators: Do not translate USERNAME, ADMIN_URL, EMAIL, SITENAME, SITEURL:
 #. those are placeholders.
@@ -319,7 +345,7 @@ msgstr ""
 
 #: wp-includes/user.php:2645
 msgid "<strong>ERROR</strong>: The email address is already used."
-msgstr "<strong> त्रुटि </strong>: यह ईमेल पहले ही उपयोग किया जा चूका है। "
+msgstr "<strong> त्रुटि </strong>: यह ईमेल पता पहले से उपयोग में है।"
 
 #: wp-includes/taxonomy.php:526
 msgid "&larr; Back to Categories"
@@ -329,32 +355,32 @@ msgstr "&larr; वापस श्रेणियों पर जाये"
 msgid "&larr; Back to Link Categories"
 msgstr "&larr; संबधित वर्गों पर वापस जाएं"
 
-#: wp-includes/script-loader.php:856
+#: wp-includes/script-loader.php:857
 msgid "Color value"
 msgstr "रंग का मान"
 
-#: wp-includes/script-loader.php:852
+#: wp-includes/script-loader.php:853
 msgid "Clear color"
 msgstr "रंग हटायें "
 
-#: wp-includes/script-loader.php:798
+#: wp-includes/script-loader.php:799
 msgid "Installation Failed!"
 msgstr "स्थापना विफल रही!"
 
-#: wp-includes/script-loader.php:598
+#: wp-includes/script-loader.php:599
 msgid "Sorry, you can&#8217;t preview new themes when you have changes scheduled or saved as a draft. Please publish your changes, or wait until they publish to preview new themes."
 msgstr "माफ़ कीजिए, आप किसी भी नई थीम का पूर्वावलोकन नहीं कर सकते अगर आपने कुछ बदलाव भविष्य के लिए तय किए या संजोए हुए हैं। नई थीम का पूर्वावलोकन करने के लिए कृपया अपने परिवर्तन प्रकाशित करें, या उनके प्रकाशित होने की प्रतिक्षा करें।"
 
-#: wp-includes/script-loader.php:597
+#: wp-includes/script-loader.php:598
 msgid "Schedule your customization changes to publish (\"go live\") at a future date."
 msgstr "भविष्य की तारीख में प्रकाशित (सजीव) करने के लिए अपने अनुकूलन परिवर्तनों को शेड्यूल करें।"
 
-#: wp-includes/script-loader.php:590
+#: wp-includes/script-loader.php:591
 msgid "Homepage and posts page must be different."
 msgstr "मुखपृष्ठ और पोस्ट पेज अलग-अलग होने चाहिए।"
 
 #. translators: %d: error count
-#: wp-includes/script-loader.php:586 wp-includes/script-loader.php:588
+#: wp-includes/script-loader.php:587 wp-includes/script-loader.php:589
 #: wp-includes/widgets/class-wp-widget-custom-html.php:217
 #: wp-includes/widgets/class-wp-widget-custom-html.php:219
 msgid "There is %d error which must be fixed before you can save."
@@ -363,23 +389,23 @@ msgstr[0] "सहेजने से पहले %d त्रुटि ठी�
 msgstr[1] "सहेजने से पहले %d त्रुटियाँ ठीक करनी पड़ेगी।"
 
 #. translators: %s: URL to the Customizer to load the autosaved version
-#: wp-includes/script-loader.php:580
+#: wp-includes/script-loader.php:581
 msgid "There is a more recent autosave of your changes than the one you are previewing. <a href=\"%s\">Restore the autosave</a>"
 msgstr "जो आप पूर्वावलोकन कर रहे हैं, उसका हाल ही में स्वतः सहेजा गया संसकरण पहले ही मौजूद है। <a href=\"%s\">स्वतः सहेजा पुनर्स्थापित करें</a>"
 
-#: wp-includes/script-loader.php:576
+#: wp-includes/script-loader.php:577
 msgid "Are you sure you&#8217;d like to discard your unpublished changes?"
 msgstr "क्या आप वाकई अपने अप्रकाशित परिवर्तनों को छोड़ना चाहते हैं?"
 
-#: wp-includes/script-loader.php:575
+#: wp-includes/script-loader.php:576
 msgid "Reverting unpublished changes&hellip;"
 msgstr "अप्रकाशित परिवर्तन &hellip; को वापस ले रहे हैं"
 
-#: wp-includes/script-loader.php:574
+#: wp-includes/script-loader.php:575
 msgid "Setting up your live preview. This may take a bit."
 msgstr "अापका सजीव पूर्वावलोकन तैयार हो रहा है। इसमें थोड़ा समय लग सकता है।"
 
-#: wp-includes/script-loader.php:573
+#: wp-includes/script-loader.php:574
 msgid "Downloading your new theme&hellip;"
 msgstr "आपकी नई थीम डाउनलोड हो रही है&hellip;"
 
@@ -652,7 +678,7 @@ msgstr "1 सेकंड में छोड़ें"
 
 #: wp-includes/script-loader.php:385
 msgid "Skip ad"
-msgstr "विज्ञापन छोड़ो"
+msgstr "विज्ञापन छोड़ें"
 
 #: wp-includes/script-loader.php:376
 msgid "Chapters"
@@ -677,11 +703,11 @@ msgstr "'%s' पद्धति को ओवरराइड करना आव
 
 #: wp-includes/post.php:201
 msgid "oEmbed Response"
-msgstr "ओएएम्बेड प्रतिक्रिया"
+msgstr "ओएम्बेड प्रतिक्रिया"
 
 #: wp-includes/post.php:200
 msgid "oEmbed Responses"
-msgstr "ओएएम्बेड प्रतिक्रियाएं"
+msgstr "ओएम्बेड प्रतिक्रियाएँ"
 
 #. translators: %s: Post custom field name
 #: wp-includes/post-template.php:1031
@@ -706,13 +732,13 @@ msgstr "वेबसाइट: %1$s (आई पी पता: %2$s,%3$s)"
 
 #. translators: Network admin email change notification email subject. %s:
 #. Network title
-#: wp-includes/ms-functions.php:2697
+#: wp-includes/ms-functions.php:2704
 msgid "[%s] Notice of Network Admin Email Change"
 msgstr "[%s] नेटवर्क व्यवस्थापक के ईमेल परिवर्तन की सूचना"
 
 #. translators: Do not translate OLD_EMAIL, NEW_EMAIL, SITENAME, SITEURL: those
 #. are placeholders.
-#: wp-includes/ms-functions.php:2682
+#: wp-includes/ms-functions.php:2689
 msgid ""
 "Hi,\n"
 "\n"
@@ -728,14 +754,14 @@ msgid ""
 msgstr ""
 "नमस्ते,\n"
 "\n"
-"यह सूचना पुष्ट करता है कि ### SITENAME ### पर नेटवर्क एडमिन का ईमेल बदल दिया गया था।\n"
+"यह सूचना पुष्टि करता है कि ###SITENAME### पर नेटवर्क एडमिन का ईमेल पता परिवर्तित कर दिया गया था।\n"
 "\n"
-"नया नेटवर्क व्यवस्थापक ईमेल ### NEW_EMAIL ### है।\n"
+"नया नेटवर्क व्यवस्थापक ईमेल पता ###NEW_EMAIL### है।\n"
 "\n"
-"यह ईमेल ### OLD_EMAIL ### पर भेजा गया है।\n"
+"यह ईमेल ###OLD_EMAIL### पर भेजा गया है।\n"
 "\n"
 "सादर,\n"
-"### SITENAME ### पर सभी\n"
+"###SITENAME### पर सभी\n"
 "###SITEURL###"
 
 #: wp-includes/ms-functions.php:2647
@@ -763,19 +789,19 @@ msgid ""
 "All at ###SITENAME###\n"
 "###SITEURL###"
 msgstr ""
-"प्रिय ### USERNAME ###,\n"
+"प्रिय ###USERNAME###,\n"
 "\n"
 "हाल ही में आपने अपने नेटवर्क पर नेटवर्क व्यवस्थापक ईमेल पता बदलने का अनुरोध किया था।\n"
 "\n"
-"अगर यह सही है, तो इसे बदलने के लिए कृपया इस लिंक पर क्लिक करें: ### ADMIN_URL ###\n"
+"अगर यह सही है, तो इसे बदलने के लिए कृपया इस लिंक पर क्लिक करें: ###ADMIN_URL###\n"
 "\n"
 "यदि आप यह क्रिया नहीं करना चाहते हैं, तो आप इस ईमेल को सुरक्षित रूप से अनदेखा कर सकते हैं और हटा सकते हैं\n"
 "\n"
-"यह ईमेल ### EMAIL ### पर भेजा गया है\n"
+"यह ईमेल ###EMAIL### पर भेजा गया है\n"
 "\n"
 "सादर,\n"
-"### SITENAME ### पर सभी\n"
-"###साईट यूआरएल###"
+"###SITENAME### पर सभी\n"
+"###SITEURL###"
 
 #: wp-includes/ms-functions.php:184
 msgid "User cannot be added to this site."
@@ -787,13 +813,13 @@ msgstr "अस्थायी परिमार्जन जाँच विफ
 
 #. translators: Site admin email change notification email subject. %s: Site
 #. title
-#: wp-includes/functions.php:5771
+#: wp-includes/functions.php:5779
 msgid "[%s] Notice of Admin Email Change"
 msgstr "[%s] व्यवस्थापक के ईमेल परिवर्तन की सूचना"
 
 #. translators: Do not translate OLD_EMAIL, NEW_EMAIL, SITENAME, SITEURL: those
 #. are placeholders.
-#: wp-includes/functions.php:5756
+#: wp-includes/functions.php:5764
 msgid ""
 "Hi,\n"
 "\n"
@@ -809,19 +835,19 @@ msgid ""
 msgstr ""
 "नमस्ते,\n"
 "\n"
-"यह नोटिस पुष्टि करता है कि व्यवस्थापक ईमेल पता ### SITENAME ### पर बदल दिया गया था।\n"
+"यह सूचना पुष्टि करता है कि ###SITENAME### पर व्यवस्थापक ईमेल पता बदल दिया गया था।\n"
 "\n"
-"नया व्यवस्थापक ईमेल पता ### NEW_EMAIL ### है।\n"
+"नया व्यवस्थापक ईमेल पता ###NEW_EMAIL### है।\n"
 "\n"
-"यह ईमेल ### OLD_EMAIL ### पर भेजा गया है।\n"
+"यह ईमेल ###OLD_EMAIL### पर भेजा गया है।\n"
 "\n"
 "सादर,\n"
-"### SITENAME ### पर सभी\n"
+"###SITENAME### पर सभी\n"
 "###SITEURL###"
 
-#: wp-includes/functions.php:5699
+#: wp-includes/functions.php:5700
 msgid "Only UUID V4 is supported at this time."
-msgstr "इस समय केवल UUID V4 समर्थित है।"
+msgstr "इस समय केवल यूयूआइडी वी4 समर्थित है।"
 
 #: wp-includes/deprecated.php:3927 wp-includes/deprecated.php:3944
 msgid "The Press This plugin is required."
@@ -835,7 +861,7 @@ msgstr "%s थीम"
 #. translators: %s: number of filters selected.
 #: wp-includes/customize/class-wp-customize-themes-section.php:125
 msgid "Filter themes (%s)"
-msgstr "थीम को फ़िल्टर करें (%s)"
+msgstr "थीम्स फ़िल्टर करें (%s)"
 
 #: wp-includes/customize/class-wp-customize-themes-section.php:113
 msgid "Back to theme sources"
@@ -851,11 +877,12 @@ msgstr "स्थापन और पूर्वावलोकन करें
 
 #: wp-includes/customize/class-wp-customize-nav-menu-item-setting.php:713
 msgid "Invalid URL."
-msgstr "गलत URL।"
+msgstr "अमान्य यूआरएल।"
 
-#: wp-includes/customize/class-wp-customize-nav-menu-control.php:39
-msgid "Time to add some links! Click &#8220;Add menu items&#8221; to start putting pages, categories, and custom links in your menu. Add as many things as you&#8217;d like."
-msgstr "क्यूँ ना कुछ लिंक डालें जाए! अपने मेनू में पृष्ठ, श्रेणियां और कस्टम लिंक प्रारंभ करने के लिए &#8220;मेनू आइटम जोड़ें&#8221; पर क्लिक करें। जितनी चाहें उतनी चीज़ों को जोड़ें।"
+#. translators: %s: "Add Items" button text
+#: wp-includes/customize/class-wp-customize-nav-menu-control.php:44
+msgid "Time to add some links! Click &#8220;%s&#8221; to start putting pages, categories, and custom links in your menu. Add as many things as you&#8217;d like."
+msgstr "क्यूँ ना कुछ लिंक डालें जाए! अपने मेनू में पृष्ठ, श्रेणियां और कस्टम लिंक प्रारंभ करने के लिए &#8220;%s &#8221; पर क्लिक करें। जितनी चाहें उतनी चीज़ों को जोड़ें।"
 
 #: wp-includes/customize/class-wp-customize-media-control.php:249
 msgid "Choose image"
@@ -954,41 +981,41 @@ msgctxt "Name for the Visual editor tab"
 msgid "Visual"
 msgstr "दृश्य"
 
-#: wp-includes/class-wp-customize-nav-menus.php:968
+#: wp-includes/class-wp-customize-nav-menus.php:984
 msgid "Create New Menu"
 msgstr "नया मेनू बनाएं"
 
-#: wp-includes/class-wp-customize-nav-menus.php:693
+#: wp-includes/class-wp-customize-nav-menus.php:709
 msgid "New Menu"
 msgstr "नया मेनू"
 
 #. translators: URL to the widgets panel of the customizer
-#: wp-includes/class-wp-customize-nav-menus.php:584
+#: wp-includes/class-wp-customize-nav-menus.php:600
 msgid "If your theme has widget areas, you can also add menus there. Visit the <a href=\"%s\">Widgets panel</a> and add a &#8220;Navigation Menu widget&#8221; to display a menu in a sidebar or footer."
 msgstr "यदि आपकी थीम में विजेट्स हैं, तो आप वहां मेनू भी जोड़ सकते हैं। एक साइडबार या फूटर में मेनू प्रदर्शित करने के लिए <a href=\"%s\"> विजेट पैनल </a> पर जाएं और एक कस्टम मेनू विजेट जोड़ें।"
 
-#: wp-includes/class-wp-customize-nav-menus.php:420
+#: wp-includes/class-wp-customize-nav-menus.php:436
 msgid "If your theme has multiple menus, giving them clear names will help you manage them."
 msgstr "यदि आपकी थीम में एकाधिक मेनू हैं, तो उन्हें स्पष्ट नाम दें जिससे कि आप उनका प्रबंधन कर सकें।"
 
 #. translators: %s: number of menu locations
-#: wp-includes/class-wp-customize-nav-menus.php:403
+#: wp-includes/class-wp-customize-nav-menus.php:419
 msgid "Your theme can display menus in %s location."
 msgid_plural "Your theme can display menus in %s locations."
 msgstr[0] "आपकी थीम %s स्थान में मेनू प्रदर्शित कर सकती है।"
 msgstr[1] "आपकी थीम %s स्थानों में मेनू प्रदर्शित कर सकती है।"
 
-#: wp-includes/class-wp-customize-nav-menus.php:400
+#: wp-includes/class-wp-customize-nav-menus.php:416
 msgid "Your theme can display menus in one location."
 msgstr "आपकी थीम एक स्थान पर मेनू प्रदर्शित कर सकती है"
 
-#: wp-includes/class-wp-customize-manager.php:5278
+#: wp-includes/class-wp-customize-manager.php:5318
 msgid "CSS code"
 msgstr "सीएसएस कोड"
 
 #. translators: 1: link to user profile, 2: additional link attributes, 3:
 #. accessibility text
-#: wp-includes/class-wp-customize-manager.php:5249
+#: wp-includes/class-wp-customize-manager.php:5289
 #: wp-includes/widgets/class-wp-widget-custom-html.php:299
 msgid "The edit field automatically highlights code syntax. You can disable this in your <a href=\"%1$s\" %2$s>user profile%3$s</a> to work in plain text mode."
 msgstr "फ़ील्ड स्वत: वाक्यविन्यास को हाइलाइट करता है। ऐसा न करके सामान्य टेक्सट की तरह लिखने के लिए  <a href=\"%1$s\" %2$s>उपयोगकर्ता के प्रोफ़ाइल%3$s </a> पर क्लिक करके ।"
@@ -997,110 +1024,110 @@ msgstr "फ़ील्ड स्वत: वाक्यविन्यास �
 msgid "Screen reader users: when in forms mode, you may need to press the Esc key twice."
 msgstr "स्क्रीन रीडर उपयोगकर्ता: जब रूपों के मोड में, आपको एस्के कुंजी को दो बार दबाएं।"
 
-#: wp-includes/class-wp-customize-manager.php:5241
+#: wp-includes/class-wp-customize-manager.php:5281
 #: wp-includes/widgets/class-wp-widget-custom-html.php:312
 msgid "To move away from this area, press the Esc key followed by the Tab key."
 msgstr "इस क्षेत्र से कहीं और जाने के लिए, टैब कुंजी के बाद एस्केप कुंजी दबाएं।"
 
-#: wp-includes/class-wp-customize-manager.php:5240
+#: wp-includes/class-wp-customize-manager.php:5280
 #: wp-includes/widgets/class-wp-widget-custom-html.php:311
 msgid "In the editing area, the Tab key enters a tab character."
 msgstr "संपादन क्षेत्र में, टैब कुंजी एक टैब वर्ण में प्रवेश करती है।"
 
-#: wp-includes/class-wp-customize-manager.php:5238
+#: wp-includes/class-wp-customize-manager.php:5278
 #: wp-includes/widgets/class-wp-widget-custom-html.php:309
 msgid "When using a keyboard to navigate:"
 msgstr "नेविगेट करने के लिए कीबोर्ड का उपयोग करते समय:"
 
-#: wp-includes/class-wp-customize-manager.php:5228
+#: wp-includes/class-wp-customize-manager.php:5268
 msgid "Add your own CSS code here to customize the appearance and layout of your site."
 msgstr "अपनी साइट के रूप और नक्शे को अनुकूलित करने के लिए यहां खुद का सीएसएस कोड डालें।"
 
-#: wp-includes/class-wp-customize-manager.php:5193
+#: wp-includes/class-wp-customize-manager.php:5233
 msgid "Your homepage displays"
 msgstr "आपका मुखपृष्ठ दिखाता है"
 
-#: wp-includes/class-wp-customize-manager.php:5182
+#: wp-includes/class-wp-customize-manager.php:5222
 msgid "You can choose what&#8217;s displayed on the homepage of your site. It can be posts in reverse chronological order (classic blog), or a fixed/static page. To set a static homepage, you first need to create two Pages. One will become the homepage, and the other will be where your posts are displayed."
 msgstr "आप चुन सकते हैं कि आपकी साइट के होमपेज पर क्या प्रदर्शित होता है। यह रिवर्स कालानुक्रमिक क्रम (क्लासिक ब्लॉग), या एक निश्चित / स्थैतिक पेज में पोस्ट हो सकता है। स्थिर होमपेज सेट करने के लिए, आपको सबसे पहले दो पेज बनाना होगा। एक होमपेज बन जाएगा, और दूसरा होगा जहां आपकी पोस्ट प्रदर्शित की जाएगी।"
 
-#: wp-includes/class-wp-customize-manager.php:5180
+#: wp-includes/class-wp-customize-manager.php:5220
 msgid "Homepage Settings"
 msgstr "मुखपृष्ठ सेटिंग"
 
 #. translators: %s: site icon size in pixels
-#: wp-includes/class-wp-customize-manager.php:4874
+#: wp-includes/class-wp-customize-manager.php:4914
 msgid "Site Icons should be square and at least %s pixels."
 msgstr "साइट आइकन चौकोर और कम से कम %s पिक्सेल्स का होना चाहिए।"
 
-#: wp-includes/class-wp-customize-manager.php:4872
+#: wp-includes/class-wp-customize-manager.php:4912
 msgid "Site Icons are what you see in browser tabs, bookmark bars, and within the WordPress mobile apps. Upload one here!"
 msgstr "साइट आइकन ब्राउज़र टैब, बुकमार्क बार और वर्डप्रेस मोबाइल एप्लिकेशन में दिखाइ देते हैं। यहां एक अपलोड करें!"
 
-#: wp-includes/class-wp-customize-manager.php:4804
+#: wp-includes/class-wp-customize-manager.php:4844
 msgid "WordPress.org themes"
 msgstr "WordPress.org थीम्स"
 
-#: wp-includes/class-wp-customize-manager.php:4795
+#: wp-includes/class-wp-customize-manager.php:4835
 msgid "Installed themes"
 msgstr "स्थापित थीम"
 
-#: wp-includes/script-loader.php:604
+#: wp-includes/script-loader.php:605
 msgid "Publish Settings"
 msgstr "सेटिंग प्रकाशित करें"
 
-#: wp-includes/class-wp-customize-manager.php:4165
+#: wp-includes/class-wp-customize-manager.php:4202
 msgid "Copied"
 msgstr "कॉपी किया गया"
 
-#: wp-includes/class-wp-customize-manager.php:4159
+#: wp-includes/class-wp-customize-manager.php:4196
 msgid "Preview Link"
 msgstr "पूर्वावलोकन लिंक"
 
-#: wp-includes/class-wp-customize-manager.php:4156
+#: wp-includes/class-wp-customize-manager.php:4193
 msgid "See how changes would look live on your website, and share the preview with people who can't access the Customizer."
 msgstr "देखें कि आपकी वेबसाइट पर परिवर्तन लाइव कैसे दिखेंगे, और उन लोगों को पूर्वावलोकन दिखाएं, जो कस्टमाइज़र नहीं देख सकते।"
 
-#: wp-includes/class-wp-customize-manager.php:4154
+#: wp-includes/class-wp-customize-manager.php:4191
 msgid "Share Preview Link"
 msgstr "पूर्वावलोकन लिंक साझा करें"
 
-#: wp-includes/class-wp-customize-manager.php:3035
+#: wp-includes/class-wp-customize-manager.php:3042
 msgid "Changes trashed successfully."
 msgstr "परिवर्तन सफलतापूर्वक मिटाया गया।"
 
-#: wp-includes/class-wp-customize-manager.php:3020
+#: wp-includes/class-wp-customize-manager.php:3027
 msgid "Changes have already been trashed."
 msgstr "परिवर्तन पहले से ही ट्रैश किए गए हैं।"
 
-#: wp-includes/class-wp-customize-manager.php:3014
-#: wp-includes/class-wp-customize-manager.php:3030
+#: wp-includes/class-wp-customize-manager.php:3021
+#: wp-includes/class-wp-customize-manager.php:3037
 msgid "Unable to trash changes."
 msgstr "परिवर्तन को नष्ट नहीं कर पाए।"
 
-#: wp-includes/class-wp-customize-manager.php:3005
+#: wp-includes/class-wp-customize-manager.php:3012
 msgid "No changes saved yet, so there is nothing to trash."
 msgstr "एक प्रमाणीकरण समस्या थी कृपया पुनः लोड करें और पुनः प्रयास करें।"
 
-#: wp-includes/class-wp-customize-manager.php:2997
+#: wp-includes/class-wp-customize-manager.php:3004
 msgid "There was an authentication problem. Please reload and try again."
 msgstr "एक प्रमाणीकरण समस्या थी कृपया पुनः लोड करें और पुनः प्रयास करें।"
 
 #. translators: %s: number of invalid settings
-#: wp-includes/class-wp-customize-manager.php:2702
-#: wp-includes/script-loader.php:593 wp-includes/script-loader.php:595
+#: wp-includes/class-wp-customize-manager.php:2707
+#: wp-includes/script-loader.php:594 wp-includes/script-loader.php:596
 msgid "Unable to save due to %s invalid setting."
 msgid_plural "Unable to save due to %s invalid settings."
 msgstr[0] "%s अमान्य सेटिंग के कारण सहेजने में असमर्थ।"
 msgstr[1] "%s अमान्य सेटिंग के कारण सहेजने में असमर्थ।"
 
-#: wp-includes/class-wp-customize-manager.php:2588
-#: wp-includes/class-wp-customize-manager.php:2603
+#: wp-includes/class-wp-customize-manager.php:2593
+#: wp-includes/class-wp-customize-manager.php:2608
 #: wp-includes/script-loader.php:558
 msgid "You must supply a future date to schedule."
 msgstr "आपको शेड्यूल करने के लिए भविष्य की तिथि प्रदान करनी होगी।"
 
-#: wp-includes/class-wp-customize-manager.php:2565
+#: wp-includes/class-wp-customize-manager.php:2570
 msgid "The previous set of changes has already been published. Please try saving your current set of changes again."
 msgstr "परिवर्तनों के पिछले सेट को पहले से ही प्रकाशित किया जा चुका है। कृपया अपने वर्तमान परिवर्तनों को फिर से सहेजने का प्रयास करें।"
 
@@ -1112,31 +1139,31 @@ msgstr "उपयोगकर्ता का संपादन करें"
 msgid "View User"
 msgstr "उपयोगकर्ता देखें"
 
-#: wp-includes/widgets/class-wp-widget-text.php:460
+#: wp-includes/widgets/class-wp-widget-text.php:481
 msgid "This widget may have contained code that may work better in the &#8220;Custom HTML&#8221; widget. If you haven&#8217;t yet, how about trying that widget instead?"
 msgstr "इस विजेट में ऐसा कोड था जो शायद नए &#8220;अनुकूलित एचटीएमएल&#8221; विजेट में बेहतर काम करेगा।क्यूं ना उस विजेट का इस्तेमाल करके देेखें?"
 
-#: wp-includes/widgets/class-wp-widget-text.php:513
+#: wp-includes/widgets/class-wp-widget-text.php:534
 msgid "Hey there, looks like you just pasted HTML into the &#8220;Visual&#8221; tab of the Text widget. You may want to paste your code into the &#8220;Text&#8221; tab instead. Alternately, try out the new &#8220;Custom HTML&#8221; widget!"
 msgstr "ऐसा लगता है कि आपने .मूलशब्द विजेट के &#8220;दृश्यात्मक&#8221; टैब मे कुछ एचटीएमएल पेस्ट किया है। शायद आप अपने कोड को &#8220;मूलशब्द&#8221; टैब में पेस्ट करना चाह सकते हैं। इसके अलावा, आप नए &#8220;अनुकूलित एचटीएमएल&#8221; विजेट को आज़मा सकते हैं!"
 
-#: wp-includes/widgets/class-wp-widget-text.php:512
+#: wp-includes/widgets/class-wp-widget-text.php:533
 msgid "Did you just paste HTML?"
 msgstr "क्या आपने अभी एचटीएमएल पेस्ट किया?"
 
-#: wp-includes/widgets/class-wp-widget-text.php:497
+#: wp-includes/widgets/class-wp-widget-text.php:518
 msgid "Did you know there is a &#8220;Custom HTML&#8221; widget now? You can find it by scanning the list of available widgets on this screen. Check it out to add some custom code to your site!"
 msgstr "क्या आप जानते है कि एक नया &#8220;अनुकूलित एचटीएमएल&#8221; विजेट उप्लब्ध है? इस स्क्रीन पर उपलब्ध विजेट्स में ढूंढने से मिल जाएगा। इससे कुछ कस्टम कोड अपनी साइट पर डाल कर देखिए!"
 
-#: wp-includes/widgets/class-wp-widget-text.php:495
+#: wp-includes/widgets/class-wp-widget-text.php:516
 msgid "Did you know there is a &#8220;Custom HTML&#8221; widget now? You can find it by pressing the &#8220;<a class=\"add-widget\" href=\"#\">Add a Widget</a>&#8221; button and searching for &#8220;HTML&#8221;. Check it out to add some custom code to your site!"
 msgstr "क्या आप जानते हैं कि अब एक &#8220;अनुकूलित एचटीएमएल&#8221; विजेट भी है? &#8220;<a class=\"add-widget\" href=\"#\">एक विजेट जोड़ें</a>&#8221; बटन को दबाकर  &#8220;एचटीएमएल&#8221; को ढूंढकर उसे पा सकते हैं। इससे कुछ कस्टम कोड अपनी साइट पर डाल कर देखिए!"
 
-#: wp-includes/widgets/class-wp-widget-text.php:493
+#: wp-includes/widgets/class-wp-widget-text.php:514
 msgid "New Custom HTML Widget"
 msgstr "नया अनुकूलित एचटीएमएल विजेट"
 
-#: wp-includes/widgets/class-wp-widget-text.php:458
+#: wp-includes/widgets/class-wp-widget-text.php:479
 msgid "This widget may contain code that may work better in the &#8220;Custom HTML&#8221; widget. How about trying that widget instead?"
 msgstr "इस विजेट में ऐसा कोड है जो शायद नए &#8220;अनुकूलित एचटीएमएल&#8221; विजेट में बेहतर काम करेगा।क्यूं ना उस विजेट का इस्तेमाल करके देेखें?"
 
@@ -1191,7 +1218,7 @@ msgid "(no author)"
 msgstr "(लेखक नहीं)"
 
 #. translators: %s: the name of a city
-#: wp-includes/script-loader.php:1201
+#: wp-includes/script-loader.php:1202
 msgid "City updated. Listing events near %s."
 msgstr "शहर अद्यतन किया गया था | लिखे गए सम्मलेन %s के पास हैं |"
 
@@ -1202,19 +1229,19 @@ msgstr "शहर अद्यतन किया गया था | लिख�
 #. locale that would be recognizable to most users. Use only the city name
 #. itself, without any region or country. Use the endonym (native locale name)
 #. instead of the English name if possible.
-#: wp-includes/script-loader.php:1197
+#: wp-includes/script-loader.php:1198
 msgid "We couldn&#8217;t locate %s. Please try another nearby city. For example: Kansas City; Springfield; Portland."
 msgstr "हम %s का पता नहीं लगा सके कृपया किसी दूसरे शहर का प्रयास करें। उदाहरण के लिए: दिल्ली, पुणे, मुंबई  "
 
-#: wp-includes/script-loader.php:1180
+#: wp-includes/script-loader.php:1181
 msgid "Attend an upcoming event near you."
 msgstr "आप के पास की एक आगामी घटना में भाग लें"
 
-#: wp-includes/script-loader.php:1179
+#: wp-includes/script-loader.php:1180
 msgid "An error occurred. Please try again."
 msgstr "एक त्रुटि पाई गई। कृपया पुन: प्रयास करें।"
 
-#: wp-includes/script-loader.php:1178
+#: wp-includes/script-loader.php:1179
 msgid "Enter your closest city to find nearby events."
 msgstr "आसपास के सम्मलेन ढूंढने के लिए अपना सबसे निकटतम शहर दर्ज करें |"
 
@@ -1428,62 +1455,62 @@ msgstr "कोई ऑडियो चयनित नहीं"
 msgid "Displays an audio player."
 msgstr "ऑडियो प्लेयर का प्रदर्शित करता है। "
 
-#: wp-includes/script-loader.php:827
+#: wp-includes/script-loader.php:828
 msgctxt "theme"
 msgid "Deleted!"
 msgstr "हटाया गया!"
 
-#: wp-includes/script-loader.php:826
+#: wp-includes/script-loader.php:827
 msgctxt "plugin"
 msgid "Deleted!"
 msgstr "हटाया गया!"
 
-#: wp-includes/script-loader.php:797
+#: wp-includes/script-loader.php:798
 msgctxt "theme"
 msgid "Installed!"
 msgstr "स्थापित की गयी !"
 
-#: wp-includes/script-loader.php:796
+#: wp-includes/script-loader.php:797
 msgctxt "plugin"
 msgid "Installed!"
 msgstr "स्थापित किया गया  !"
 
 #. translators: %s: Plugin name
-#: wp-includes/script-loader.php:794
+#: wp-includes/script-loader.php:795
 msgctxt "plugin"
 msgid "Install %s now"
 msgstr "%s अभी स्थापित करें"
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:784
+#: wp-includes/script-loader.php:785
 msgctxt "plugin"
 msgid "%s update failed"
 msgstr "%s का अद्यतन असफल हो गया है"
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:782
+#: wp-includes/script-loader.php:783
 msgctxt "plugin"
 msgid "%s updated!"
 msgstr "%s का अद्यतन हो गया है !"
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:780
+#: wp-includes/script-loader.php:781
 msgctxt "plugin"
 msgid "Updating %s..."
 msgstr "%s अपडेट कर रहा है ..."
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:775
+#: wp-includes/script-loader.php:776
 msgctxt "plugin"
 msgid "Update %s now"
 msgstr "%s का अद्यतन अभी करें"
 
-#: wp-includes/script-loader.php:771
+#: wp-includes/script-loader.php:772
 msgctxt "theme"
 msgid "Updated!"
 msgstr "अपडेट किया!"
 
-#: wp-includes/script-loader.php:770
+#: wp-includes/script-loader.php:771
 msgctxt "plugin"
 msgid "Updated!"
 msgstr "अपडेट किया!"
@@ -1918,7 +1945,7 @@ msgctxt "New site notification email subject"
 msgid "[%1$s] Activate %2$s"
 msgstr "[%1$s] %2$s सक्रिय करें "
 
-#: wp-includes/widgets.php:1395 wp-includes/widgets.php:1504
+#: wp-includes/widgets.php:1398 wp-includes/widgets.php:1507
 msgid "RSS Error:"
 msgstr "आरएसएस त्रुटि:"
 
@@ -1949,7 +1976,7 @@ msgid "Invalid page template."
 msgstr "अमान्य पृष्ठ प्रारूप।"
 
 #: wp-includes/post.php:3207 wp-includes/rest-api.php:1151
-#: wp-includes/script-loader.php:605
+#: wp-includes/script-loader.php:606
 msgid "Invalid date."
 msgstr "अमान्य तिथि।"
 
@@ -2130,7 +2157,7 @@ msgstr "क्षमा करें, आपको स्टिकी पोस�
 msgid "Reassign the deleted user's posts and links to this user ID."
 msgstr "हटाये गये उपयोगकर्ता के पोस्टस और लिंक्स इस उपयोगकर्ता को आवंटित करें । "
 
-#: wp-includes/script-loader.php:581
+#: wp-includes/script-loader.php:582
 msgid "This theme doesn&#8217;t support video headers on this page. Navigate to the front page or another page that supports video headers."
 msgstr "यह थीम इस पृष्ठ पर विडियो हेडर्स का समर्थन नहीं करती। विडियो हेडर्स का समर्थन करनेवाले मुख पृष्ठ अथवा अन्य पृष्ठ पर जाएं।"
 
@@ -2264,12 +2291,12 @@ msgstr "उपयोगकर्ता नाम में अमान्य �
 msgid "Invalid user parameter(s)."
 msgstr "अमान्य उपयोगकर्ता मानक(के)। "
 
-#: wp-includes/script-loader.php:570
+#: wp-includes/script-loader.php:571
 msgctxt "label for hide controls button without length constraints"
 msgid "Show Controls"
 msgstr "नियंत्रक दिखाएँ"
 
-#: wp-includes/script-loader.php:569
+#: wp-includes/script-loader.php:570
 msgctxt "label for hide controls button without length constraints"
 msgid "Hide Controls"
 msgstr "नियंत्रक छिपाएँ"
@@ -2278,7 +2305,7 @@ msgstr "नियंत्रक छिपाएँ"
 msgid "Document Preview"
 msgstr "प्रपत्र पूर्वावलोकन"
 
-#: wp-includes/class-wp-customize-manager.php:4963
+#: wp-includes/class-wp-customize-manager.php:5003
 msgid "Header Media"
 msgstr "हेडर मीडिया"
 
@@ -2312,7 +2339,7 @@ msgstr "संलगित के एचटीएमएल अनुशीर्
 msgid "Caption for the attachment, as it exists in the database."
 msgstr "संलग्न हेतु अनुशीर्षक, जैसा कि डेटाबेस में स्थित है।"
 
-#: wp-includes/class-wp-customize-manager.php:5625
+#: wp-includes/class-wp-customize-manager.php:5665
 msgid "Please enter a valid YouTube URL."
 msgstr "कृपया एक वैध यूट्यूब यूआरएल अंकित करें।"
 
@@ -2349,7 +2376,7 @@ msgstr "इस पोस्ट को हटाया नहीं जा सक
 msgid "The comment does not support trashing. Set '%s' to delete."
 msgstr "इस टिप्पणी को हटाया नहीं जा सकता। हटाने के लिए '%s' निर्धारित करें।"
 
-#: wp-includes/class-wp-customize-manager.php:5048
+#: wp-includes/class-wp-customize-manager.php:5088
 msgid "Or, enter a YouTube URL:"
 msgstr "या, एक यूट्यूब यूआरएल अंकित करें:"
 
@@ -2383,11 +2410,11 @@ msgstr "सीमा परिणाम एक या एक से अधिक
 msgid "Comment is required."
 msgstr "टिप्पणी आवश्यक है।"
 
-#: wp-includes/class-wp-customize-nav-menus.php:795
+#: wp-includes/class-wp-customize-nav-menus.php:811
 msgid "Status is forbidden"
 msgstr "स्थिति निषिद्ध है"
 
-#: wp-includes/class-wp-customize-nav-menus.php:792
+#: wp-includes/class-wp-customize-nav-menus.php:808
 msgid "Empty title"
 msgstr "रिक्त शीर्षक"
 
@@ -2403,23 +2430,23 @@ msgstr "क्षमा करें, ट्रैकबैक्स इस म�
 msgid "I really need an ID for this to work."
 msgstr "मुझे  वास्तव में इस काम के लिए एक आईडी की जरूरत है।"
 
-#: wp-includes/class-wp-customize-manager.php:5208
+#: wp-includes/class-wp-customize-manager.php:5248
 msgid "Homepage"
 msgstr "मुखपृष्ठ"
 
-#: wp-includes/script-loader.php:675
+#: wp-includes/script-loader.php:676
 msgid "Term removed."
 msgstr "टर्म निष्कासित।"
 
-#: wp-includes/script-loader.php:674
+#: wp-includes/script-loader.php:675
 msgid "Term added."
 msgstr "टर्म संकलित।"
 
-#: wp-includes/script-loader.php:673
+#: wp-includes/script-loader.php:674
 msgid "Term selected."
 msgstr "टर्म चयनित।"
 
-#: wp-includes/script-loader.php:672
+#: wp-includes/script-loader.php:673
 msgid "Remove term:"
 msgstr "शब्द हटाए:"
 
@@ -3409,133 +3436,133 @@ msgid "Number of widgets found: %d"
 msgstr "प्राप्त विजेट्स की संख्या: %d"
 
 #. translators: %1$s is the post type name and %2$s is the error message.
-#: wp-includes/class-wp-customize-nav-menus.php:886
+#: wp-includes/class-wp-customize-nav-menus.php:902
 msgid "%1$s could not be created: %2$s"
 msgstr "%1$s बनाया नहीं जा सका: %2$s"
 
-#: wp-includes/class-wp-customize-nav-menus.php:881
+#: wp-includes/class-wp-customize-nav-menus.php:897
 msgid "Post"
 msgstr "पोस्ट"
 
 #. translators: 1: .mp4, 2: .mov
-#: wp-includes/class-wp-customize-manager.php:5601
+#: wp-includes/class-wp-customize-manager.php:5641
 msgid "Only %1$s or %2$s files may be used for header video. Please convert your video file and try again, or, upload your video to YouTube and link it with the option below."
 msgstr "केवल %1$s या %2$s फ़ाइलें हेडर के वीडियो के लिए इस्तेमाल किया जा सकता है। अपने वीडियो फ़ाइल में परिवर्तित करें और फिर कोशिश करें, या, यूट्यूब के लिए अपने वीडियो अपलोड करें और नीचे दिए गए विकल्प के साथ यह लिंक।"
 
-#: wp-includes/class-wp-customize-manager.php:5595
+#: wp-includes/class-wp-customize-manager.php:5635
 msgid "This video file is too large to use as a header video. Try a shorter video or optimize the compression settings and re-upload a file that is less than 8MB. Or, upload your video to YouTube and link it with the option below."
 msgstr ""
 "यह वीडियो फाइल हेडर वीडियो के लिए बहुत बड़ी है। कृपया एक छोटा वीडियो, या इस वीडियो फाइल की कंप्रेशन सेट्टिंग्स का अनुकूलन करने के बाद आठ मेगाबाइट (8MB) से छोटी फाइल फिर से अपलोड करने की \n"
 "कोशिश करें, या इस वीडियो फाइल को यूट्युब पर अपलोड करें और नीचे दिए हुए विकल्प के साथ लिंक करें।"
 
-#: wp-includes/class-wp-customize-manager.php:5555
+#: wp-includes/class-wp-customize-manager.php:5595
 msgid "Unrecognized background setting."
 msgstr "पहचानने अयोग्य पृष्ठभूमि सेटिंग"
 
-#: wp-includes/class-wp-customize-manager.php:5546
-#: wp-includes/class-wp-customize-manager.php:5550
+#: wp-includes/class-wp-customize-manager.php:5586
+#: wp-includes/class-wp-customize-manager.php:5590
 msgid "Invalid value for background size."
 msgstr "पृष्ठभूमि आकार के लिए अमान्य मान"
 
-#: wp-includes/class-wp-customize-manager.php:5542
+#: wp-includes/class-wp-customize-manager.php:5582
 msgid "Invalid value for background position Y."
 msgstr "पृष्ठभूमि स्थिति Y के लिए अमान्य मान"
 
-#: wp-includes/class-wp-customize-manager.php:5538
+#: wp-includes/class-wp-customize-manager.php:5578
 msgid "Invalid value for background position X."
 msgstr "पृष्ठभूमि स्थिति X के लिए अमान्य मान"
 
-#: wp-includes/class-wp-customize-manager.php:5534
+#: wp-includes/class-wp-customize-manager.php:5574
 msgid "Invalid value for background attachment."
 msgstr "पृष्ठभूमि लगाव के लिए अमान्य मान।"
 
-#: wp-includes/class-wp-customize-manager.php:5530
+#: wp-includes/class-wp-customize-manager.php:5570
 msgid "Invalid value for background repeat."
 msgstr "पृष्ठभूमि दोहराव हेतु अमान्य मूल्य।"
 
 #. translators: accessibility text
-#: wp-includes/class-wp-customize-manager.php:4162
-#: wp-includes/class-wp-customize-manager.php:5234
-#: wp-includes/class-wp-customize-manager.php:5254
+#: wp-includes/class-wp-customize-manager.php:4199
+#: wp-includes/class-wp-customize-manager.php:5274
+#: wp-includes/class-wp-customize-manager.php:5294
 #: wp-includes/customize/class-wp-customize-nav-menu-locations-control.php:56
 #: wp-includes/widgets/class-wp-widget-custom-html.php:304
 msgid "(opens in a new window)"
 msgstr "(लिंक एक नयी विंडो में खुलेगी)"
 
-#: wp-includes/class-wp-customize-manager.php:5232
+#: wp-includes/class-wp-customize-manager.php:5272
 msgid "Learn more about CSS"
 msgstr "सीएसएस के बारे में और सीखें"
 
-#: wp-includes/class-wp-customize-manager.php:5265
+#: wp-includes/class-wp-customize-manager.php:5305
 msgid "Additional CSS"
 msgstr "अतिरिक्त सीएसएस"
 
-#: wp-includes/class-wp-customize-manager.php:5159
+#: wp-includes/class-wp-customize-manager.php:5199
 msgid "Scroll with Page"
 msgstr "पृष्ठ के साथ स्क्रॉल करे "
 
-#: wp-includes/class-wp-customize-manager.php:5147
+#: wp-includes/class-wp-customize-manager.php:5187
 msgid "Repeat Background Image"
 msgstr "पृष्ठभूमि छवि दोहराएँ"
 
-#: wp-includes/class-wp-customize-manager.php:5134
+#: wp-includes/class-wp-customize-manager.php:5174
 msgid "Original"
 msgstr "वास्तविक"
 
-#: wp-includes/class-wp-customize-manager.php:5130
+#: wp-includes/class-wp-customize-manager.php:5170
 msgid "Image Size"
 msgstr "छवि आकार"
 
-#: wp-includes/class-wp-customize-manager.php:5115
+#: wp-includes/class-wp-customize-manager.php:5155
 #: wp-includes/customize/class-wp-customize-background-position-control.php:66
 msgid "Image Position"
 msgstr "छवि स्थिति"
 
-#: wp-includes/class-wp-customize-manager.php:5098
+#: wp-includes/class-wp-customize-manager.php:5138
 msgctxt "Custom Preset"
 msgid "Custom"
 msgstr "अनुकूलित"
 
-#: wp-includes/class-wp-customize-manager.php:5097
+#: wp-includes/class-wp-customize-manager.php:5137
 msgctxt "Repeat Image"
 msgid "Repeat"
 msgstr "पुनरावृत्ति"
 
-#: wp-includes/class-wp-customize-manager.php:5096
-#: wp-includes/class-wp-customize-manager.php:5135
+#: wp-includes/class-wp-customize-manager.php:5136
+#: wp-includes/class-wp-customize-manager.php:5175
 msgid "Fit to Screen"
 msgstr "स्क्रीन में फिट करे"
 
-#: wp-includes/class-wp-customize-manager.php:5094
+#: wp-includes/class-wp-customize-manager.php:5134
 msgctxt "Default Preset"
 msgid "Default"
 msgstr "पूर्व निर्धारित"
 
-#: wp-includes/class-wp-customize-manager.php:5090
+#: wp-includes/class-wp-customize-manager.php:5130
 msgctxt "Background Preset"
 msgid "Preset"
 msgstr "पूर्व निर्धारित"
 
-#: wp-includes/class-wp-customize-manager.php:5038
+#: wp-includes/class-wp-customize-manager.php:5078
 msgid "Header Video"
 msgstr "हैडर वीडियो"
 
 #. translators: 1: .mp4, 2: header height in pixels
-#: wp-includes/class-wp-customize-manager.php:4985
+#: wp-includes/class-wp-customize-manager.php:5025
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends a height of %2$s pixels."
 msgstr "%1$s प्रारूप में अपने वीडियो अपलोड करें और अच्छे परिणाम के लिए अपनी फाइल के आकार को कम। आपका विषय%2$s पिक्सल एक ऊंचाई की सिफारिश की।"
 
 #. translators: 1: .mp4, 2: header width in pixels
-#: wp-includes/class-wp-customize-manager.php:4978
+#: wp-includes/class-wp-customize-manager.php:5018
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends a width of %2$s pixels."
 msgstr "%1$s प्रारूप में अपने वीडियो अपलोड करें और अच्छे परिणाम के लिए अपनी फाइल के आकार को कम। आपका विषय%2$s पिक्सल एक ऊंचाई की सिफारिश की।"
 
 #. translators: 1: .mp4, 2: header size in pixels
-#: wp-includes/class-wp-customize-manager.php:4971
+#: wp-includes/class-wp-customize-manager.php:5011
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends dimensions of %2$s pixels."
 msgstr "अपने वीडियो को %1$s प्रारूप में अपलोड करें और सर्वोत्तम परिणाम के लिए इसका फ़ाइल आकार कम करें आपकी थीम %2$s पिक्सेल के आकार की अनुशंसा करती है।"
 
-#: wp-includes/class-wp-customize-manager.php:4964
+#: wp-includes/class-wp-customize-manager.php:5004
 msgid "If you add a video, the image will be used as a fallback while the video loads."
 msgstr "यदि आप एक वीडियो जोड़ते है, वीडियो लोड होने के दौरान छवि का इस्तेमाल विकल्प के रूप में किया जाएगा।"
 
@@ -3547,43 +3574,43 @@ msgid "Search themes&hellip;"
 msgstr "थीम खोजें &hellip;"
 
 #. translators: %s: theme name
-#: wp-includes/class-wp-customize-manager.php:4670
+#: wp-includes/class-wp-customize-manager.php:4710
 msgid "Showing details for theme: %s"
 msgstr "थीम के लिए विवरण: %s"
 
 #. translators: %d: number of themes being displayed, which cannot currently
 #. consider singular vs. plural forms
-#: wp-includes/class-wp-customize-manager.php:4668
+#: wp-includes/class-wp-customize-manager.php:4708
 msgid "Displaying %d themes"
 msgstr "%d थीम प्रदर्शित"
 
 #. translators: %d: number of theme search results, which cannot currently
 #. consider singular vs. plural forms
-#: wp-includes/class-wp-customize-manager.php:4666
+#: wp-includes/class-wp-customize-manager.php:4706
 msgid "%d themes found"
 msgstr "%d थीम मिले"
 
-#: wp-includes/class-wp-customize-manager.php:4664
+#: wp-includes/class-wp-customize-manager.php:4704
 msgid "Are you sure you want to delete this theme?"
 msgstr "क्या आप वाकई इस थीम को हटाना चाहते हैं?"
 
-#: wp-includes/class-wp-customize-manager.php:2272
+#: wp-includes/class-wp-customize-manager.php:2277
 msgid "Unauthorized to modify setting due to capability."
 msgstr "सामर्थता के कारण सेटिंग्स सुधार के लिए अनिधिकृत"
 
-#: wp-includes/class-wp-customize-manager.php:2267
+#: wp-includes/class-wp-customize-manager.php:2272
 msgid "Setting does not exist or is unrecognized."
 msgstr "सेटिंग्स विद्यमान नही है या अस्विकृति है"
 
-#: wp-includes/class-wp-customize-manager.php:2060
+#: wp-includes/class-wp-customize-manager.php:2065
 msgid "This form is not live-previewable."
 msgstr "यह फॉर्म सजीव-पूर्वावलोकन योग्य नहीं है।"
 
-#: wp-includes/class-wp-customize-manager.php:2059
+#: wp-includes/class-wp-customize-manager.php:2064
 msgid "This link is not live-previewable."
 msgstr "यह सम्बन्ध सजीव अवलोकन हेतु नही है"
 
-#: wp-includes/class-wp-customize-manager.php:1844
+#: wp-includes/class-wp-customize-manager.php:1849
 msgid "Unauthorized. You may remove the customize_messenger_channel param to preview as frontend."
 msgstr "अनधिकृत। आप दृश्यपटल के रूप में पूर्वावलोकन करने के लिए customize_messenger_channel परम निकाल सकते हैं।"
 
@@ -3621,7 +3648,7 @@ msgstr "चयनित मेनू सम्पादित करें"
 msgid "Warning: the link has been inserted but may have errors. Please test it."
 msgstr "चेतावनी: लिंक प्रविष्ट कर लिया गया है किन्तु त्रुटियाँ हो सकती हैं। कृपया इसका परीक्षण कर लें।"
 
-#: wp-includes/script-loader.php:766
+#: wp-includes/script-loader.php:767
 msgid "Search Results"
 msgstr "खोज परिणाम"
 
@@ -3678,73 +3705,73 @@ msgid "Inexistent terms."
 msgstr "अस्तित्वहीन टर्म्स।"
 
 #. translators: %s: Importer name
-#: wp-includes/script-loader.php:837
+#: wp-includes/script-loader.php:838
 msgid "Run %s"
 msgstr "%s शुरू करें"
 
-#: wp-includes/script-loader.php:835
+#: wp-includes/script-loader.php:836
 msgid "Run Importer"
 msgstr "इम्पोर्टर शुरू करें"
 
 #. translators: %s: Activation URL
-#: wp-includes/script-loader.php:816
+#: wp-includes/script-loader.php:817
 msgid "Importer installed successfully. <a href=\"%s\">Run importer</a>"
 msgstr "इम्पोर्टर सफलतापूर्वक स्थापित। <a href=\"%s\">इम्पोर्टर शुरू करें</a>"
 
-#: wp-includes/script-loader.php:834
+#: wp-includes/script-loader.php:835
 msgctxt "theme"
 msgid "Activate %s"
 msgstr "%s सक्रिय करें"
 
 #. translators: %s: Theme name
-#: wp-includes/script-loader.php:834
+#: wp-includes/script-loader.php:835
 msgctxt "theme"
 msgid "Network Activate %s"
 msgstr "%s नेटवर्क सक्रिय करें "
 
-#: wp-includes/script-loader.php:832
+#: wp-includes/script-loader.php:833
 msgctxt "plugin"
 msgid "Activate %s"
 msgstr "%s सक्रिय करें "
 
 #. translators: %s: Plugin name
-#: wp-includes/script-loader.php:832
+#: wp-includes/script-loader.php:833
 msgctxt "plugin"
 msgid "Network Activate %s"
 msgstr "%s नेटवर्क सक्रिय करें "
 
 #. translators: %s: Theme name and version
-#: wp-includes/script-loader.php:812
+#: wp-includes/script-loader.php:813
 msgctxt "theme"
 msgid "%s installation failed"
 msgstr "%s स्थापना विफल रही"
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:810
+#: wp-includes/script-loader.php:811
 msgctxt "plugin"
 msgid "%s installation failed"
 msgstr "%s स्थापना विफल रही"
 
 #. translators: %s: Theme name and version
-#: wp-includes/script-loader.php:808
+#: wp-includes/script-loader.php:809
 msgctxt "theme"
 msgid "%s installed!"
 msgstr "%s स्थापित!"
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:806
+#: wp-includes/script-loader.php:807
 msgctxt "plugin"
 msgid "%s installed!"
 msgstr "%s स्थापित!"
 
 #. translators: %s: Theme name and version
-#: wp-includes/script-loader.php:804
+#: wp-includes/script-loader.php:805
 msgctxt "theme"
 msgid "Installing %s..."
 msgstr "%s स्थापित हो रहा है..."
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:802
+#: wp-includes/script-loader.php:803
 msgctxt "plugin"
 msgid "Installing %s..."
 msgstr "%s स्थापित हो रहा है..."
@@ -3753,7 +3780,7 @@ msgstr "%s स्थापित हो रहा है..."
 msgid "Sorry, you are not allowed to access user data on this site."
 msgstr "क्षमा करें, आपको इस साइट पर उपयोगकर्ता के डेटा तक पहुँच की अनुमति नहीं है।"
 
-#: wp-includes/script-loader.php:841
+#: wp-includes/script-loader.php:842
 msgid "Number of plugins found: %d"
 msgstr "पाई गयी प्लगइन्स की संख्या:%d"
 
@@ -3808,7 +3835,7 @@ msgid "Tan"
 msgstr "टैन"
 
 #. translators: %s: Error string for a failed installation
-#: wp-includes/script-loader.php:800
+#: wp-includes/script-loader.php:801
 msgid "Installation failed: %s"
 msgstr "स्थापना विफल रही: %s"
 
@@ -3834,7 +3861,7 @@ msgctxt "site"
 msgid "&larr; Back to %s"
 msgstr "&larr; %s पर वापस जाएँ"
 
-#: wp-includes/wp-db.php:1856 wp-includes/wp-db.php:1862
+#: wp-includes/wp-db.php:1849 wp-includes/wp-db.php:1855
 msgid "Unable to retrieve the error message from MySQL"
 msgstr "मायएसक्यूएल से त्रुटि संदेश को पुन: प्राप्त करने में असमर्थ"
 
@@ -3843,59 +3870,59 @@ msgstr "मायएसक्यूएल से त्रुटि संदे
 msgid "Edit Menu"
 msgstr "संपादन मेनू"
 
-#: wp-includes/script-loader.php:1126
+#: wp-includes/script-loader.php:1127
 msgid "Today"
 msgstr "आज"
 
-#: wp-includes/script-loader.php:829
+#: wp-includes/script-loader.php:830
 msgid "Network Activate"
 msgstr "नेटवर्क सक्रिय "
 
 #. translators: %s: Error string for a failed deletion
-#: wp-includes/script-loader.php:825
+#: wp-includes/script-loader.php:826
 msgid "Deletion failed: %s"
 msgstr "नष्ट करना विफल हुआ: %s"
 
-#: wp-includes/script-loader.php:823
+#: wp-includes/script-loader.php:824
 msgid "Deleting..."
 msgstr "नष्ट कर रहे हैं..."
 
-#: wp-includes/script-loader.php:822
+#: wp-includes/script-loader.php:823
 msgid "Caution: These themes may be active on other sites in the network. Are you sure you want to proceed?"
 msgstr "सावधान: ये थीम्स नेटवर्क में अन्य साइटों पर सक्रिय हो सकते हैं। क्या आप निश्चित हैं कि आप आगे बढ़ना चाहते हैं?"
 
-#: wp-includes/script-loader.php:821
+#: wp-includes/script-loader.php:822
 msgid "Are you sure you want to delete the selected plugins and their data?"
 msgstr "क्या आप निष्चित हैं कि आप चयनित प्लगइन्स और उनके डेटा को नष्ट करना चाहते हैं?"
 
 #. translators: %s: Plugin name
-#: wp-includes/script-loader.php:820
+#: wp-includes/script-loader.php:821
 msgid "Are you sure you want to delete %s and its data?"
 msgstr "क्या आप निष्चित हैं कि आप %s और उसके डेटा को नष्ट करना चाहते हैं?"
 
 #. translators: %s: Theme name
-#: wp-includes/script-loader.php:818
+#: wp-includes/script-loader.php:819
 msgid "Are you sure you want to delete %s?"
 msgstr "क्या आप निश्चित है कि आप %s को नष्ट करना चाहते हैं?"
 
-#: wp-includes/script-loader.php:773
+#: wp-includes/script-loader.php:774
 msgid "Update Now"
 msgstr "अभी अद्यतन करें"
 
-#: wp-includes/script-loader.php:768
+#: wp-includes/script-loader.php:769
 msgid "Please select at least one item to perform this action on."
 msgstr "कृपया कम से कम एक आइटम का चयन करें जिसपर यह कार्रवाई की जा सके।"
 
-#: wp-includes/script-loader.php:767
+#: wp-includes/script-loader.php:768
 msgid "You do not appear to have any plugins available at this time."
 msgstr "ऐसा प्रतीत होता है कि आपके पास इस समय कोई भी प्लगइन्स उपलब्ध नहीं हैं।"
 
 #. translators: %s: Search string
-#: wp-includes/script-loader.php:765
+#: wp-includes/script-loader.php:766
 msgid "Search results for &#8220;%s&#8221;"
 msgstr "&#8220;%s&#8221; के लिये खोज परिणाम"
 
-#: wp-includes/script-loader.php:654
+#: wp-includes/script-loader.php:655
 msgid ""
 "Are you sure you want to do this?\n"
 "The comment changes you made will be lost."
@@ -3913,7 +3940,7 @@ msgid "Password strength unknown"
 msgstr "पासवर्ड की सामर्थ्यता अज्ञात है"
 
 #: wp-includes/rest-api/class-wp-rest-server.php:911
-#: wp-includes/script-loader.php:132 wp-includes/script-loader.php:643
+#: wp-includes/script-loader.php:132 wp-includes/script-loader.php:644
 msgid "Sorry, you are not allowed to do that."
 msgstr "क्षमा करें, आपको ऐसा करने की अनुमति नहीं है।"
 
@@ -3961,14 +3988,14 @@ msgstr "क्षमा करें, आपको नया वर्ग जो
 msgid "Sorry, you are not allowed to list users."
 msgstr "क्षमा करें, आपको उपयोगकर्ताओं को सूचीबद्ध करने की अनुमति नहीं है।"
 
-#: wp-includes/class-wp-customize-manager.php:2295
+#: wp-includes/class-wp-customize-manager.php:2300
 #: wp-includes/class-wp-customize-setting.php:579
-#: wp-includes/script-loader.php:606
+#: wp-includes/script-loader.php:607
 msgid "Invalid value."
 msgstr "अमान्य वैल्यू।"
 
 #: wp-includes/class-wp-customize-manager.php:516
-#: wp-includes/script-loader.php:566
+#: wp-includes/script-loader.php:567
 msgid "Sorry, you are not allowed to customize this site."
 msgstr "क्षमा करें, आपको इस साइट को अनुकूलित करने की अनुमति नहीं है।"
 
@@ -3997,7 +4024,7 @@ msgstr "लिंक चयनित।"
 msgid "%s is required to strip image meta."
 msgstr "छवि का डेटा हटाने के लिए %s की ज़रूरत है।"
 
-#: wp-includes/script-loader.php:756
+#: wp-includes/script-loader.php:757
 msgid "Plugin details"
 msgstr "प्लगिन का विवरण"
 
@@ -4021,13 +4048,13 @@ msgid "1 result found. Use up and down arrow keys to navigate."
 msgstr "1 नतीजा मिला। क्रमावलोकन करने के लिए ऊपर व नीचे की कुंजियों का प्रयोग करें।"
 
 #. translators: %s: user name
-#: wp-includes/comment-template.php:2232
+#: wp-includes/comment-template.php:2231
 msgid "Logged in as %s. Edit your profile."
 msgstr "%s के रूप में लॉगिन हैं। अपना प्रोफाइल संपादित करें।"
 
 #. translators: 1: edit user link, 2: accessibility text, 3: user name, 4:
 #. logout URL
-#: wp-includes/comment-template.php:2229
+#: wp-includes/comment-template.php:2228
 msgid "<a href=\"%1$s\" aria-label=\"%2$s\">Logged in as %3$s</a>. <a href=\"%4$s\">Log out?</a>"
 msgstr "<a href=\"%1$s\" aria-label=\"%2$s\">%3$s के तौर पर लॉगिन हैं</a>. <a href=\"%4$s\">लॉग आउट करें?</a>"
 
@@ -4039,7 +4066,7 @@ msgstr "कॉन्स्टेंट %1$s <strong>पदावनत है</s
 
 #. translators: 1: panel id, 2: link to 'customize_loaded_components' filter
 #. reference
-#: wp-includes/class-wp-customize-manager.php:3737
+#: wp-includes/class-wp-customize-manager.php:3760
 msgid "Removing %1$s manually will cause PHP warnings. Use the %2$s filter instead."
 msgstr "%1$s को खुद हटाने पर PHP चेतावनियाँ आएंगी। इसके बजाए %2$s फिल्टर का प्रयोग करें।"
 
@@ -4074,11 +4101,11 @@ msgstr "<strong>त्रुटि</strong>: इमेल की जगह ख�
 msgid "Unregistering a built-in taxonomy is not allowed."
 msgstr "एक बिल्ट-इन वर्गीकरण के अपंजीकरण की अनुमति नहीं है।"
 
-#: wp-includes/script-loader.php:664
+#: wp-includes/script-loader.php:665
 msgid "Drag boxes here"
 msgstr "बक्से यहाँ छोड़ें"
 
-#: wp-includes/script-loader.php:571
+#: wp-includes/script-loader.php:572
 msgid "(Untitled)"
 msgstr "(बेनाम)"
 
@@ -4139,30 +4166,30 @@ msgstr "<strong>भूल</strong>: अमान्य यूज़रनेम,
 msgid "%1$s %2$s %3$s %4$s Feed"
 msgstr "%1$s %2$s %3$s %4$s फीड"
 
-#: wp-includes/functions.php:5312
+#: wp-includes/functions.php:5313
 msgid "Close dialog"
 msgstr "संवाद बंद करें"
 
 #. translators: 1: PHP class name, 2: PHP parent class name, 3: version number,
 #. 4: __construct() method
-#: wp-includes/functions.php:3900
+#: wp-includes/functions.php:3901
 msgid "The called constructor method for %1$s in %2$s is <strong>deprecated</strong> since version %3$s! Use %4$s instead."
 msgstr "%2$s में %1$s के लिये जो कंस्ट्रक्टर मेथड कॉल की गयी है, वह वर्ज़न %3$s  से <strong>deprecated</strong> है! इस की बजाए %4$s का उपयाग करें।"
 
-#: wp-includes/class-wp-customize-manager.php:4904
+#: wp-includes/class-wp-customize-manager.php:4944
 msgid "Choose logo"
 msgstr "लोगो चुनें"
 
-#: wp-includes/class-wp-customize-manager.php:4902
+#: wp-includes/class-wp-customize-manager.php:4942
 msgid "No logo selected"
 msgstr "लोगो का चयन नहीं किया"
 
-#: wp-includes/class-wp-customize-manager.php:4899
+#: wp-includes/class-wp-customize-manager.php:4939
 msgid "Change logo"
 msgstr "लोगो बदले"
 
-#: wp-includes/class-wp-customize-manager.php:4898
-#: wp-includes/class-wp-customize-manager.php:4903
+#: wp-includes/class-wp-customize-manager.php:4938
+#: wp-includes/class-wp-customize-manager.php:4943
 msgid "Select logo"
 msgstr "लोगो चुने"
 
@@ -4224,28 +4251,28 @@ msgstr "अमान्य वस्तु प्रकार"
 msgid "Paste URL or type to search"
 msgstr "खोजने के लिये यूआरएल या प्रकार दर्ज करें"
 
-#: wp-includes/class-wp-customize-manager.php:4890
+#: wp-includes/class-wp-customize-manager.php:4930
 msgid "Logo"
 msgstr "लोगो "
 
-#: wp-includes/class-wp-customize-manager.php:4856
-#: wp-includes/class-wp-customize-manager.php:4934
+#: wp-includes/class-wp-customize-manager.php:4896
+#: wp-includes/class-wp-customize-manager.php:4974
 msgid "Display Site Title and Tagline"
 msgstr "साइट का नाम व टैगलाइन दिखाएँ"
 
-#: wp-includes/class-wp-customize-manager.php:4757
+#: wp-includes/class-wp-customize-manager.php:4797
 msgid "Enter mobile preview mode"
 msgstr "मोबाइल पूर्वावलोकन मोड में जाये"
 
-#: wp-includes/class-wp-customize-manager.php:4754
+#: wp-includes/class-wp-customize-manager.php:4794
 msgid "Enter tablet preview mode"
 msgstr "नोटबुक पूर्वावलोकन मोड में जाये"
 
-#: wp-includes/class-wp-customize-manager.php:4750
+#: wp-includes/class-wp-customize-manager.php:4790
 msgid "Enter desktop preview mode"
 msgstr "डेस्कटॉप पर प्रिव्यू करें"
 
-#: wp-includes/class-wp-customize-manager.php:2058
+#: wp-includes/class-wp-customize-manager.php:2063
 #: wp-includes/customize/class-wp-customize-selective-refresh.php:192
 msgid "Shift-click to edit this element."
 msgstr "इस वस्तु को संपादित करने के लिए Shift के साथ क्लिक करें।"
@@ -4269,7 +4296,7 @@ msgid "(Current: %s)"
 msgstr "(वर्तमान: %s)"
 
 #. translators: %s:      menu location
-#: wp-includes/class-wp-customize-nav-menus.php:416
+#: wp-includes/class-wp-customize-nav-menus.php:432
 msgctxt "menu"
 msgid "(Currently set to: %s)"
 msgstr "(वर्तमान में निम्न पर सेट: %s)"
@@ -4283,12 +4310,12 @@ msgstr "https://codex.wordpress.org/Debugging_a_WordPress_Network"
 msgid "Read the <a href=\"%s\" target=\"_blank\">bug report</a> page. Some of the guidelines there may help you figure out what went wrong."
 msgstr "<a href=\"%s\" target=\"_blank\">त्रुटि रिपोर्ट</a> पृष्ठ पढ़ें। वहाँ मिले दिशा निर्देशों से आपको पता लगाने में मदद मिल सकती है, कि क्या गलत हो गया।"
 
-#: wp-includes/functions.php:4143
+#: wp-includes/functions.php:4144
 msgid "https://codex.wordpress.org/Debugging_in_WordPress"
 msgstr "https://codex.wordpress.org/Debugging_in_WordPress"
 
 #. translators: %s: Codex URL
-#: wp-includes/functions.php:4142
+#: wp-includes/functions.php:4143
 msgid "Please see <a href=\"%s\">Debugging in WordPress</a> for more information."
 msgstr "कृपया अधिक जानकारी हेतु <a href=\"%s\">वर्डप्रेस में डिबगिंग</a> देखें।"
 
@@ -4297,7 +4324,7 @@ msgstr "कृपया अधिक जानकारी हेतु <a href=
 msgid "<strong>ERROR</strong>: %1$s in %2$s can only contain numbers, letters, and underscores."
 msgstr "<strong>त्रुटि</strong>: %2$s में %1$s में केवल संख्या, अक्षर और अंडरस्कोर ही शामिल कर सकते हैं।"
 
-#: wp-includes/script-loader.php:744 wp-includes/script-loader.php:750
+#: wp-includes/script-loader.php:745 wp-includes/script-loader.php:751
 msgid "Changes saved."
 msgstr "बदलाव सहेजे गए।"
 
@@ -4497,66 +4524,66 @@ msgstr "पोस्ट किया गया शीर्षक:"
 msgid "Author:"
 msgstr "लेखक:"
 
-#: wp-includes/wp-db.php:1754
+#: wp-includes/wp-db.php:1747
 msgid "Are you sure that the database server is not under particularly heavy load?"
 msgstr "क्या आप सुनिश्चित हैं कि डेटाबेस सर्वर विशेष रूप से भारी लोड से ग्रस्त नहीं है?"
 
 #. translators: %s: database host
-#: wp-includes/wp-db.php:1748
+#: wp-includes/wp-db.php:1741
 msgid "This means that we lost contact with the database server at %s. This could mean your host&#8217;s database server is down."
 msgstr "इसका अर्थ यह है कि हमारा संपर्क %s डेटाबेस सर्वर से टूट गया है। इसका अर्थ यह हो सकता है कि आपके होस्ट का डेटाबेस सर्वर डाउन है।"
 
-#: wp-includes/wp-db.php:1744
+#: wp-includes/wp-db.php:1737
 msgid "Error reconnecting to the database"
 msgstr "डेटाबेस से पुनः जोड़ने में त्रुटि"
 
 #. translators: %s: support forums URL
-#: wp-includes/wp-db.php:1601 wp-includes/wp-db.php:1759
+#: wp-includes/wp-db.php:1594 wp-includes/wp-db.php:1752
 msgid "If you&#8217;re unsure what these terms mean you should probably contact your host. If you still need help you can always visit the <a href=\"%s\">WordPress Support Forums</a>."
 msgstr "यदि आप अनिश्चित हैं कि इन शब्दों का अर्थ क्या है तो आपको सम्भवतः अपने होस्ट से संपर्क करना चाहिए। यदि आपको अब भी सहायता की आवश्यकता है, तो आप कभी भी <a href=\"%s\">वर्डप्रेस सहायता फ़ोरम्स</a> पर जा सकते हैं।"
 
-#: wp-includes/wp-db.php:1596 wp-includes/wp-db.php:1753
+#: wp-includes/wp-db.php:1589 wp-includes/wp-db.php:1746
 msgid "Are you sure that the database server is running?"
 msgstr "क्या आप सुनिश्चित हैं कि डेटाबेस सर्वर चल रहा है?"
 
-#: wp-includes/wp-db.php:1595
+#: wp-includes/wp-db.php:1588
 msgid "Are you sure that you have typed the correct hostname?"
 msgstr "क्या आप सुनिश्चित हैं कि आपने सही होस्ट नाम टाइप किया है?"
 
-#: wp-includes/wp-db.php:1594
+#: wp-includes/wp-db.php:1587
 msgid "Are you sure you have the correct username and password?"
 msgstr "क्या आप सुनिश्चित हैं कि आपके पास सही यूज़रनेम और पासवर्ड हैं?"
 
 #. translators: 1: wp-config.php. 2: database host
-#: wp-includes/wp-db.php:1588
+#: wp-includes/wp-db.php:1581
 msgid "This either means that the username and password information in your %1$s file is incorrect or we can&#8217;t contact the database server at %2$s. This could mean your host&#8217;s database server is down."
 msgstr "इसका अर्थ यह है कि या तो आपकी %1$s फाइल में यूज़रनेम और पासवर्ड की जानकारी गलत है या हम %2$s पर डेटाबेस सर्वर से संपर्क नहीं कर पा रहे हैं। इसका अर्थ यह है कि आपके होस्ट का डेटाबेस सर्वर डाउन है।"
 
 #. translators: %s: support forums URL
-#: wp-includes/wp-db.php:1068
+#: wp-includes/wp-db.php:1061
 msgid "If you don&#8217;t know how to set up a database you should <strong>contact your host</strong>. If all else fails you may find help at the <a href=\"%s\">WordPress Support Forums</a>."
 msgstr "यदि आपको नहीं पता कि एक डेटाबेस कैसे स्थापित करें तो आपको <strong>अपने होस्ट से संपर्क करना चाहिए</strong>। यदि बाकि सब विफल रहता है, तो आपको <a href=\"%s\">वर्डप्रेस सहायता फ़ोरम</a> में सहायता मिल सकती है।"
 
 #. translators: %s: database name
-#: wp-includes/wp-db.php:1060
+#: wp-includes/wp-db.php:1053
 msgid "On some systems the name of your database is prefixed with your username, so it would be like <code>username_%1$s</code>. Could that be the problem?"
 msgstr "कुछ सिस्टम्स पर आपके डेटाबेस के नाम के साथ यूज़रनेम उपसर्ग लगा होता है, तो यह <code>यूज़रनेम_%1$s</code> की तरह हो जाएगा। कहीं यही समस्या तो नहीं?"
 
 #. translators: 1: database user, 2: database name
-#: wp-includes/wp-db.php:1053
+#: wp-includes/wp-db.php:1046
 msgid "Does the user %1$s have permission to use the %2$s database?"
 msgstr "क्या उपयोगकर्ता %1$s को %2$s डेटाबेस का उपयोग करने की अनुमति है?"
 
-#: wp-includes/wp-db.php:1049
+#: wp-includes/wp-db.php:1042
 msgid "Are you sure it exists?"
 msgstr "क्या आप सुनिश्चित हैं कि यह मौजूद है?"
 
 #. translators: %s: database name
-#: wp-includes/wp-db.php:1044
+#: wp-includes/wp-db.php:1037
 msgid "We were able to connect to the database server (which means your username and password is okay) but not able to select the %s database."
 msgstr "हम डेटाबेस सर्वर से कनेक्ट करने में सक्षम थे, (जिसका अर्थ है कि आपके यूज़रनेम और पासवर्ड सही हैं) लेकिन %s डेटाबेस का चयन करने में सक्षम नहीं।"
 
-#: wp-includes/wp-db.php:1040
+#: wp-includes/wp-db.php:1033
 msgid "Can&#8217;t select database"
 msgstr "डेटाबेस का चयन नहीं कर सकते"
 
@@ -4607,7 +4634,7 @@ msgstr "अमान्य शॉर्ट कोड नामः %s। रि�
 msgid "Invalid shortcode name: Empty name given."
 msgstr "अमान्य शॉर्ट कोड नामः रिक्त नाम प्रदान किया गया।"
 
-#: wp-includes/script-loader.php:702
+#: wp-includes/script-loader.php:703
 msgid "Permalink saved"
 msgstr "परमालिंक संचित किया गया"
 
@@ -4905,7 +4932,7 @@ msgid "Press return or enter to open this section"
 msgstr "इस भाग को खोलने के लिए रिर्टन या एन्टर दबाएँ"
 
 #. translators: %s: document title from the preview
-#: wp-includes/class-wp-customize-manager.php:4335
+#: wp-includes/class-wp-customize-manager.php:4372
 msgid "Live Preview: %s"
 msgstr "सजीव पूर्वावलोकन: %s"
 
@@ -4930,7 +4957,7 @@ msgstr "पोस्ट प्रकार %1$s पंजीकृत नही�
 msgid "%1$s is deprecated. Use %2$s instead."
 msgstr "%1$s को पदावनत किया गया है। इसकी बजाय %2$s का प्रयोग करें।"
 
-#: wp-includes/class-wp-customize-nav-menus.php:1005
+#: wp-includes/class-wp-customize-nav-menus.php:1021
 #: wp-includes/class-wp-customize-widgets.php:811
 msgid "Clear Results"
 msgstr "परिणाम हटाये"
@@ -4940,7 +4967,7 @@ msgid "The following formatting shortcuts are replaced when pressing Enter. Pres
 msgstr "एंटर दबाने पर निम्न फारमैटिंग शॉर्टकट प्रतिस्थापित हो जाते हैं। अनडू (पूर्ववत) करने के लिए एस्केप या अनडू बटन दबाएँ।"
 
 #. translators: %s: Title of a section with menu items
-#: wp-includes/class-wp-customize-nav-menus.php:1054
+#: wp-includes/class-wp-customize-nav-menus.php:1070
 msgid "Toggle section: %s"
 msgstr "इस भाग को टॉगल करेँ: %s"
 
@@ -4948,7 +4975,7 @@ msgstr "इस भाग को टॉगल करेँ: %s"
 #. Asian characters), enter 'characters_excluding_spaces' or
 #. 'characters_including_spaces'. Otherwise, enter 'words'. Do not translate
 #. into your own language.
-#: wp-includes/formatting.php:3372 wp-includes/script-loader.php:1088
+#: wp-includes/formatting.php:3372 wp-includes/script-loader.php:1089
 msgctxt "Word count type. Do not translate!"
 msgid "words"
 msgstr "words"
@@ -4963,7 +4990,7 @@ msgstr "मेन्यू आइटम का संपादन कीजि�
 msgid "Remove Menu Item: %1$s (%2$s)"
 msgstr "मेन्यू आइटम को हटाएं: %1$s (%2$s)"
 
-#: wp-includes/class-wp-customize-nav-menus.php:1088
+#: wp-includes/class-wp-customize-nav-menus.php:1104
 msgid "Toggle section: Custom Links"
 msgstr "इस भाग को टॉगल करेँ: विशेष लिँक"
 
@@ -4979,7 +5006,7 @@ msgstr "पासवर्ड छिपाएं"
 msgid "Show password"
 msgstr "पासवर्ड दिखाए"
 
-#: wp-includes/class-wp-customize-nav-menus.php:419
+#: wp-includes/class-wp-customize-nav-menus.php:435
 msgid "Menu Name"
 msgstr "मेन्यू का नाम"
 
@@ -5001,7 +5028,7 @@ msgstr "ब्राउज़र आइकन के रूप में सम�
 msgid "As a browser icon"
 msgstr "ब्राउज़र आइकन की तरह"
 
-#: wp-includes/class-wp-customize-nav-menus.php:1050
+#: wp-includes/class-wp-customize-nav-menus.php:1066
 msgid "No items"
 msgstr "कोई मेन्यू आइटम नहीं"
 
@@ -5053,16 +5080,16 @@ msgstr "चित्र छिपाएं "
 msgid "Hide header image"
 msgstr "शीर्षक चित्र छिपाएं"
 
-#: wp-includes/class-wp-customize-manager.php:4870
+#: wp-includes/class-wp-customize-manager.php:4910
 msgid "Site Icon"
 msgstr "साइट आइकन"
 
-#: wp-includes/class-wp-customize-manager.php:4821
+#: wp-includes/class-wp-customize-manager.php:4861
 msgid "Site Identity"
 msgstr "साइट की पहचान"
 
 #. translators: 1: Title of a menu item, 2: Type of a menu item
-#: wp-includes/class-wp-customize-nav-menus.php:919
+#: wp-includes/class-wp-customize-nav-menus.php:935
 msgid "Add to menu: %1$s (%2$s)"
 msgstr "मेन्यू में जोड़ें: %1$s (%2$s)"
 
@@ -5078,7 +5105,7 @@ msgstr "आपका पासवर्ड रीसेट कड़ी  की स
 msgid "Your password reset link appears to be invalid. Please request a new link below."
 msgstr "लगता है, आपका पासवर्ड रीसेट लिंक अमान्य है। कृपया नीचे नया लिंक माँगे।"
 
-#: wp-includes/wp-db.php:1386 wp-includes/wp-db.php:1403
+#: wp-includes/wp-db.php:1379 wp-includes/wp-db.php:1396
 msgid "WordPress database error:"
 msgstr "वर्डप्रेस डेटाबेस की खराबी:"
 
@@ -5096,7 +5123,7 @@ msgid "The %s directory of the develop repository must be used for RTL."
 msgstr "विकसित भंडार की  %s डायरेक्टरी को RTL के लिए इस्तेमाल किया जाना चाहिए ।"
 
 #. translators: 1: PHP class name, 2: version number, 3: __construct() method
-#: wp-includes/functions.php:3904
+#: wp-includes/functions.php:3905
 msgid "The called constructor method for %1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "%1$s के लिए जिस निर्माता विधि को काम में लिया है उसका <strong> पदावनत</strong>, संस्करण %2$s के बाद से हो गया है ! इसकी बजाय %3$s का उपयोग करें।"
 
@@ -5118,45 +5145,45 @@ msgstr "थीम पूर्वावलोकन"
 msgid "Active theme"
 msgstr "सक्रिय थीम"
 
-#: wp-includes/class-wp-customize-nav-menus.php:562
+#: wp-includes/class-wp-customize-nav-menus.php:578
 msgid "Menus can be displayed in locations defined by your theme."
 msgstr "मेनू आपकी थीम द्वारा निर्धारित स्थानों में दिखाया जा सकता है।"
 
 #. translators: URL to the widgets panel of the customizer
-#: wp-includes/class-wp-customize-nav-menus.php:560
+#: wp-includes/class-wp-customize-nav-menus.php:576
 msgid "Menus can be displayed in locations defined by your theme or in <a href=\"%s\">widget areas</a> by adding a &#8220;Navigation Menu&#8221; widget."
 msgstr "मेनू आपकी थीम द्वारा निर्धारित स्थानों में दिखाया जा सकता है या <a href=\"%s\">विजेट क्षेत्र</a> में एक &#8220;मेनू विजेट#8221; के दवारा दिखाया जा सकता है।"
 
-#: wp-includes/class-wp-customize-nav-menus.php:439
+#: wp-includes/class-wp-customize-nav-menus.php:455
 #: wp-includes/class-wp-customize-widgets.php:762
 msgid "Reorder mode closed"
 msgstr "मेनू आइटमों का क्रम बदलने की प्रणालि बंद है"
 
-#: wp-includes/class-wp-customize-nav-menus.php:438
+#: wp-includes/class-wp-customize-nav-menus.php:454
 #: wp-includes/class-wp-customize-widgets.php:761
 msgid "Reorder mode enabled"
 msgstr "मेनू आइटमों का क्रम बदलने की प्रणालि चालू है"
 
-#: wp-includes/class-wp-customize-nav-menus.php:412
+#: wp-includes/class-wp-customize-nav-menus.php:428
 #: wp-includes/customize/class-wp-customize-nav-menu-setting.php:430
 msgctxt "Missing menu name."
 msgid "(unnamed)"
 msgstr "(बेनाम)"
 
-#: wp-includes/customize/class-wp-customize-nav-menu-control.php:49
+#: wp-includes/customize/class-wp-customize-nav-menu-control.php:58
 msgid "When in reorder mode, additional controls to reorder menu items will be available in the items list above."
 msgstr "मेनू आइटमों का क्रम बदलने की प्रणालि चालू रहने पर, मेनू आइटमों का क्रम बदलने के लिए कुछ और नियंत्रण उपर, आइटमों की सूची में मिलेंगे।"
 
-#: wp-includes/class-wp-customize-nav-menus.php:441
+#: wp-includes/class-wp-customize-nav-menus.php:457
 msgid "Close reorder mode"
 msgstr "मेन्यू आइटमों का क्रम बदलने की प्रणालि बंद करें"
 
-#: wp-includes/class-wp-customize-nav-menus.php:440
-#: wp-includes/customize/class-wp-customize-nav-menu-control.php:44
+#: wp-includes/class-wp-customize-nav-menus.php:456
+#: wp-includes/customize/class-wp-customize-nav-menu-control.php:53
 msgid "Reorder menu items"
 msgstr "मेनू आइटमों का क्रम बदलें"
 
-#: wp-includes/customize/class-wp-customize-nav-menu-control.php:41
+#: wp-includes/customize/class-wp-customize-nav-menu-control.php:50
 msgid "Add or remove menu items"
 msgstr "मेन्यू आइटम डालें या निकालें"
 
@@ -5238,11 +5265,11 @@ msgid "Attempting to parse a shortcode without a valid callback: %s"
 msgstr "एक वैध कॉलबैक के बिना एक शाॅर्टकोड पार्स करने का प्रयास किया गया है: %s"
 
 #. translators: %s: Error string for a failed update
-#: wp-includes/script-loader.php:778
+#: wp-includes/script-loader.php:779
 msgid "Update Failed: %s"
 msgstr "अपडेट असफल रहा: %s"
 
-#: wp-includes/script-loader.php:653
+#: wp-includes/script-loader.php:654
 msgid ""
 "Are you sure you want to edit this comment?\n"
 "The changes you made will be lost."
@@ -5330,8 +5357,8 @@ msgid "'tain't,'twere,'twas,'tis,'twill,'til,'bout,'nuff,'round,'cause,'em"
 msgstr "'tain't,'twere,'twas,'tis,'twill,'til,'bout,'nuff,'round,'cause,'em"
 
 #: wp-includes/widgets/class-wp-widget-custom-html.php:258
-#: wp-includes/widgets/class-wp-widget-text.php:464
-#: wp-includes/widgets/class-wp-widget-text.php:525
+#: wp-includes/widgets/class-wp-widget-text.php:485
+#: wp-includes/widgets/class-wp-widget-text.php:546
 msgid "Content:"
 msgstr "सामग्री:"
 
@@ -5376,162 +5403,163 @@ msgstr "अनुकूलित बनाया जा रहा"
 msgid "Menu Options"
 msgstr "मेनू के विकल्प"
 
-#: wp-includes/class-wp-customize-nav-menus.php:1104
+#: wp-includes/class-wp-customize-nav-menus.php:1120
 msgid "Add to Menu"
 msgstr "मेनू में जोड़ें"
 
-#: wp-includes/class-wp-customize-nav-menus.php:1086
+#: wp-includes/class-wp-customize-nav-menus.php:1102
 msgid "Custom Links"
 msgstr "स्वनुकूलित कड़िया"
 
-#: wp-includes/class-wp-customize-nav-menus.php:1001
+#: wp-includes/class-wp-customize-nav-menus.php:1017
 #: wp-includes/class-wp-customize-widgets.php:812
 #: wp-includes/customize/class-wp-customize-themes-section.php:119
 #: wp-includes/customize/class-wp-customize-themes-section.php:134
 msgid "The search results will be updated as you type."
 msgstr "जैसे ही आप लिखेंगे वैसे ही खोज परिणामों का अपडेट शुरु हो जाएगा।"
 
-#: wp-includes/class-wp-customize-nav-menus.php:1000
+#: wp-includes/class-wp-customize-nav-menus.php:1016
 msgid "Search menu items&hellip;"
 msgstr "मेनू आइटम खोजे&hellip;"
 
-#: wp-includes/class-wp-customize-nav-menus.php:999
+#: wp-includes/class-wp-customize-nav-menus.php:1015
 msgid "Search Menu Items"
 msgstr "मेन्यू आइटम खोजे"
 
-#: wp-includes/class-wp-customize-nav-menus.php:994
+#: wp-includes/class-wp-customize-nav-menus.php:1010
 msgid "Add Menu Items"
 msgstr "मेन्यू आइटम जोड़ें"
 
 #. translators: &#9656; is the unicode right-pointing triangle, and %s is the
 #. section title in the Customizer
-#: wp-includes/class-wp-customize-nav-menus.php:430
-#: wp-includes/class-wp-customize-nav-menus.php:991
+#: wp-includes/class-wp-customize-nav-menus.php:446
+#: wp-includes/class-wp-customize-nav-menus.php:1007
 #: wp-includes/class-wp-customize-section.php:230
 #: wp-includes/class-wp-customize-widgets.php:802
 msgid "Customizing &#9656; %s"
 msgstr "अनुकूलित बनाया जा रहा &#9656; %s"
 
-#: wp-includes/class-wp-customize-nav-menus.php:935
+#: wp-includes/class-wp-customize-nav-menus.php:951
 msgid "Move one level down"
 msgstr "एक स्तर नीचे ले जाएं"
 
-#: wp-includes/class-wp-customize-nav-menus.php:934
+#: wp-includes/class-wp-customize-nav-menus.php:950
 msgid "Move one level up"
 msgstr "एक स्तर ऊपर ले जाएं"
 
-#: wp-includes/class-wp-customize-nav-menus.php:417
+#: wp-includes/class-wp-customize-nav-menus.php:433
 msgid "Menu Locations"
 msgstr "मेन्यू के स्थान"
 
 #. translators: %s: number of menu locations
-#: wp-includes/class-wp-customize-nav-menus.php:579
+#: wp-includes/class-wp-customize-nav-menus.php:595
 msgid "Your theme can display menus in %s location. Select which menu you would like to use."
 msgid_plural "Your theme can display menus in %s locations. Select which menu appears in each location."
 msgstr[0] "आपके विषय में %s मेन्यू स्थान हैं। आप जो मेनू उपयोग करना चाहते हैं उसका चयन करें।"
 msgstr[1] "आपकी थीम में %s मेनू स्थान हैं। हर स्थान में कौनसा मेनू दिखेगा इसका चयन करें।"
 
-#: wp-includes/class-wp-customize-nav-menus.php:557
+#: wp-includes/class-wp-customize-nav-menus.php:573
 msgid "This panel is used for managing navigation menus for content you have already published on your site. You can create menus and add items for existing content such as pages, posts, categories, tags, formats, or custom links."
 msgstr "इस पैनल का प्रयोग पहले से ही आपकी साइट पर प्रकाशित सामग्री के नेविगेशन मेनू के प्रबंधन के लिए किया जाता है। आप मेनू बना सकते हैं और मौजूदा सामग्री के लिए आइटम जोड़ सकते हैं जैसे कि पृष्ठ, पोस्ट, श्रेणियाँ, टैग, प्रारूप, या कस्टम लिंक।"
 
 #. translators: 1: item name, 2: item position, 3: parent item name
-#: wp-includes/class-wp-customize-nav-menus.php:472
+#: wp-includes/class-wp-customize-nav-menus.php:488
 msgid "%1$s. Sub item number %2$d under %3$s."
 msgstr "%1$s. सब आइटम नंबर  %2$d के निचे %3$s."
 
 #. translators: 1: item name, 2: item position, 3: total number of items
-#: wp-includes/class-wp-customize-nav-menus.php:470
+#: wp-includes/class-wp-customize-nav-menus.php:486
 msgid "%1$s. Menu item %2$d of %3$d."
 msgstr "%1$s. मेनू आइटम  %2$d का %3$d."
 
 #. translators: %s: previous item name
-#: wp-includes/class-wp-customize-nav-menus.php:468
+#: wp-includes/class-wp-customize-nav-menus.php:484
 msgid "Out from under %s"
 msgstr "%s  के अंदर से बाहर"
 
 #. translators: %s: previous item name
-#: wp-includes/class-wp-customize-nav-menus.php:466
+#: wp-includes/class-wp-customize-nav-menus.php:482
 msgid "Under %s"
 msgstr "%s से कम"
 
 #. translators: %s: previous item name
-#: wp-includes/class-wp-customize-nav-menus.php:464
+#: wp-includes/class-wp-customize-nav-menus.php:480
 msgid "Move out from under %s"
 msgstr "%s  के नीचे से बाहर ले जाएं"
 
 #. translators: %s: previous item name
-#: wp-includes/class-wp-customize-nav-menus.php:462
+#: wp-includes/class-wp-customize-nav-menus.php:478
 msgid "Move under %s"
 msgstr "%s के निचे ले जाये"
 
-#: wp-includes/class-wp-customize-nav-menus.php:460
+#: wp-includes/class-wp-customize-nav-menus.php:476
 msgid "Move to the top"
 msgstr "शीर्ष पर ले जाएं"
 
-#: wp-includes/class-wp-customize-nav-menus.php:459
+#: wp-includes/class-wp-customize-nav-menus.php:475
 msgid "Move down one"
 msgstr "एक नीचे ले जाएं"
 
-#: wp-includes/class-wp-customize-nav-menus.php:458
+#: wp-includes/class-wp-customize-nav-menus.php:474
 msgid "Move up one"
 msgstr "एक के ऊपर ले जाएं"
 
-#: wp-includes/class-wp-customize-nav-menus.php:437
+#: wp-includes/class-wp-customize-nav-menus.php:453
 msgid "Loading more results... please wait."
 msgstr "और परिणाम लोड हो रहे है ... कृपया प्रतीक्षा करें"
 
-#: wp-includes/class-wp-customize-nav-menus.php:436
+#: wp-includes/class-wp-customize-nav-menus.php:452
 msgid "Additional items found: %d"
 msgstr "अतिरिक्त आइटम मिला: %d"
 
-#: wp-includes/class-wp-customize-nav-menus.php:435
+#: wp-includes/class-wp-customize-nav-menus.php:451
 msgid "Number of items found: %d"
 msgstr "आइटम की संख्या: %d"
 
 #. translators: %s: title of menu item in draft status
-#: wp-includes/class-wp-customize-nav-menus.php:434
+#: wp-includes/class-wp-customize-nav-menus.php:450
 msgid "%s (Pending)"
 msgstr "%s (विचाराधीन)"
 
 #. translators: %s: title of menu item which is invalid
-#: wp-includes/class-wp-customize-nav-menus.php:432
+#: wp-includes/class-wp-customize-nav-menus.php:448
 msgid "%s (Invalid)"
 msgstr "%s (अमान्य)"
 
-#: wp-includes/class-wp-customize-nav-menus.php:428
+#: wp-includes/class-wp-customize-nav-menus.php:444
 msgid "Menu item is now a sub-item"
 msgstr "मेनू आइटम अब एक उप आइटम है"
 
-#: wp-includes/class-wp-customize-nav-menus.php:427
+#: wp-includes/class-wp-customize-nav-menus.php:443
 msgid "Menu item moved out of submenu"
 msgstr "मेनू आइटम उपमेनू से बाहर ले जाया गया"
 
-#: wp-includes/class-wp-customize-nav-menus.php:426
+#: wp-includes/class-wp-customize-nav-menus.php:442
 msgid "Menu item moved down"
 msgstr "मेनू आइटम नीचे चला गया"
 
-#: wp-includes/class-wp-customize-nav-menus.php:425
+#: wp-includes/class-wp-customize-nav-menus.php:441
 msgid "Menu item moved up"
 msgstr "मेनू आइटम ऊपर ले जाया गया"
 
-#: wp-includes/class-wp-customize-nav-menus.php:424
+#: wp-includes/class-wp-customize-nav-menus.php:440
 msgid "Menu deleted"
 msgstr "मेनू नष्ट किया गया"
 
-#: wp-includes/class-wp-customize-nav-menus.php:423
+#: wp-includes/class-wp-customize-nav-menus.php:439
 msgid "Menu created"
 msgstr "मेनू बनाया गया "
 
-#: wp-includes/class-wp-customize-nav-menus.php:422
+#: wp-includes/class-wp-customize-nav-menus.php:438
 msgid "Menu item deleted"
 msgstr "मेनू आइटम  नष्ट किया गया"
 
-#: wp-includes/class-wp-customize-nav-menus.php:421
+#: wp-includes/class-wp-customize-nav-menus.php:437
 msgid "Menu item added"
 msgstr "मेनू  आइटम जोड़ा गया"
 
 #: wp-includes/class-wp-customize-nav-menus.php:153
+#: wp-includes/class-wp-customize-nav-menus.php:375
 msgctxt "nav menu home label"
 msgid "Home"
 msgstr "मुख्य पृष्ठ"
@@ -5576,15 +5604,15 @@ msgstr "नेविगेशन लेबल"
 msgid "Automatically add new top-level pages to this menu"
 msgstr "स्वतः यह मेनू के लिए नए शीर्ष स्तर के पृष्ठों को जोड़ेगा"
 
-#: wp-includes/class-wp-customize-nav-menus.php:417
+#: wp-includes/class-wp-customize-nav-menus.php:433
 msgid "Menu Location"
 msgstr "मेनू के स्थान"
 
-#: wp-includes/class-wp-customize-nav-menus.php:944
+#: wp-includes/class-wp-customize-nav-menus.php:960
 msgid "Delete Menu"
 msgstr "मेनू हटाएं"
 
-#: wp-includes/customize/class-wp-customize-nav-menu-control.php:42
+#: wp-includes/customize/class-wp-customize-nav-menu-control.php:38
 msgid "Add Items"
 msgstr "आइटम जोड़ें"
 
@@ -5615,20 +5643,20 @@ msgstr "https://codex.wordpress.org/"
 msgid "No %1$s was set in the arguments array for the \"%2$s\" sidebar. Defaulting to \"%3$s\". Manually set the %1$s to \"%3$s\" to silence this notice and keep existing sidebar content."
 msgstr "\"%2$s\" साइडबार के लिए कोई भी %1$s तर्क सारणी में स्थापित नहीं किया गया था। डिफ़ॉल्ट रूप से \"%3$s\" है। इस नोटिस को शांत रखने और मौजूदा साइडबार सामग्री ही रखने के लिए मैन्युअल रूप से %1$s को \"%3$s\" में सेट कीजिये।"
 
-#: wp-includes/script-loader.php:839
+#: wp-includes/script-loader.php:840
 msgid "Connection lost or the server is busy. Please try again later."
 msgstr "संचार टूट गया अथवा सर्वर व्यस्त है. कृपया थोड़ी देर बाद प्रयास करें."
 
-#: wp-includes/script-loader.php:791
+#: wp-includes/script-loader.php:792
 msgid "Updates may not complete if you navigate away from this page."
 msgstr "यदि आप इस पृष्ठ से कहीं और चले जाएँगे, तो अपडेट अपूर्ण रह जाएगा।"
 
-#: wp-includes/script-loader.php:776
+#: wp-includes/script-loader.php:777
 msgid "Update Failed!"
 msgstr "अपडेट विफल हुआ!"
 
 #. translators: Accessibility text
-#: wp-includes/script-loader.php:790
+#: wp-includes/script-loader.php:791
 msgid "Update canceled."
 msgstr "अपडेट रद्द।"
 
@@ -5653,37 +5681,37 @@ msgstr[1] "%2$s के लिए प्रतिक्रिया %1$s"
 msgid "<span>Previewing:</span> %s"
 msgstr "<span>पूर्वावलोकन:</span> %s"
 
-#: wp-includes/script-loader.php:567
+#: wp-includes/script-loader.php:568
 msgid "Site Preview"
 msgstr "साइट पूर्वदर्शन"
 
-#: wp-includes/script-loader.php:769
+#: wp-includes/script-loader.php:770
 msgid "Updating..."
 msgstr "अद्यतन शुरु है..."
 
-#: wp-includes/script-loader.php:792
+#: wp-includes/script-loader.php:793
 msgid "Install Now"
 msgstr "अभी स्थापित करें"
 
-#: wp-includes/script-loader.php:795
+#: wp-includes/script-loader.php:796
 msgid "Installing..."
 msgstr "स्थापित हो रहा है..."
 
-#: wp-includes/script-loader.php:813
+#: wp-includes/script-loader.php:814
 msgid "Installing... please wait."
 msgstr "स्थापित हो रहा है... कृपया प्रतीक्षा करें।"
 
 #. translators: Accessibility text
-#: wp-includes/script-loader.php:786
+#: wp-includes/script-loader.php:787
 msgid "Updating... please wait."
 msgstr "अद्यतन शुरु है... कृपया प्रतीक्षा करें"
 
 #. translators: Accessibility text
-#: wp-includes/script-loader.php:788
+#: wp-includes/script-loader.php:789
 msgid "Update completed successfully."
 msgstr "अपडेट सफलतापूर्वक पूर्ण हुआ।"
 
-#: wp-includes/script-loader.php:814
+#: wp-includes/script-loader.php:815
 msgid "Installation completed successfully."
 msgstr "स्थापना कार्य सफलतापूर्वक पूर्ण हुआ।"
 
@@ -5773,7 +5801,8 @@ msgid "<strong>Database tables are missing.</strong> This means that MySQL is no
 msgstr "<strong>डाटाबेस सारणी नहीं मिली।</strong> इसका अर्थ यह है कि MySQL कार्य नहीं कर रहा, वर्डप्रैस सही तरीके से स्थापित नहीं हुआ या किसी %s ने हटा दिया। कृपया डाटाबेस देखें।"
 
 #: wp-includes/class-wp-customize-nav-menus.php:155
-#: wp-includes/class-wp-customize-nav-menus.php:413
+#: wp-includes/class-wp-customize-nav-menus.php:382
+#: wp-includes/class-wp-customize-nav-menus.php:429
 #: wp-includes/customize/class-wp-customize-nav-menu-item-setting.php:322
 #: wp-includes/nav-menu.php:821
 msgid "Custom Link"
@@ -5794,7 +5823,7 @@ msgctxt "revision date format"
 msgid "F j, Y @ H:i:s"
 msgstr "F j, Y @ H:i:s"
 
-#: wp-includes/class-wp-customize-nav-menus.php:1099
+#: wp-includes/class-wp-customize-nav-menus.php:1115
 #: wp-includes/class-wp-editor.php:1704 wp-includes/media-template.php:820
 msgid "Link Text"
 msgstr "कड़ी पाठ्य"
@@ -5855,7 +5884,7 @@ msgid "Theme Details"
 msgstr "विषय विवरण"
 
 #: wp-includes/customize/class-wp-customize-theme-control.php:118
-#: wp-includes/script-loader.php:828
+#: wp-includes/script-loader.php:829
 msgid "Live Preview"
 msgstr "सजीव पूर्वावलोकन"
 
@@ -5915,7 +5944,7 @@ msgstr "प्रदान किए गए नाम जैसा ही एक
 
 #. translators: %s: database access abstraction class, usually wpdb or a class
 #. extending wpdb
-#: wp-includes/wp-db.php:1117
+#: wp-includes/wp-db.php:1110
 msgid "%s must set a database connection for use with escaping."
 msgstr "इस्केप का उपयोग करने हेतु %s डाटाबेस संचार जोड़ना होगा."
 
@@ -5946,7 +5975,7 @@ msgstr "पोस्ट्स नेविगेशन"
 msgid "Newer posts"
 msgstr "नए पोस्ट"
 
-#: wp-includes/script-loader.php:1130
+#: wp-includes/script-loader.php:1131
 msgid "Previous"
 msgstr "पिछले"
 
@@ -6238,8 +6267,8 @@ msgstr "बड़ी संख्या में चुनें"
 msgid "%s: %l."
 msgstr "%s: %l."
 
-#: wp-includes/class-wp-customize-nav-menus.php:411
-#: wp-includes/script-loader.php:888
+#: wp-includes/class-wp-customize-nav-menus.php:427
+#: wp-includes/script-loader.php:889
 msgctxt "missing menu item navigation label"
 msgid "(no label)"
 msgstr "(कोई लेबल नहीं)"
@@ -6248,7 +6277,7 @@ msgstr "(कोई लेबल नहीं)"
 msgid "This site is no longer available."
 msgstr "यह साइट अब उपलब्ध नहीं है"
 
-#: wp-includes/script-loader.php:842
+#: wp-includes/script-loader.php:843
 msgid "No plugins found. Try a different search."
 msgstr "ऐसा कोई प्लगइन नहीं मिला। कुछ और ढुंढने कि कोशिश करें।"
 
@@ -6375,7 +6404,7 @@ msgid "<strong>ERROR</strong>: The comment could not be saved. Please try again 
 msgstr "<strong>त्रुटि</strong>: आप की टिप्पणी को सहेजा नहीं जा सका। बाद में पुन: प्रयास करें।"
 
 #: wp-includes/update.php:154 wp-includes/update.php:346
-#: wp-includes/update.php:524
+#: wp-includes/update.php:528
 msgid "(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)"
 msgstr "(वर्डप्रेस WordPress.org से एक सुरक्षित कनेक्शन स्थापित नहीं कर सका। अपने सर्वर व्यवस्थापक से संपर्क करें।)"
 
@@ -6797,7 +6826,7 @@ msgstr "अधिकतम एचटीएमएल 5 प्लेबैक क�
 msgid "Hint: The password should be at least twelve characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! \" ? $ % ^ &amp; )."
 msgstr "सुझाव: पासवर्ड कम से कम बारह वर्ण लंबा होना चाहिए। इसे मजबूत बनाने के लिए, अपर व लोअर केस के अक्षर, संख्या, और ! \" ? $ % ^ &amp; ) जैसे प्रतीकों का उपयोग करें।"
 
-#: wp-includes/wp-db.php:1237
+#: wp-includes/wp-db.php:1230
 msgid "The query argument of %s must have a placeholder."
 msgstr "%s के क्वेरी तर्क में एक प्लेसहोल्डर अवश्य होना चाहिए।"
 
@@ -6966,7 +6995,7 @@ msgstr "प्लेलिस्ट की सेटिंग"
 msgid "Show Tracklist"
 msgstr "ट्रॅकलिस्ट दिखाइए"
 
-#: wp-includes/class-wp-customize-nav-menus.php:985
+#: wp-includes/class-wp-customize-nav-menus.php:1001
 #: wp-includes/class-wp-customize-panel.php:359
 #: wp-includes/class-wp-customize-section.php:350
 #: wp-includes/class-wp-customize-widgets.php:797
@@ -7157,7 +7186,7 @@ msgid "Align right"
 msgstr "दाहिने में संरेखित करें "
 
 #: wp-includes/class-wp-customize-widgets.php:755
-#: wp-includes/script-loader.php:840 wp-includes/script-loader.php:866
+#: wp-includes/script-loader.php:841 wp-includes/script-loader.php:867
 msgid "An error has occurred. Please reload the page and try again."
 msgstr "एक त्रुटि हो गई है. कृपया पेज पुन: लोड करें और पुन: प्रयास करें।"
 
@@ -7165,17 +7194,17 @@ msgstr "एक त्रुटि हो गई है. कृपया पे�
 msgid "Select an area to move this widget into:"
 msgstr " इस विजेट को स्थानांतरित करने के लिए एक क्षेत्र का चयन करें:"
 
-#: wp-includes/class-wp-customize-nav-menus.php:932
+#: wp-includes/class-wp-customize-nav-menus.php:948
 #: wp-includes/class-wp-customize-widgets.php:685
 msgid "Move up"
 msgstr "ऊपर ले जाए"
 
-#: wp-includes/class-wp-customize-nav-menus.php:933
+#: wp-includes/class-wp-customize-nav-menus.php:949
 #: wp-includes/class-wp-customize-widgets.php:684
 msgid "Move down"
 msgstr "नीचे की ओर"
 
-#: wp-includes/customize/class-wp-customize-nav-menu-control.php:45
+#: wp-includes/customize/class-wp-customize-nav-menu-control.php:54
 #: wp-includes/customize/class-wp-widget-area-customize-control.php:60
 msgid "Reorder"
 msgstr "पुन: व्यवस्थित करें"
@@ -7224,9 +7253,9 @@ msgid "https://wordpress.org/support/forum/requests-and-feedback"
 msgstr "https://wordpress.org/support/forum/requests-and-feedback"
 
 #: wp-includes/admin-bar.php:164 wp-includes/update.php:153
-#: wp-includes/update.php:345 wp-includes/update.php:523
-#: wp-includes/wp-db.php:1069 wp-includes/wp-db.php:1602
-#: wp-includes/wp-db.php:1760 wp-login.php:882
+#: wp-includes/update.php:345 wp-includes/update.php:527
+#: wp-includes/wp-db.php:1062 wp-includes/wp-db.php:1595
+#: wp-includes/wp-db.php:1753 wp-login.php:882
 msgid "https://wordpress.org/support/"
 msgstr "https://wordpress.org/support/"
 
@@ -7263,22 +7292,22 @@ msgstr "कॉलम समूह "
 msgid "Could not find the specified string."
 msgstr "निर्दिष्ट स्ट्रिंग नहीं मिल सका."
 
-#: wp-includes/general-template.php:3928
+#: wp-includes/general-template.php:3930
 msgctxt "admin color scheme"
 msgid "Coffee"
 msgstr "कॉफ़ी"
 
-#: wp-includes/general-template.php:3922
+#: wp-includes/general-template.php:3924
 msgctxt "admin color scheme"
 msgid "Ocean"
 msgstr "सागर"
 
-#: wp-includes/general-template.php:3916
+#: wp-includes/general-template.php:3918
 msgctxt "admin color scheme"
 msgid "Ectoplasm"
 msgstr "एक्टोप्लास्म"
 
-#: wp-includes/general-template.php:3910
+#: wp-includes/general-template.php:3912
 msgctxt "admin color scheme"
 msgid "Sunrise"
 msgstr "सनराइज़"
@@ -7330,21 +7359,21 @@ msgstr "आपकी साइट के पृष्ठों की एक स
 #. translators: If there are characters in your language that are not supported
 #. by Open Sans, translate this to 'off'. Do not translate into your own
 #. language.
-#: wp-includes/script-loader.php:935
+#: wp-includes/script-loader.php:936
 msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr "off"
 
 #. translators: %s: support forums URL
 #: wp-includes/update.php:152 wp-includes/update.php:344
-#: wp-includes/update.php:522
+#: wp-includes/update.php:526
 msgid "An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href=\"%s\">support forums</a>."
 msgstr "एक अप्रत्याशित त्रुटि हुई। कुछ WordPress.org या इस सर्वर के विन्यास के साथ गलत हो सकता है। आप समस्या जारी रहती है, तो <a href=\"%s\"> समर्थन मंचों </a> प्रयास करें।"
 
 #. translators: To add an additional Open Sans character subset specific to
 #. your language, translate this to 'greek', 'cyrillic' or 'vietnamese'. Do not
 #. translate into your own language.
-#: wp-includes/script-loader.php:941
+#: wp-includes/script-loader.php:942
 msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
 msgid "no-subset"
 msgstr "no-subset"
@@ -7353,17 +7382,17 @@ msgstr "no-subset"
 msgid "Use commas instead of %s to separate excluded terms."
 msgstr "अपवर्जित शर्तों को अलग करने के लिए %s के बजाय अल्पविराम का प्रयोग करें।"
 
-#: wp-includes/general-template.php:3904
+#: wp-includes/general-template.php:3906
 msgctxt "admin color scheme"
 msgid "Midnight"
 msgstr "काला रंग"
 
-#: wp-includes/general-template.php:3892
+#: wp-includes/general-template.php:3894
 msgctxt "admin color scheme"
 msgid "Light"
 msgstr "धीमा"
 
-#: wp-includes/general-template.php:3881
+#: wp-includes/general-template.php:3883
 msgctxt "admin color scheme"
 msgid "Default"
 msgstr "मूलभूत"
@@ -7372,7 +7401,7 @@ msgstr "मूलभूत"
 msgid "Menu"
 msgstr "मेनू "
 
-#: wp-includes/update.php:629
+#: wp-includes/update.php:633
 msgid "Translation Updates"
 msgstr "अनुवाद अपडेट"
 
@@ -7542,7 +7571,7 @@ msgid "Have you entered your email correctly? You have entered %s, if it&#8217;s
 msgstr "क्या आपने सही तरीके अपना ईमेल दर्ज किया है? आपने %s दर्ज किया है, अगर यह गलत है, तो आपको अपना ई-मेल प्राप्त नहीं होगा।"
 
 #. translators: 1: month, 2: day, 3: year, 4: hour, 5: minute
-#: wp-includes/script-loader.php:686 wp-includes/script-loader.php:714
+#: wp-includes/script-loader.php:687 wp-includes/script-loader.php:715
 msgid "%1$s %2$s, %3$s @ %4$s:%5$s"
 msgstr "%1$s %2$s, %3$s @ %4$s : %5$s"
 
@@ -7550,7 +7579,7 @@ msgstr "%1$s %2$s, %3$s @ %4$s : %5$s"
 msgid "Your session has expired. You can log in again from this page or go to the login page."
 msgstr "आपका सत्र समाप्त हो गया है। आप इस पेज से फिर से लॉग इन कर सकते हैं या प्रवेश (लॉग इन) पृष्ठ पर जा सकते हैं।"
 
-#: wp-includes/functions.php:5329
+#: wp-includes/functions.php:5330
 msgid "The login page will open in a new window. After logging in you can close it and return to this page."
 msgstr "प्रवेश(लॉग इन) पृष्ठ एक नए विंडो में खुलेगा। प्रवेश(लॉग इन) करने के बाद उसे बंद कर सकते हैं और इस पृष्ठ पर वापस लौट सकते हैं।"
 
@@ -7575,7 +7604,7 @@ msgctxt "placeholder"
 msgid "Search &hellip;"
 msgstr "खोज &hellip;"
 
-#: wp-includes/functions.php:5327 wp-includes/script-loader.php:568
+#: wp-includes/functions.php:5328 wp-includes/script-loader.php:569
 msgid "Session expired"
 msgstr "सेशन समाप्त हो गया है"
 
@@ -7948,11 +7977,11 @@ msgstr "%1$s %2$s"
 msgid "Could not insert term relationship into the database."
 msgstr "डेटाबेस में टर्म संबंध को प्रविष्ट नहीं किया जा सका।"
 
-#: wp-includes/script-loader.php:855
+#: wp-includes/script-loader.php:856
 msgid "Select Color"
 msgstr "रंग चुनें"
 
-#: wp-includes/media-template.php:601 wp-includes/script-loader.php:851
+#: wp-includes/media-template.php:601 wp-includes/script-loader.php:852
 msgid "Clear"
 msgstr "साफ़ करें"
 
@@ -8036,15 +8065,15 @@ msgstr "Text"
 msgid "Skip to toolbar"
 msgstr "टूलबार पर जाएं"
 
-#: wp-includes/class-wp-customize-manager.php:4941
+#: wp-includes/class-wp-customize-manager.php:4981
 msgid "Header Text Color"
 msgstr "शीर्ष वाक्य का रंग"
 
-#: wp-includes/class-wp-customize-manager.php:4918
+#: wp-includes/class-wp-customize-manager.php:4958
 msgid "Colors"
 msgstr "रंग"
 
-#: wp-includes/script-loader.php:560 wp-includes/script-loader.php:722
+#: wp-includes/script-loader.php:560 wp-includes/script-loader.php:723
 msgid "Saved"
 msgstr "सहेजा गया"
 
@@ -8074,7 +8103,7 @@ msgstr "क्षमा करें, आप एक निजी पोस्ट
 msgid "Sorry, you are not allowed to publish this page."
 msgstr "क्षमा करें, आपको इस पृष्ठ को प्रकाशित करने की अनुमति नहीं है।"
 
-#: wp-includes/class-wp-customize-manager.php:4991
+#: wp-includes/class-wp-customize-manager.php:5031
 #: wp-includes/customize/class-wp-customize-header-image-control.php:31
 msgid "Header Image"
 msgstr "शीर्ष चित्र"
@@ -8118,16 +8147,16 @@ msgid_plural "Site name must be at least %s characters."
 msgstr[0] "साइट का नाम कम से कम %s अक्षर का होना चाहिए |"
 msgstr[1] "साइट का नाम कम से कम %s अक्षरों का होना चाहिए |"
 
-#: wp-includes/class-wp-customize-manager.php:5198
+#: wp-includes/class-wp-customize-manager.php:5238
 msgid "A static page"
 msgstr "एक स्थिर पृष्ठ"
 
-#: wp-includes/class-wp-customize-manager.php:5065
+#: wp-includes/class-wp-customize-manager.php:5105
 #: wp-includes/customize/class-wp-customize-background-image-control.php:30
 msgid "Background Image"
 msgstr "पृष्ठभूमि का चित्र"
 
-#: wp-includes/class-wp-customize-manager.php:4956
+#: wp-includes/class-wp-customize-manager.php:4996
 msgid "Background Color"
 msgstr "पृष्ठभूमि का रंग"
 
@@ -8143,15 +8172,15 @@ msgstr "चित्र हटाए"
 msgid "Sorry, you are not allowed to edit this comment."
 msgstr "क्षमा करें, आपको इस टिप्पणी को संपादित करने की अनुमति नहीं है।"
 
-#: wp-includes/class-wp-customize-manager.php:5220
+#: wp-includes/class-wp-customize-manager.php:5260
 msgid "Posts page"
 msgstr "पोस्ट पृष्ठ"
 
-#: wp-includes/script-loader.php:583
+#: wp-includes/script-loader.php:584
 msgid "Allowed Files"
 msgstr "अनुमति प्राप्त फ़ाइलें"
 
-#: wp-includes/class-wp-customize-manager.php:4900
+#: wp-includes/class-wp-customize-manager.php:4940
 #: wp-includes/class-wp-customize-widgets.php:753
 #: wp-includes/class-wp-editor.php:1258
 #: wp-includes/customize/class-wp-customize-media-control.php:226
@@ -8271,21 +8300,21 @@ msgid "ERROR: The themes directory is either empty or doesn&#8217;t exist. Pleas
 msgstr "त्रुटि: विषय (थीम) निर्देशिका या तो खाली है अथवा मौजूद नहीं है। कृपया अपनी स्थापना की जाँच करें।"
 
 #. translators: %s: document title from the preview
-#: wp-includes/class-wp-customize-manager.php:4332
+#: wp-includes/class-wp-customize-manager.php:4369
 msgid "Customize: %s"
 msgstr "कस्टमाइज़: %s"
 
 #: wp-includes/class-wp-customize-control.php:586
-#: wp-includes/class-wp-customize-nav-menus.php:594
+#: wp-includes/class-wp-customize-nav-menus.php:610
 #: wp-includes/widgets/class-wp-nav-menu-widget.php:143
 msgid "&mdash; Select &mdash;"
 msgstr "&mdash; चयन करें &mdash;"
 
-#: wp-includes/class-wp-customize-manager.php:4843
+#: wp-includes/class-wp-customize-manager.php:4883
 msgid "Tagline"
 msgstr "टैगलाइन "
 
-#: wp-includes/class-wp-customize-manager.php:5197
+#: wp-includes/class-wp-customize-manager.php:5237
 msgid "Your latest posts"
 msgstr "आपके नवीनतम पोस्ट"
 
@@ -8325,8 +8354,8 @@ msgstr "क्षमा करें, आप को इस पोस्ट क�
 msgid "Edit Site"
 msgstr "साइट संपादित करें"
 
-#: wp-includes/post.php:3952 wp-includes/script-loader.php:671
-#: wp-includes/script-loader.php:743
+#: wp-includes/post.php:3952 wp-includes/script-loader.php:672
+#: wp-includes/script-loader.php:744
 msgctxt "tag delimiter"
 msgid ","
 msgstr ","
@@ -8456,7 +8485,7 @@ msgstr "एक कॉन्फ़िगरेशन फ़ाइल बनाए
 msgid "You can create a %s file through a web interface, but this doesn't work for all server setups. The safest way is to manually create the file."
 msgstr "आप एक वेब इंटरफेस के माध्यम से %s फ़ाइल बना सकते हैं, लेकिन यह सभी सर्वर व्यवस्थाओं के लिए काम नहीं करता है। सबसे सुरक्षित तरीका मैन्युअली फ़ाइल बनाने का है।"
 
-#: wp-includes/class-wp-customize-manager.php:5231
+#: wp-includes/class-wp-customize-manager.php:5271
 msgid "https://codex.wordpress.org/CSS"
 msgstr "https://codex.wordpress.org/CSS"
 
@@ -8554,7 +8583,7 @@ msgstr "<strong>त्रुटि</strong>: एक मान्य ई-मे�
 msgid "<strong>ERROR</strong>: please type a comment."
 msgstr "<strong>त्रुटि</strong>: टिप्पणी टाइप करें."
 
-#: wp-includes/script-loader.php:871
+#: wp-includes/script-loader.php:872
 msgid "Could not load the preview image. Please reload the page and try again."
 msgstr "पूर्वावलोकन छवि लोड नहीं हो सका। कृपया पेज रिलोड करें और पुन: प्रयास करें।"
 
@@ -8574,16 +8603,16 @@ msgstr "सहायता फ़ोरम"
 msgid "Documentation"
 msgstr "प्रलेखन"
 
-#: wp-includes/formatting.php:3361 wp-includes/general-template.php:3800
+#: wp-includes/formatting.php:3361 wp-includes/general-template.php:3802
 msgid "&hellip;"
 msgstr "&hellip;"
 
-#: wp-includes/functions.php:3777 wp-includes/ms-load.php:455
-#: wp-includes/wp-db.php:1584
+#: wp-includes/functions.php:3778 wp-includes/ms-load.php:455
+#: wp-includes/wp-db.php:1577
 msgid "Error establishing a database connection"
 msgstr "डेटाबेस से कनेक्शन स्थापित करने में त्रुटि"
 
-#: wp-includes/functions.php:3773
+#: wp-includes/functions.php:3774
 msgid "Database Error"
 msgstr "डैशबोर्ड त्रुटी"
 
@@ -8635,7 +8664,7 @@ msgstr "यह फ़ाइल एक छवि नहीं है। कृप
 msgid "This is larger than the maximum size. Please try another."
 msgstr "यह अधिकतम आकार से बड़ा है। कृपया अन्य के साथ प्रयत्न करें।"
 
-#: wp-includes/general-template.php:3898
+#: wp-includes/general-template.php:3900
 msgctxt "admin color scheme"
 msgid "Blue"
 msgstr "नीला"
@@ -8688,7 +8717,7 @@ msgstr "सभी पोस्ट"
 msgid "Link"
 msgstr "कड़ी"
 
-#: wp-includes/script-loader.php:651
+#: wp-includes/script-loader.php:652
 msgid "Approve and Reply"
 msgstr "अनुमोदन करें और जवाब दें"
 
@@ -8760,13 +8789,13 @@ msgid "The user is already active."
 msgstr "उपयोगकर्ता पहले से ही सक्रिय है."
 
 #. translators: %s: version number
-#: wp-includes/functions.php:4139
+#: wp-includes/functions.php:4140
 msgid "(This message was added in version %s.)"
 msgstr "(इस संदेश %s  संस्करण में जोड़ा गया.)"
 
 #. translators: Developer debugging message. 1: PHP function name, 2:
 #. Explanatory message, 3: Version information message
-#: wp-includes/functions.php:4146
+#: wp-includes/functions.php:4147
 msgid "%1$s was called <strong>incorrectly</strong>. %2$s %3$s"
 msgstr "%1$s <strong>गलत</strong> तरीके से बुलाया गया था। %2$s %3$s"
 
@@ -8862,7 +8891,7 @@ msgstr "कोई पृष्ठ नहीं पाया गया."
 msgid "No pages found in Trash."
 msgstr "कोई पृष्ठ कचरा पेटी में नहीं पाया गया."
 
-#: wp-includes/script-loader.php:830
+#: wp-includes/script-loader.php:831
 msgid "Network Enable"
 msgstr "नेटवर्क सक्षम"
 
@@ -9162,7 +9191,7 @@ msgstr "<strong>VHOST और SUBDOMAIN_INSTALL कॉन्स्टेंट्
 msgid "<strong>ERROR</strong>: This username is invalid because it uses illegal characters. Please enter a valid username."
 msgstr "<strong>त्रुटि</strong>: यह उपयोगकर्ता नाम अवैध है क्योंकि यह अवैध अक्षरों का उपयोग करता है। कृपया एक मान्य उपयोगकर्ता नाम दर्ज करें।"
 
-#: wp-includes/comment-template.php:2207
+#: wp-includes/comment-template.php:2206
 msgid "Required fields are marked %s"
 msgstr "आवश्यक फ़ील्ड चिह्नित हैं %s"
 
@@ -9324,7 +9353,7 @@ msgstr "आपको इस साइट से जोड़ने में ए
 msgid "This file is too big. Files must be less than %d KB in size."
 msgstr "यह फ़ाइल बहुत बड़ी है। फाइल आकार में %d KB से कम होनी चाहिए।"
 
-#: wp-includes/comment-template.php:2236
+#: wp-includes/comment-template.php:2235
 msgid "Your email address will not be published."
 msgstr "आपका ईमेल पता प्रकाशित नहीं किया जाएगा."
 
@@ -9367,11 +9396,11 @@ msgstr "आप सबसे पहले <a href=\"%s\">लॉग इन कर�
 msgid "Must be at least 4 characters, letters and numbers only. It cannot be changed, so choose carefully!"
 msgstr "कम से कम 4 अक्षर, केवल अक्षर और संख्या होने चाहिए। यह बदला नहीं जा सकता, इसलिए सावधानी से चुनें!"
 
-#: wp-includes/script-loader.php:757
+#: wp-includes/script-loader.php:758
 msgid "Are you sure you want to install this plugin?"
 msgstr "क्या आप सुनिश्चित हैं कि आप यह प्लगइन स्थापित करना चाहते हैं?"
 
-#: wp-includes/script-loader.php:876
+#: wp-includes/script-loader.php:877
 msgid "Use as featured image"
 msgstr "विशेष रुप से प्रदर्शित छवि के रूप में प्रयोग करें"
 
@@ -9408,7 +9437,7 @@ msgstr "%s के लिए कड़ी"
 msgid "No menus have been created yet. <a href=\"%s\">Create some</a>."
 msgstr "अभी तक कोई भी मेनू बनाया नहीं गया है। <a href=\"%s\">कुछ बनाएँ</a>।"
 
-#: wp-includes/script-loader.php:886
+#: wp-includes/script-loader.php:887
 msgid ""
 "You are about to permanently delete this menu. \n"
 " 'Cancel' to stop, 'OK' to delete."
@@ -9421,21 +9450,21 @@ msgid "This is the short link."
 msgstr "यह शॉर्ट लिंक है।"
 
 #. translators: 1: Number of updates available to plugins
-#: wp-includes/update.php:622
+#: wp-includes/update.php:626
 msgid "%d Plugin Update"
 msgid_plural "%d Plugin Updates"
 msgstr[0] "%d प्लगइन अपडेट"
 msgstr[1] "%d प्लगइन अपडेट्स"
 
 #. translators: 1: Number of updates available to themes
-#: wp-includes/update.php:626
+#: wp-includes/update.php:630
 msgid "%d Theme Update"
 msgid_plural "%d Theme Updates"
 msgstr[0] "%d थीम अपडेट"
 msgstr[1] "%d थीम अपडेट"
 
 #. translators: 1: Number of updates available to WordPress
-#: wp-includes/update.php:618
+#: wp-includes/update.php:622
 msgid "%d WordPress Update"
 msgstr "%d वर्डप्रेस अपडेट"
 
@@ -9557,19 +9586,19 @@ msgid "Select Menu:"
 msgstr "मेनू चुनें:"
 
 #: wp-includes/admin-bar.php:836
-#: wp-includes/class-wp-customize-nav-menus.php:565
+#: wp-includes/class-wp-customize-nav-menus.php:581
 #: wp-includes/customize/class-wp-customize-nav-menus-panel.php:98
 msgid "Menus"
 msgstr "मेनूज़"
 
 #. translators: 1: Database error message, 2: SQL query
-#: wp-includes/wp-db.php:1373
+#: wp-includes/wp-db.php:1366
 msgid "WordPress database error %1$s for query %2$s"
 msgstr "वर्डप्रेस डेटाबेस त्रुटि %1$s  %2$s क्वेरी के लिए"
 
 #. translators: 1: Database error message, 2: SQL query, 3: Name of the calling
 #. function
-#: wp-includes/wp-db.php:1370
+#: wp-includes/wp-db.php:1363
 msgid "WordPress database error %1$s for query %2$s made by %3$s"
 msgstr "वर्डप्रेस डेटाबेस त्रुटि %1$s %2$sक्वेरी के लिए द्वारा %3$s"
 
@@ -9634,7 +9663,7 @@ msgstr "क्षमा करें, आपको इस उपयोगकर�
 msgid "Sorry, you are not allowed to update posts as this user."
 msgstr "क्षमा करें, आपको इस उपयोगकर्ता के रूप में पोस्ट अपडेट करने की अनुमति नहीं है।"
 
-#: wp-includes/class-wp-customize-nav-menus.php:789
+#: wp-includes/class-wp-customize-nav-menus.php:805
 #: wp-includes/class-wp-xmlrpc-server.php:1377
 #: wp-includes/class-wp-xmlrpc-server.php:1861
 #: wp-includes/class-wp-xmlrpc-server.php:3381
@@ -9788,8 +9817,8 @@ msgstr "लेकिन, इससे पहले कि आप अपने �
 msgid "%s is your new username"
 msgstr "%s आपका नया उपयोगकर्ता नाम है"
 
-#: wp-includes/class-wp-customize-nav-menus.php:951
-#: wp-includes/script-loader.php:1129 wp-signup.php:562
+#: wp-includes/class-wp-customize-nav-menus.php:967
+#: wp-includes/script-loader.php:1130 wp-signup.php:562
 msgid "Next"
 msgstr "अगला"
 
@@ -9931,7 +9960,7 @@ msgstr "वर्डप्रेस द्वारा संचालित"
 
 #. translators: 1: WordPress version number, 2: Minimum required MySQL version
 #. number
-#: wp-includes/wp-db.php:3318
+#: wp-includes/wp-db.php:3311
 msgid "<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher"
 msgstr "<strong>त्रुटि</strong>: वर्डप्रेस %1$s को माइएसक्यूएल %2$s या अधिक चाहिए"
 
@@ -9939,7 +9968,7 @@ msgstr "<strong>त्रुटि</strong>: वर्डप्रेस %1$s �
 msgid "Sidebar %d"
 msgstr "साइडबार %d"
 
-#: wp-includes/functions.php:5328 wp-includes/user.php:285
+#: wp-includes/functions.php:5329 wp-includes/user.php:285
 msgid "Please log in again."
 msgstr "फिर लॉग इन करें."
 
@@ -9981,51 +10010,51 @@ msgstr "डेटाबेस में टर्म को प्रविष�
 msgid "Empty Term."
 msgstr "खाली टर्म।"
 
-#: wp-includes/script-loader.php:701
+#: wp-includes/script-loader.php:702
 msgid "Saving Draft&#8230;"
 msgstr "प्रारूप सहेज रहा&#8230;"
 
-#: wp-includes/script-loader.php:878
+#: wp-includes/script-loader.php:879
 msgid "Could not set that as the thumbnail image. Try a different attachment."
 msgstr "थंबनेल चित्र के रूप में इसे निर्धारित नहीं किया जा सका। कोई दूसरा अटैचमेंट आजमाएँ।"
 
-#: wp-includes/script-loader.php:877
+#: wp-includes/script-loader.php:878
 msgid "Saving..."
 msgstr "सहेजा जा रहा... "
 
-#: wp-includes/script-loader.php:741
+#: wp-includes/script-loader.php:742
 msgid "Remove From Bulk Edit"
 msgstr "बल्क संपादन से हटाएँ"
 
-#: wp-includes/script-loader.php:740 wp-includes/script-loader.php:749
+#: wp-includes/script-loader.php:741 wp-includes/script-loader.php:750
 msgid "Error while saving the changes."
 msgstr "परिवर्तन सहेजते समय त्रुटि."
 
-#: wp-includes/script-loader.php:712
+#: wp-includes/script-loader.php:713
 msgid "Submitted on:"
 msgstr "निवेदित:"
 
-#: wp-includes/script-loader.php:697
+#: wp-includes/script-loader.php:698
 msgid "Password Protected"
 msgstr "पासवर्ड संरक्षित"
 
-#: wp-includes/script-loader.php:688
+#: wp-includes/script-loader.php:689
 msgid "No more comments found."
 msgstr "और टिप्पणियाँ नहीं मिली।"
 
-#: wp-includes/script-loader.php:687
+#: wp-includes/script-loader.php:688
 msgid "Show more comments"
 msgstr "अधिक टिप्पणियां दिखायें"
 
-#: wp-includes/script-loader.php:684
+#: wp-includes/script-loader.php:685
 msgid "Published on:"
 msgstr "पर प्रकाशित:"
 
-#: wp-includes/script-loader.php:683
+#: wp-includes/script-loader.php:684
 msgid "Schedule for:"
 msgstr "के लिए संयोजित:"
 
-#: wp-includes/script-loader.php:682
+#: wp-includes/script-loader.php:683
 msgid "Publish on:"
 msgstr "पर प्रकाशित:"
 
@@ -10103,12 +10132,6 @@ msgstr "&lt; पिछला"
 msgid "Next &gt;"
 msgstr "अगला &gt;"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3689
-#: wp-includes/script-loader.php:133 wp-includes/script-loader.php:644
-#: wp-includes/script-loader.php:838
-msgid "An unidentified error has occurred."
-msgstr "एक अज्ञात त्रुटि हुई है."
-
 #: wp-includes/script-loader.php:96
 msgid "Enter a description of the image"
 msgstr "छवि का विवरण दर्ज करें"
@@ -10129,7 +10152,7 @@ msgstr "टैग बंद करें"
 msgid "Close all open tags"
 msgstr "सभी खुले टैग बंद करें"
 
-#: wp-includes/rss.php:917 wp-includes/widgets.php:1410
+#: wp-includes/rss.php:917 wp-includes/widgets.php:1413
 msgid "An error has occurred, which probably means the feed is down. Try again later."
 msgstr "एक त्रुटि हुई है, शायद इसका मतलब है कि फीड बंद है। बाद में पुन: प्रयास करें।"
 
@@ -10417,8 +10440,8 @@ msgstr "टिप्पणी फीड"
 msgid "Insert Page Break tag"
 msgstr "पृष्ठ विराम टैग डालें"
 
-#: wp-includes/class-wp-customize-manager.php:5095
-#: wp-includes/class-wp-customize-manager.php:5136
+#: wp-includes/class-wp-customize-manager.php:5135
+#: wp-includes/class-wp-customize-manager.php:5176
 msgid "Fill Screen"
 msgstr "चित्रपट भरना"
 
@@ -10555,7 +10578,7 @@ msgstr "नया दस्तावेज़"
 msgid "Paste"
 msgstr "चिपकाएँ"
 
-#: wp-includes/class-wp-customize-manager.php:4165
+#: wp-includes/class-wp-customize-manager.php:4202
 #: wp-includes/class-wp-editor.php:1045
 msgid "Copy"
 msgstr "प्रतिकृति बनाये"
@@ -10633,8 +10656,8 @@ msgid "Document properties"
 msgstr "दस्तावेज गुण"
 
 #: wp-includes/class-wp-editor.php:1238 wp-includes/script-loader.php:477
-#: wp-includes/script-loader.php:559 wp-includes/script-loader.php:700
-#: wp-includes/script-loader.php:723 wp-includes/script-loader.php:887
+#: wp-includes/script-loader.php:559 wp-includes/script-loader.php:701
+#: wp-includes/script-loader.php:724 wp-includes/script-loader.php:888
 #: wp-includes/theme.php:2961
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr "अगर आप इस पृष्ठ से दूर जायेंगे तो आपके द्वारा किए बदलाव नष्ट हो जायेंगे."
@@ -10862,11 +10885,11 @@ msgstr "उपयोगकर्ता ने HTTP के माध्यम स
 msgid "Gray"
 msgstr "धुमैला"
 
-#: wp-includes/general-template.php:3715
+#: wp-includes/general-template.php:3717
 msgid "Next &raquo;"
 msgstr "अगला &raquo;"
 
-#: wp-includes/general-template.php:3714
+#: wp-includes/general-template.php:3716
 msgid "&laquo; Previous"
 msgstr "&laquo; पिछला"
 
@@ -10955,34 +10978,34 @@ msgstr "लॉग आउट"
 msgid "Log in"
 msgstr "लॉग इन"
 
-#: wp-includes/functions.php:4722
+#: wp-includes/functions.php:4723
 msgid "Manual Offsets"
 msgstr "मैनुअल ऑफसेट्स"
 
-#: wp-includes/functions.php:4714 wp-includes/functions.php:4718
+#: wp-includes/functions.php:4715 wp-includes/functions.php:4719
 msgid "UTC"
 msgstr "यूटीसी"
 
-#: wp-includes/functions.php:4669
+#: wp-includes/functions.php:4670
 msgid "Select a city"
 msgstr "शहर चुने"
 
 #. translators: 1: PHP function name, 2: version number
-#: wp-includes/functions.php:4033
+#: wp-includes/functions.php:4034
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s एक तर्क के साथ बुलाया गया था जो कोई विकल्प उपलब्ध बिना %2$s संस्करण के बाद से <strong>पदावनत</strong> है।"
 
 #. translators: 1: PHP function name, 2: version number, 3: optional message
 #. regarding the change
-#: wp-includes/functions.php:4030
+#: wp-includes/functions.php:4031
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s! %3$s"
 msgstr "%1$s एक तर्क के साथ बुलाया गया था जो %2$s संस्करण के बाद से <strong>पदावनत</strong> है! %3$s"
 
 #. translators: 1: PHP function name, 2: version number
 #. translators: 1: PHP file name, 2: version number
 #. translators: 1: WordPress hook name, 2: version number
-#: wp-includes/functions.php:3841 wp-includes/functions.php:3969
-#: wp-includes/functions.php:4092
+#: wp-includes/functions.php:3842 wp-includes/functions.php:3970
+#: wp-includes/functions.php:4093
 msgid "%1$s is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s कोई विकल्प उपलब्ध बिना %2$s संस्करण के बाद से <strong>पदावनत है</strong>।"
 
@@ -10991,34 +11014,30 @@ msgstr "%1$s कोई विकल्प उपलब्ध बिना %2$s �
 #. translators: 1: PHP file name, 2: version number, 3: alternative file name
 #. translators: 1: WordPress hook name, 2: version number, 3: alternative hook
 #. name
-#: wp-includes/functions.php:3838 wp-includes/functions.php:3966
-#: wp-includes/functions.php:4089
+#: wp-includes/functions.php:3839 wp-includes/functions.php:3967
+#: wp-includes/functions.php:4090
 msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "%1$s %2$s संस्करण के बाद से <strong>पदावनत है</strong>! इसके बदले %3$s का प्रयोग करें।"
 
-#: wp-includes/functions.php:2748 wp-load.php:92
+#: wp-includes/functions.php:2749 wp-load.php:92
 msgid "WordPress &rsaquo; Error"
 msgstr "वर्डप्रेस &rsaquo; त्रुटि"
 
-#: wp-includes/functions.php:2736
+#: wp-includes/functions.php:2737
 msgid "&laquo; Back"
 msgstr "&laquo; वापस"
 
-#: wp-includes/functions.php:2611 wp-includes/ms-functions.php:2047
+#: wp-includes/functions.php:2612 wp-includes/ms-functions.php:2047
 msgid "Please try again."
 msgstr "कृपया पुनः प्रयास करें."
 
 #. translators: %s: logout URL
-#: wp-includes/functions.php:2602
+#: wp-includes/functions.php:2603
 msgid "Do you really want to <a href=\"%s\">log out</a>?"
 msgstr "क्या आप वास्तव में <a href=\"%s\">लॉग आउट</a>करना चाहते हैं?"
 
-#: wp-includes/functions.php:2616
-msgid "WordPress Failure Notice"
-msgstr "वर्डप्रेस असफलता नोटिस"
-
 #. translators: %s: site name
-#: wp-includes/functions.php:2595
+#: wp-includes/functions.php:2596
 msgid "You are attempting to log out of %s"
 msgstr "आप %s से लॉग आउट करने का प्रयास कर रहे हैं."
 
@@ -11111,31 +11130,31 @@ msgstr "नया वर्डप्रेस लूप"
 msgid "Tag Cloud"
 msgstr "टैग का बादल"
 
-#: wp-includes/widgets.php:1532
+#: wp-includes/widgets.php:1535
 msgid "Display item date?"
 msgstr "आइटम तिथि दिखाएँ?"
 
-#: wp-includes/widgets.php:1529
+#: wp-includes/widgets.php:1532
 msgid "Display item author if available?"
 msgstr "यदि उपलब्ध हो तो आइटम लेखक को दिखाए?"
 
-#: wp-includes/widgets.php:1526
+#: wp-includes/widgets.php:1529
 msgid "Display item content?"
 msgstr "आइटम सामग्री को दिखाए?"
 
-#: wp-includes/widgets.php:1516
+#: wp-includes/widgets.php:1519
 msgid "How many items would you like to display?"
 msgstr "कितने आइटम आप प्रदर्शित करना चाहते हैं?"
 
-#: wp-includes/widgets.php:1513
+#: wp-includes/widgets.php:1516
 msgid "Give the feed a title (optional):"
 msgstr "फ़ीड के लिए शीर्षक दें (वैकल्पिक):"
 
-#: wp-includes/widgets.php:1510
+#: wp-includes/widgets.php:1513
 msgid "Enter the RSS feed URL here:"
 msgstr "यहां आरएसएस फ़ीड URL दर्ज करें:"
 
-#: wp-includes/widgets.php:1426
+#: wp-includes/widgets.php:1429
 msgid "Untitled"
 msgstr "शीर्षकहीन"
 
@@ -11162,7 +11181,7 @@ msgstr "हाइरार्की दिखायें"
 msgid "Select Category"
 msgstr "श्रेणी चुनें"
 
-#: wp-includes/widgets/class-wp-widget-text.php:468
+#: wp-includes/widgets/class-wp-widget-text.php:489
 msgid "Automatically add paragraphs"
 msgstr "स्वतः पैराग्राफ जोड़े"
 
@@ -11261,19 +11280,19 @@ msgstr "डुप्लीकेट टिप्पणी का पता च�
 msgid "Unapproved"
 msgstr "अस्वीकृत किया गया"
 
-#: wp-includes/comment-template.php:2251
+#: wp-includes/comment-template.php:2250
 msgid "Post Comment"
 msgstr "टिप्पणी करे"
 
-#: wp-includes/comment-template.php:2250
+#: wp-includes/comment-template.php:2249
 msgid "Cancel reply"
 msgstr "जवाब रद्द करें"
 
-#: wp-includes/comment-template.php:1874 wp-includes/comment-template.php:2245
+#: wp-includes/comment-template.php:1874 wp-includes/comment-template.php:2244
 msgid "Leave a Reply to %s"
 msgstr "%s को प्रतिक्रिया दें"
 
-#: wp-includes/comment-template.php:1873 wp-includes/comment-template.php:2244
+#: wp-includes/comment-template.php:1873 wp-includes/comment-template.php:2243
 msgid "Leave a Reply"
 msgstr "प्रातिक्रिया दे"
 
@@ -11344,7 +11363,7 @@ msgstr "आपकी टिप्पणी स्वीकृति के इ�
 msgid "Comments are closed."
 msgstr "टिप्पणियाँ बंद कर दी गयी है."
 
-#: wp-includes/script-loader.php:854
+#: wp-includes/script-loader.php:855
 msgid "Select default color"
 msgstr "डिफ़ॉल्ट रंग चुनें"
 
@@ -11357,16 +11376,16 @@ msgid "Pages:"
 msgstr "पृष्ठ:"
 
 #. translators: %s: comments count
-#: wp-includes/script-loader.php:657
+#: wp-includes/script-loader.php:658
 msgid "Comments (%s)"
 msgstr "टिप्पणियाँ (%s)"
 
-#: wp-includes/category-template.php:1139
+#: wp-includes/category-template.php:1131
 msgid "Tags: "
 msgstr "टैग्स: "
 
 #. translators: %s: login URL
-#: wp-includes/comment-template.php:2223
+#: wp-includes/comment-template.php:2222
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "एक टिप्पणी पोस्ट करने के लिए आप को <a href=\"%s\">लॉग इन</a> करना पड़ेगा।"
 
@@ -11398,7 +11417,7 @@ msgstr "%s पर टिप्पणियाँ"
 
 #: wp-includes/class-wp-customize-nav-menus.php:276
 #: wp-includes/script-loader.php:242 wp-includes/script-loader.php:527
-#: wp-includes/script-loader.php:885
+#: wp-includes/script-loader.php:886
 msgid "No results found."
 msgstr "कोई परिणाम नही मिला."
 
@@ -11420,11 +11439,11 @@ msgid "For some strange yet very annoying reason, this post could not be edited.
 msgstr "कुछ अजीब मगर बहुत कष्टप्रद कारण से, इस पोस्ट को संपादित नहीं किया जा सकता।"
 
 #: wp-includes/admin-bar.php:830 wp-includes/class-wp-customize-widgets.php:412
-#: wp-includes/functions.php:3714
+#: wp-includes/functions.php:3715
 msgid "Widgets"
 msgstr "विजेट्स"
 
-#: wp-includes/comment-template.php:2203
+#: wp-includes/comment-template.php:2202
 msgid "Website"
 msgstr "वेबसाईट"
 
@@ -11444,22 +11463,22 @@ msgstr "सभी टैग्स को अल्पविराम से अ�
 #: wp-includes/widgets/class-wp-widget-recent-posts.php:135
 #: wp-includes/widgets/class-wp-widget-search.php:70
 #: wp-includes/widgets/class-wp-widget-tag-cloud.php:126
-#: wp-includes/widgets/class-wp-widget-text.php:453
-#: wp-includes/widgets/class-wp-widget-text.php:486
+#: wp-includes/widgets/class-wp-widget-text.php:474
+#: wp-includes/widgets/class-wp-widget-text.php:507
 msgid "Title:"
 msgstr "शीर्षक:"
 
-#: wp-includes/script-loader.php:755
+#: wp-includes/script-loader.php:756
 msgid "Plugin:"
 msgstr "प्लगइन:"
 
-#: wp-includes/class-wp-customize-manager.php:4901
+#: wp-includes/class-wp-customize-manager.php:4941
 #: wp-includes/customize/class-wp-customize-color-control.php:51
 #: wp-includes/customize/class-wp-customize-media-control.php:225
 #: wp-includes/customize/class-wp-customize-media-control.php:235
 #: wp-includes/customize/class-wp-customize-media-control.php:245
 #: wp-includes/customize/class-wp-customize-media-control.php:255
-#: wp-includes/script-loader.php:853
+#: wp-includes/script-loader.php:854
 msgid "Default"
 msgstr "मूलभूत"
 
@@ -11480,11 +11499,11 @@ msgstr "तिथि प्रारूप"
 msgid "Allow people to post comments on new articles"
 msgstr "लोगो को नये लेख पर टिप्पणी पोस्ट करने की अनुमति दें"
 
-#: wp-includes/comment-template.php:2201 wp-login.php:809
+#: wp-includes/comment-template.php:2200 wp-login.php:809
 msgid "Email"
 msgstr "ईमेल"
 
-#: wp-includes/class-wp-customize-manager.php:4832
+#: wp-includes/class-wp-customize-manager.php:4872
 #: wp-includes/class-wp-xmlrpc-server.php:540
 msgid "Site Title"
 msgstr "साइट शीर्षक"
@@ -11610,7 +11629,7 @@ msgid "Help"
 msgstr "मदद"
 
 #: wp-includes/media.php:3143 wp-includes/script-loader.php:526
-#: wp-includes/script-loader.php:742
+#: wp-includes/script-loader.php:743
 #: wp-includes/widgets/class-wp-widget-recent-posts.php:91
 msgid "(no title)"
 msgstr "(कोई शीर्षक नही)"
@@ -11631,10 +11650,10 @@ msgstr "नया पृष्ठ"
 msgid "Select"
 msgstr "चुनें"
 
-#: wp-includes/class-wp-customize-manager.php:5261
+#: wp-includes/class-wp-customize-manager.php:5301
 #: wp-includes/class-wp-editor.php:1053 wp-includes/class-wp-editor.php:1695
 #: wp-includes/script-loader.php:277 wp-includes/script-loader.php:371
-#: wp-includes/script-loader.php:562 wp-includes/script-loader.php:1125
+#: wp-includes/script-loader.php:562 wp-includes/script-loader.php:1126
 msgid "Close"
 msgstr "बंद करें"
 
@@ -11672,10 +11691,10 @@ msgstr "छवियाँ"
 msgid "Search"
 msgstr "खोजें"
 
-#: wp-includes/class-wp-customize-manager.php:4090
+#: wp-includes/class-wp-customize-manager.php:4129
 #: wp-includes/script-loader.php:146 wp-includes/script-loader.php:307
-#: wp-includes/widgets/class-wp-widget-text.php:500
-#: wp-includes/widgets/class-wp-widget-text.php:515
+#: wp-includes/widgets/class-wp-widget-text.php:521
+#: wp-includes/widgets/class-wp-widget-text.php:536
 msgid "Dismiss"
 msgstr "खारिज करें"
 
@@ -11684,7 +11703,7 @@ msgid "All Categories"
 msgstr "सभी श्रेणियां"
 
 #: wp-includes/class-wp-customize-control.php:634
-#: wp-includes/class-wp-customize-nav-menus.php:1065
+#: wp-includes/class-wp-customize-nav-menus.php:1081
 msgid "Add"
 msgstr "जोडें"
 
@@ -11693,32 +11712,32 @@ msgid "Add or remove tags"
 msgstr "टैग्स जोड़ें या निकालें"
 
 #: wp-includes/media.php:3499 wp-includes/script-loader.php:524
-#: wp-includes/script-loader.php:691 wp-includes/script-loader.php:772
+#: wp-includes/script-loader.php:692 wp-includes/script-loader.php:773
 msgid "Update"
 msgstr "अपडेट"
 
-#: wp-includes/script-loader.php:695
+#: wp-includes/script-loader.php:696
 msgid "Public"
 msgstr "सार्वजनिक"
 
-#: wp-includes/script-loader.php:696
+#: wp-includes/script-loader.php:697
 msgid "Public, Sticky"
 msgstr "सार्वजनिक, अस्थिरचित्त"
 
 #: wp-includes/post.php:705 wp-includes/post.php:725
-#: wp-includes/script-loader.php:694
+#: wp-includes/script-loader.php:695
 msgid "Private"
 msgstr "निजी"
 
-#: wp-includes/class-wp-editor.php:1051 wp-includes/script-loader.php:680
+#: wp-includes/class-wp-editor.php:1051 wp-includes/script-loader.php:681
 msgid "OK"
 msgstr "ठीक है"
 
-#: wp-includes/script-loader.php:698
+#: wp-includes/script-loader.php:699
 msgid "Privately Published"
 msgstr "निजी रूप से प्रकाशित"
 
-#: wp-includes/script-loader.php:692
+#: wp-includes/script-loader.php:693
 msgid "Save as Pending"
 msgstr "लंबित रूप में सहेजें"
 
@@ -11853,12 +11872,12 @@ msgstr "ट्रैकबैक"
 msgid "Pingback"
 msgstr "पिंगबैक"
 
-#: wp-includes/comment-template.php:1597 wp-includes/script-loader.php:652
+#: wp-includes/comment-template.php:1597 wp-includes/script-loader.php:653
 msgid "Reply"
 msgstr "प्रतिक्रिया"
 
-#: wp-includes/class-wp-customize-manager.php:4583
-#: wp-includes/script-loader.php:551 wp-includes/script-loader.php:693
+#: wp-includes/class-wp-customize-manager.php:4622
+#: wp-includes/script-loader.php:551 wp-includes/script-loader.php:694
 msgid "Save Draft"
 msgstr "प्रारूप सहेजे"
 
@@ -11872,7 +11891,7 @@ msgstr "सामग्री"
 
 #: wp-includes/class-wp-editor.php:1052 wp-includes/class-wp-editor.php:1741
 #: wp-includes/media.php:3498 wp-includes/script-loader.php:510
-#: wp-includes/script-loader.php:561 wp-includes/script-loader.php:681
+#: wp-includes/script-loader.php:561 wp-includes/script-loader.php:682
 msgid "Cancel"
 msgstr "रद्द करें"
 
@@ -11885,7 +11904,7 @@ msgstr "प्लगइन्स"
 msgid "Recent Comments"
 msgstr "हाल ही की टिप्पणियाँ"
 
-#: wp-includes/class-wp-customize-manager.php:4119
+#: wp-includes/class-wp-customize-manager.php:4156
 #: wp-includes/class-wp-editor.php:1119 wp-includes/media-template.php:1247
 msgid "Preview"
 msgstr "पूर्वावलोकन"
@@ -11898,9 +11917,9 @@ msgstr "आरएसएस"
 msgid "Anonymous"
 msgstr "अनाम"
 
-#: wp-includes/customize/class-wp-customize-nav-menu-control.php:46
+#: wp-includes/customize/class-wp-customize-nav-menu-control.php:55
 #: wp-includes/customize/class-wp-widget-area-customize-control.php:61
-#: wp-includes/script-loader.php:879
+#: wp-includes/script-loader.php:880
 msgid "Done"
 msgstr "पूरा हुआ"
 
@@ -11940,7 +11959,7 @@ msgstr "कोई नही"
 msgid "Description"
 msgstr "विवरण"
 
-#: wp-includes/comment-template.php:2199
+#: wp-includes/comment-template.php:2198
 msgid "Name"
 msgstr "नाम"
 
@@ -11959,7 +11978,7 @@ msgstr "लक्ष्य"
 msgid "Categories"
 msgstr "श्रेणी"
 
-#: wp-includes/class-wp-editor.php:1121 wp-includes/script-loader.php:721
+#: wp-includes/class-wp-editor.php:1121 wp-includes/script-loader.php:722
 msgid "Save"
 msgstr "सहेजें"
 
@@ -11991,12 +12010,12 @@ msgstr "संशोधन"
 msgid "Excerpt"
 msgstr "अंश"
 
-#: wp-includes/class-wp-customize-manager.php:4578
-#: wp-includes/script-loader.php:549 wp-includes/script-loader.php:689
+#: wp-includes/class-wp-customize-manager.php:4617
+#: wp-includes/script-loader.php:549 wp-includes/script-loader.php:690
 msgid "Publish"
 msgstr "प्रकाशित करे"
 
-#: wp-includes/script-loader.php:655
+#: wp-includes/script-loader.php:656
 msgid "Comments"
 msgstr "टिप्पणियाँ"
 
@@ -12024,16 +12043,16 @@ msgstr "सम्पादन"
 msgid "No"
 msgstr "नहीं"
 
-#: wp-includes/deprecated.php:3130 wp-includes/functions.php:2606
+#: wp-includes/deprecated.php:3130
 msgid "Are you sure you want to do this?"
 msgstr "क्या आप वास्तव में इसे करना चाहते हैं?"
 
-#: wp-includes/comment-template.php:1082 wp-includes/comment-template.php:2219
+#: wp-includes/comment-template.php:1082 wp-includes/comment-template.php:2218
 msgctxt "noun"
 msgid "Comment"
 msgstr "टिप्पणी"
 
-#: wp-includes/class-wp-customize-nav-menus.php:1095
+#: wp-includes/class-wp-customize-nav-menus.php:1111
 #: wp-includes/class-wp-editor.php:1136 wp-includes/class-wp-editor.php:1700
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:86
 #: wp-includes/media-template.php:376 wp-includes/media-template.php:557
@@ -12068,7 +12087,7 @@ msgid "Pending Review"
 msgstr "पुनरावलोकन बाकी"
 
 #: wp-includes/post.php:706 wp-includes/post.php:726
-#: wp-includes/script-loader.php:550 wp-includes/script-loader.php:699
+#: wp-includes/script-loader.php:550 wp-includes/script-loader.php:700
 msgid "Published"
 msgstr "प्रकाशित"
 
@@ -12080,12 +12099,6 @@ msgstr "शीर्षक"
 #: wp-includes/post.php:1394
 msgid "No posts found."
 msgstr "कोई पोस्ट नही मिल़ा"
-
-#: wp-includes/class-wp-customize-manager.php:450
-#: wp-includes/class-wp-customize-manager.php:515
-#: wp-includes/script-loader.php:565
-msgid "Cheatin&#8217; uh?"
-msgstr "छल कर रहे हैं..?"
 
 #: wp-activate.php:134 wp-includes/post-template.php:1611
 msgid "Password:"
@@ -12103,8 +12116,8 @@ msgstr "सक्रियण के दौरान एक त्रुटि �
 msgid "Your account is now active!"
 msgstr "आपका खाता अब सक्रिय है!"
 
-#: wp-activate.php:85 wp-includes/script-loader.php:829
-#: wp-includes/script-loader.php:830
+#: wp-activate.php:85 wp-includes/script-loader.php:830
+#: wp-includes/script-loader.php:831
 msgid "Activate"
 msgstr "सक्रिय करें"
 
